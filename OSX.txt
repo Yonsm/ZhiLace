@@ -1,0 +1,68 @@
+Axure
+zedex.cn
+xpU4wqREqR6MNDjj957APLHET1GwFV1d6bMjkconScgt01Z2nSwH1pz55FQs5MIh
+
+AppDelete
+AD-V845-I172-R956-B601
+
+PlistEdit
+PLEDPRO095-42E7-REKA-M4H4-1309-1405
+
+Pacifist
+MacXMacX
+4nbSTd3G6C-2bS2quo1of-AIC
+
+OmniGraffle
+Yonsm
+MUIF-KYEG-ARFW-LWMV-WHAD-JEGW-HAD
+
+VMWare
+TX1NF-PPVRW-A1XAX-X5PVZ-Q7ZTT
+
+Proxifier
+P427L-9Y552-5433E-8DSR3-58Z68
+
+Surge
+‪uavana@gmail.com‬
+NQACH-QLXWD-ESWCW-QKMAC-JFMQP
+
+Charles
+Mac OS
+6BACE69077E6DA3993
+
+Sublime
++Package Control: Command+Shift+P
+	+ChineseLocalizations
+	+ConvertToUTF8
+	+Codec33
+	+JsFormat
+	+Pretty JSON
+#Settings
+	"rulers": [80,120,160,200],
+	"word_wrap": "false",
+	"update_check": false,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+#Host
+	#搜索16进制 97 94 0D 00 改为 00 00 00 00
+	echo "0.0.0.0 license.sublimehq.com" | sudo tee -a /etc/hosts
+	echo "0.0.0.0 45.55.255.55" | sudo tee -a /etc/hosts
+	echo "0.0.0.0 45.55.41.223" | sudo tee -a /etc/hosts
+	echo "127.0.0.1 www.sublimetext.com" | sudo tee -a /etc/hosts
+	echo "127.0.0.1 sublimetext.com" | sudo tee -a /etc/hosts
+	echo "127.0.0.1 sublimehq.com" | sudo tee -a /etc/hosts
+	echo "127.0.0.1 telemetry.sublimehq.com" | sudo tee -a /etc/hosts
+#SN:
+----- BEGIN LICENSE -----
+TwitterInc
+200 User License
+EA7E-890007
+1D77F72E 390CDD93 4DCBA022 FAF60790
+61AA12C0 A37081C5 D0316412 4584D136
+94D7F7D4 95BC8C1C 527DA828 560BB037
+D1EDDD8C AE7B379F 50C9D69D B35179EF
+2FE898C4 8E4277A8 555CE714 E1FB0E43
+D5D52613 C3D12E98 BC49967F 7652EED2
+9D2D2E61 67610860 6D338B72 5CF95C69
+E36B85CC 84991F19 7575D828 470A92AB
+------ END LICENSE ------

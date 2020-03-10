@@ -1,0 +1,231 @@
+{
+  "inboundDetour" : [
+    {
+      "domainOverride" : [
+        "http",
+        "tls"
+      ],
+      "port" : 1086,
+      "listen" : "127.0.0.1",
+      "protocol" : "socks",
+      "settings" : {
+        "auth" : "noauth",
+        "udp" : true
+      }
+    }
+  ],
+  "outboundDetour" : [
+    {
+      "mux" : {
+        "concurrency" : 8,
+        "enabled" : true
+      },
+      "protocol" : "vmess",
+      "settings" : {
+        "vnext" : [
+          {
+            "users" : [
+              {
+                "id" : "3f9f18d6-9adc-49fc-a281-c5e9e2ce9f4f",
+                "alterId" : 233,
+                "security" : "auto"
+              }
+            ],
+            "address" : "V.YONSM.GA",
+            "port" : 62223
+          }
+        ]
+      },
+      "streamSettings" : {
+        "security" : "none",
+        "kcpSettings" : {
+          "downlinkCapacity" : 6,
+          "readBufferSize" : 1,
+          "mtu" : 1350,
+          "writeBufferSize" : 1,
+          "uplinkCapacity" : 1,
+          "header" : {
+            "type" : "utp"
+          }
+        },
+        "network" : "kcp",
+        "tlsSettings" : {
+          "allowInsecure" : true
+        }
+      },
+      "tag" : "proxy"
+    },
+    {
+      "protocol" : "blackhole",
+      "settings" : {
+
+      },
+      "tag" : "block"
+    }
+  ],
+  "dns" : {
+    "servers" : [
+      "223.5.5.5",
+      "8.8.8.8"
+    ]
+  },
+  "inbound" : {
+    "port" : 1087,
+    "listen" : "127.0.0.1",
+    "protocol" : "http",
+    "settings" : {
+      "allowTransparent" : true
+    }
+  },
+  "log" : {
+    "access" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/226E1416-450B-4D07-AC14-36F0D8FB40B6\/v2ray_access.log",
+    "loglevel" : "none",
+    "error" : "\/private\/var\/mobile\/Containers\/Shared\/AppGroup\/226E1416-450B-4D07-AC14-36F0D8FB40B6\/v2ray_error.log"
+  },
+  "outbound" : {
+    "protocol" : "freedom",
+    "settings" : {
+
+    },
+    "tag" : "direct"
+  },
+  "policy" : {
+    "levels" : {
+      "0" : {
+        "uplinkOnly" : 0,
+        "connIdle" : 120,
+        "downlinkOnly" : 0,
+        "handshake" : 4
+      }
+    }
+  },
+  "routing" : {
+    "settings" : {
+      "rules" : [
+        {
+          "type" : "field",
+          "domain" : [
+            "dropbox",
+            "github",
+            "google",
+            "instagram",
+            "netflix",
+            "pinterest",
+            "pixiv",
+            "tumblr",
+            "twitter",
+            "domain:facebook.com",
+            "domain:fbcdn.net",
+            "domain:fivecdm.com",
+            "domain:ggpht.com",
+            "domain:gstatic.com",
+            "domain:line-scdn.net",
+            "domain:line.me",
+            "domain:medium.com",
+            "domain:naver.jp",
+            "domain:pximg.net",
+            "domain:setup.icloud.com",
+            "domain:t.co",
+            "domain:twimg.com",
+            "domain:wikipedia.org",
+            "domain:youtube.com",
+            "domain:ytimg.com"
+          ],
+          "outboundTag" : "proxy"
+        },
+        {
+          "userAgent" : [
+            "facebook",
+            "gmail",
+            "instagram",
+            "pinterest",
+            "telegram",
+            "tumblr",
+            "twitter"
+          ],
+          "type" : "field",
+          "outboundTag" : "proxy"
+        },
+        {
+          "type" : "field",
+          "ip" : [
+            "1.0.0.1\/32",
+            "1.1.1.1\/32",
+            "125.209.222.0\/24",
+            "149.112.112.112\/32",
+            "149.154.167.0\/24",
+            "149.154.175.0\/24",
+            "208.67.220.220\/32",
+            "208.67.222.222\/32",
+            "8.8.4.4\/32",
+            "8.8.8.8\/32",
+            "9.9.9.9\/32",
+            "91.108.56.0\/24"
+          ],
+          "outboundTag" : "proxy"
+        },
+        {
+          "type" : "field",
+          "domain" : [
+            "cctv",
+            "dianping",
+            "geosite:cn",
+            "maoyan",
+            "meituan",
+            "umeng",
+            "domain:360buy.com",
+            "domain:360buyimg.com",
+            "domain:apple.com",
+            "domain:crashlytics.com",
+            "domain:douyu.com",
+            "domain:douyu.tv",
+            "domain:douyucdn.cn",
+            "domain:ele.me",
+            "domain:eleme.cn",
+            "domain:elemecdn.com",
+            "domain:icloud.com",
+            "domain:ixigua.com",
+            "domain:jd.com",
+            "domain:pstatp.com",
+            "domain:snssdk.com",
+            "domain:toutiao.com",
+            "domain:weico.cc"
+          ],
+          "outboundTag" : "direct"
+        },
+        {
+          "userAgent" : [
+            "%e7%bd%91%e6%98%93",
+            "micromessenger",
+            "netease",
+            "wechat"
+          ],
+          "type" : "field",
+          "outboundTag" : "direct"
+        },
+        {
+          "port" : "123",
+          "type" : "field",
+          "outboundTag" : "direct"
+        },
+        {
+          "type" : "field",
+          "ip" : [
+            "geoip:cn",
+            "geoip:private"
+          ],
+          "outboundTag" : "direct"
+        },
+        {
+          "type" : "field",
+          "domain" : [
+            "domain:doubleclick.net"
+          ],
+          "outboundTag" : "block"
+        }
+      ],
+      "domainStrategy" : "IPIfNonMatch"
+    },
+    "strategy" : "rules"
+  }
+}

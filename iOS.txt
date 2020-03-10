@@ -1,0 +1,7 @@
+学汉字：k63900727@163.com/Dd112211
+SketchUp：teos77713@163.com/Dd112211
+Kitsunebi：shaynelegend2@outlook.com/27gongzhonghao:SCDxC
+nPlayer：shaynelegend@outlook.com/15gongzhonghao:SCDxC
+
+svn co http://svn.gozap.com/svn/CeleDial-Iphone --username li_jian --password Gozapli_jian123
+
