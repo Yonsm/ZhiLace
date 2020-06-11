@@ -1,0 +1,60 @@
+
+# Install
+ssh root@hassbian
+cd /tmp
+wget https://github.com/Dreamacro/clash/releases/download/v0.19.0/clash-linux-armv8-v0.19.0.gz
+gzip -d ./clash-linux-armv8-v0.19.0.gz 
+mv ./clash-linux-armv8-v0.19.0 /usr/bin/clash
+chmod +x /usr/bin/clash
+clash --help
+
+# Config
+mkdir -p ~/.config/clash
+cd ~/.config/clash
+exit
+scp config.yaml root@hassbian:~/.config/clash/
+ssh root@hassbian
+
+# WebUI
+cd ~/.config/clash
+wget https://github.com/haishanh/yacd/archive/gh-pages.zip
+unzip gh-pages.zip
+mv yacd-gh-pages/ dashboard/
+rm gh-pages.zip
+
+#
+sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
+sysctl -p
+
+#
+iptables -t nat -N clash
+iptables -t nat -N clash_dns
+
+iptables -t nat -A PREROUTING -p tcp --dport 53 -d 198.19.0.0/24 -j clash_dns
+iptables -t nat -A PREROUTING -p udp --dport 53 -d 198.19.0.0/24 -j clash_dns
+iptables -t nat -A PREROUTING -p tcp -j clash
+
+# 这里需要注意的是，下面两行最后的 192.168.1.40 是当前旁路由的 IP 地址，请根据你自己的实际情况修改
+# 如果你自己的旁路由 IP 跟下面的 IP 地址不对的话会造成无法翻墙
+iptables -t nat -A clash_dns -p udp --dport 53 -d 198.19.0.0/24 -j DNAT --to-destination 192.168.1.40:53
+iptables -t nat -A clash_dns -p tcp --dport 53 -d 198.19.0.0/24 -j DNAT --to-destination 192.168.1.40:53
+
+iptables -t nat -A clash -d 0.0.0.0/8 -j RETURN
+iptables -t nat -A clash -d 10.0.0.0/8 -j RETURN
+iptables -t nat -A clash -d 127.0.0.0/8 -j RETURN
+iptables -t nat -A clash -d 169.254.0.0/16 -j RETURN
+iptables -t nat -A clash -d 172.16.0.0/12 -j RETURN
+iptables -t nat -A clash -d 192.168.0.0/16 -j RETURN
+iptables -t nat -A clash -d 224.0.0.0/4 -j RETURN
+iptables -t nat -A clash -d 240.0.0.0/4 -j RETURN
+
+iptables -t nat -A clash -p tcp -j REDIRECT --to-ports 7892
+
+#
+apt install iptables-persistent
+#iptables-save > /etc/iptables/rules.v4
+
+#
+/usr/bin/clash
+
+
