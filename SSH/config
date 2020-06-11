@@ -1,0 +1,8 @@
+Host *
+    StrictHostKeyChecking no
+	UserKnownHostsFile /dev/null
+	LogLevel QUIET
+
+Host hass* yonsm.tk *.yonsm.gq
+    user root
+
