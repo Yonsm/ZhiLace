@@ -1,116 +1,105 @@
 #!/bin/sh
 
-if [ -z $1 ] || [ "$1" = "1" ]; then
-	LAN_IP=1
-	computer_name=Router
-else
-	LAN_IP=$1
-	computer_name=Router$1
+[ -z $1 ] && echo "Usage: $0 <NAME> [SSID]" && exit
+if [ "${1::1}" = "R" ]; then PASS=gjzgqz; else PASS=asdfqwer; fi
+
+# WIFI
+if [ ! -z `nvram get rt_ssid` ]; then
+	if [ ! -z $2 ]; then
+		nvram set rt_ssid=$2
+		nvram set rt_ssid2=$2
+		nvram set wl_ssid=${2}5
+		nvram set wl_ssid2=${2}5
+	fi
+	nvram set rt_wpa_psk=asdfqwer
+	nvram set wl_wpa_psk=asdfqwer
 fi
 
-if [ "$1" = "1" ]; then
-	http_proto=0
-	lan_domain=yonsm
-else
-	http_proto=2
-	lan_domain=yonsm.tk
+# WISP
+if [ "$1" = "ROUTER" ]; then
+	nvram set l_mode_x=3
+	nvram set wl_sta_wisp=1
+	nvram set wl_sta_ssid=alibaba-guest
+	nvram set wl_channel=157
+	nvram set wl_sta_auto=1
 fi
 
+# LAN
+LEN=$((${#1}-1))
+lan_ip=${1:$LEN:1}
+expr $lan_ip "+" 0 &> /dev/null || lan_ip=1
+nvram set lan_ipaddr=192.168.1.$lan_ip
+nvram set dhcp_start=192.168.1.70
+nvram set dhcp_end=192.168.1.99
+[ "${1::6}" = "Router" ] && nvram set lan_domain=yonsm.tk
 
-NVRAMS="
-computer_name=$computer_name
-http_passwd=gjzgqz
-http_proto=$http_proto
-https_lport=8$lan_ip
+if [ "$1" = "Router" ]; then
+	# WAN
+	nvram set wan_proto=pppoe
+	nvram set wan_pppoe_username=057101258602
+	nvram set wan_pppoe_passwd=08065222
 
-lan_ipaddr=192.168.1.$lan_ip
-dhcp_start=192.168.1.70
-dhcp_end=192.168.1.99
-lan_domain=$lan_domain
+	# VTS
+	nvram set vts_enable_x=1
+	nvram set vts_num_x=4
+	nvram set vts_desc_x0=DSM
+	nvram set vts_port_x0=5001
+	nvram set vts_proto_x0=TCP
+	nvram set vts_ipaddr_x0=192.168.1.4
+	nvram set vts_desc_x1=HASS
+	nvram set vts_port_x1=8123
+	nvram set vts_proto_x1=TCP
+	nvram set vts_ipaddr_x1=192.168.1.9
+	nvram set vts_desc_x2=SSH
+	nvram set vts_port_x2=22
+	nvram set vts_proto_x2=TCP
+	nvram set vts_ipaddr_x2=192.168.1.9
+	nvram set vts_desc_x3=VNC
+	nvram set vts_port_x3=5900
+	nvram set vts_proto_x3=TCP
+	nvram set vts_ipaddr_x3=192.168.1.10
 
-rt_ssid=Router
-rt_ssid2=Router
-rt_guest_ssid=Guest
-wl_ssid=Router5
-wl_ssid2=Router5
-wl_guest_ssid=Guest
-rt_wpa_psk=asdfqwer
-wl_wpa_psk=asdfqwer
-"
+	# IPTV
+	nvram set udpxy_enable_x=4000
+	nvram set viptv_mode=2
+	nvram set vlan_vid_iptv=9
+	nvram set vlan_vid_lan4=9
+	nvram set viptv_ipaddr=10.198.137.188
+	nvram set viptv_netmask=255.255.192.0
+	nvram set viptv_gateway=10.198.128.1
+	nvram set udpxy_wopen=1
 
-if [ -z $1 ]; then
-	NVRAMS="$NVRAMS
-wan_proto=pppoe
-wan_pppoe_username=057101258602
-wan_pppoe_passwd=08065222
-
-vts_enable_x=1
-vts_num_x=4
-vts_desc_x0=DSM
-vts_port_x0=5001
-vts_proto_x0=TCP
-vts_ipaddr_x0=192.168.1.4
-vts_desc_x1=HASS
-vts_port_x1=8123
-vts_proto_x1=TCP
-vts_ipaddr_x1=192.168.1.9
-vts_desc_x2=SSH
-vts_port_x2=22
-vts_proto_x2=TCP
-vts_ipaddr_x2=192.168.1.9
-vts_desc_x3=VNC
-vts_port_x3=5900
-vts_proto_x3=TCP
-vts_ipaddr_x3=192.168.1.10
-
-udpxy_enable_x=4000
-viptv_mode=$viptv_mode
-vlan_vid_iptv=9
-vlan_vid_lan4=9
-viptv_ipaddr=10.198.137.188
-viptv_netmask=255.255.192.0
-viptv_gateway=10.198.128.1
-
-ddns_server_x=CUSTOM
-ddns_cst_url=/dyndns/update?system=dyndns&hostname=
-ddns_cst_svr=members.3322.net
-ddns_username_x=yonsmguo
-ddns_passwd_x=Gzczqu30
-ddns_hostname_x=yonsm.f3322.net
-
-https_wopen=1
-ftpd_wopen=1
-udpxy_wopen=1
-trmd_ropen=1
-aria_ropen=1
-
-enable_samba=1
-enable_ftp=1
-trmd_enable=1
-aria_enable=1
-acc_username0=admin
-acc_password0=gjzgqz
-"
-else
-	NVRAMS="$NVRAMS
-wan_proto=dhcp
-"
+	# DDNS
+	nvram set ddns_server_x=CUSTOM
+	nvram set ddns_username_x=yonsmguo
+	nvram set ddns_passwd_x=Gzczqu30
+	nvram set ddns_hostname_x=yonsm.f3322.net
 fi
 
-if [ "$1" = "1" ]; then
-	NVRAMS="$NVRAMS
-wl_mode_x=3
-wl_sta_wisp=1
-wl_sta_ssid=alibaba-guest
-wl_channel=157
-wl_sta_auto=1
-"
+if [ "$lan_ip" = "1" ] && [ "$1" != "ROUTER" ]; then
+	# FW
+	nvram set https_wopen=1
+	nvram set trmd_ropen=1
+	nvram set aria_ropen=1
+	nvram set ftpd_wopen=1
+
+	# USB
+	nvram set enable_samba=1
+	nvram set enable_ftp=1
+	nvram set trmd_enable=1
+	nvram set aria_enable=1
+	nvram set acc_username0=admin
+	nvram set acc_password0=$PASS
 fi
 
-for NVRAM in $NVRAMS
-do
-	nvram set $NVRAM
-done
+# SYS
+nvram set computer_name=`echo ${1::1} | tr  '[a-z]' '[A-Z]'``echo ${1:1} | tr  '[A-Z]' '[a-z]'`
+nvram set http_passwd=$PASS
+if [ "$1" != "ROUTER" ]; then
+	nvram set http_proto=2
+	nvram set https_lport=8$lan_ip
+fi
+
 nvram commit
-reboot
+echo reboot
 
