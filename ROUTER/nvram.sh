@@ -17,7 +17,7 @@ fi
 
 # WISP
 if [ "$1" = "ROUTER" ]; then
-	nvram set l_mode_x=3
+	nvram set wl_mode_x=3
 	nvram set wl_sta_wisp=1
 	nvram set wl_sta_ssid=alibaba-guest
 	nvram set wl_channel=157
@@ -90,6 +90,7 @@ if [ "$lan_ip" = "1" ] && [ "$1" != "ROUTER" ]; then
 	nvram set aria_enable=1
 	nvram set acc_username0=admin
 	nvram set acc_password0=$PASS
+	nvram set acc_num=1
 fi
 
 # SYS
@@ -101,5 +102,4 @@ if [ "$1" != "ROUTER" ]; then
 fi
 
 nvram commit
-echo reboot
-
+reboot
