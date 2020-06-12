@@ -19,7 +19,7 @@ elif [ "$HOST" = "router" ] ||  [ "$HOST" = "ROUTER" ]; then
 fi
 
 # SSH
-scp ../SSH/authorized_keys $HOST:/etc/storage/ || echo "Usage: $0 [HOST] [NAME] [SSID]"
+scp ../SSH/authorized_keys $HOST:/etc/storage/ || (echo "Usage: $0 [HOST] [NAME] [SSID]"; exit 1)
 ssh $HOST "chmod 600 /etc/storage/authorized_keys; [ ! -d ~/.ssh ] && mkdir ~/.ssh; cp /etc/storage/authorized_keys ~/.ssh"
 
 # SSL

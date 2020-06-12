@@ -15,14 +15,15 @@ DDNS_HOST=yonsm.f3322.net
 [ "${1::1}" != "R" ] && ADMIN_PASS=$WIFI_PASS
 
 # WIFI
+if [ -z $2 ]; then SSID=Router; else SSID=$2; fi
 if [ ! -z `nvram get rt_wpa_psk` ]; then
-	if [ ! -z $2 ]; then
-		nvram set rt_ssid=$2
-		nvram set rt_ssid2=$2
-		nvram set wl_ssid=${2}5
-		nvram set wl_ssid2=${2}5
-	fi
+	nvram set rt_ssid=$SSID
+	nvram set rt_ssid2=$SSID
 	nvram set rt_wpa_psk=$WIFI_PASS
+fi
+if [ ! -z `nvram get wl_wpa_psk` ]; then
+	nvram set wl_ssid=${SSID}5
+	nvram set wl_ssid2=${SSID}5
 	nvram set wl_wpa_psk=$WIFI_PASS
 fi
 
