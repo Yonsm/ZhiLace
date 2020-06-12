@@ -1,7 +1,18 @@
 #!/bin/sh
 
+LAN_DOMAIN=yonsm.tk
+PPOE_NAME=057101258602
+PPPOE_PASS=08065222
+ADMIN_PASS=gjzgqz
+WIFI_PASS=12345678
+WIFI_STA_SSID=alibaba-guest
+DDNS_NAME=yonsmguo
+DDNS_PASS=Gzczqu30
+DDNS_HOST=yonsm.f3322.net
+
+
 [ -z $1 ] && echo "Usage: $0 <NAME> [SSID]" && exit
-if [ "${1::1}" = "R" ]; then PASS=gjzgqz; else PASS=asdfqwer; fi
+[ "${1::1}" != "R" ] && ADMIN_PASS=$WIFI_PASS
 
 # WIFI
 if [ ! -z `nvram get rt_wpa_psk` ]; then
@@ -11,15 +22,15 @@ if [ ! -z `nvram get rt_wpa_psk` ]; then
 		nvram set wl_ssid=${2}5
 		nvram set wl_ssid2=${2}5
 	fi
-	nvram set rt_wpa_psk=asdfqwer
-	nvram set wl_wpa_psk=asdfqwer
+	nvram set rt_wpa_psk=$WIFI_PASS
+	nvram set wl_wpa_psk=$WIFI_PASS
 fi
 
 # WISP
 if [ "$1" = "ROUTER" ]; then
 	nvram set wl_mode_x=3
 	nvram set wl_sta_wisp=1
-	nvram set wl_sta_ssid=alibaba-guest
+	nvram set wl_sta_ssid=$WIFI_STA_SSID
 	nvram set wl_channel=157
 	nvram set wl_sta_auto=1
 fi
@@ -31,13 +42,13 @@ expr $lan_ip "+" 0 &> /dev/null || lan_ip=1
 nvram set lan_ipaddr=192.168.1.$lan_ip
 nvram set dhcp_start=192.168.1.70
 nvram set dhcp_end=192.168.1.99
-[ "${1::6}" = "Router" ] && nvram set lan_domain=yonsm.tk
+[ "${1::6}" = "Router" ] && nvram set lan_domain=$LAN_DOMAIN
 
 if [ "$1" = "Router" ]; then
 	# WAN
 	nvram set wan_proto=pppoe
-	nvram set wan_pppoe_username=057101258602
-	nvram set wan_pppoe_passwd=08065222
+	nvram set wan_pppoe_username=$PPOE_NAME
+	nvram set wan_pppoe_passwd=$PPPOE_PASS
 
 	# VTS
 	nvram set vts_enable_x=1
@@ -71,9 +82,9 @@ if [ "$1" = "Router" ]; then
 
 	# DDNS
 	nvram set ddns_server_x=CUSTOM
-	nvram set ddns_username_x=yonsmguo
-	nvram set ddns_passwd_x=Gzczqu30
-	nvram set ddns_hostname_x=yonsm.f3322.net
+	nvram set ddns_username_x=$DDNS_NAME
+	nvram set ddns_passwd_x=$DDNS_PASS
+	nvram set ddns_hostname_x=$DDNS_HOST
 fi
 
 if [ "$lan_ip" = "1" ] && [ "$1" != "ROUTER" ]; then
@@ -89,13 +100,13 @@ if [ "$lan_ip" = "1" ] && [ "$1" != "ROUTER" ]; then
 	nvram set trmd_enable=1
 	nvram set aria_enable=1
 	nvram set acc_username0=admin
-	nvram set acc_password0=$PASS
+	nvram set acc_password0=$ADMIN_PASS
 	nvram set acc_num=1
 fi
 
 # SYS
 nvram set computer_name=`echo ${1::1} | tr  '[a-z]' '[A-Z]'``echo ${1:1} | tr  '[A-Z]' '[a-z]'`
-nvram set http_passwd=$PASS
+nvram set http_passwd=$ADMIN_PASS
 if [ "$1" != "ROUTER" ]; then
 	nvram set http_proto=2
 	nvram set https_lport=8$lan_ip
