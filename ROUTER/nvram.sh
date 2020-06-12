@@ -4,7 +4,7 @@
 if [ "${1::1}" = "R" ]; then PASS=gjzgqz; else PASS=asdfqwer; fi
 
 # WIFI
-if [ ! -z `nvram get rt_ssid` ]; then
+if [ ! -z `nvram get rt_wpa_psk` ]; then
 	if [ ! -z $2 ]; then
 		nvram set rt_ssid=$2
 		nvram set rt_ssid2=$2
