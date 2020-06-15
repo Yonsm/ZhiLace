@@ -52,24 +52,17 @@ if [ "$1" = "Router" ]; then
 	nvram set wan_pppoe_passwd=$PPPOE_PASS
 
 	# VTS
+	MAPS="RT2,82,2 RT3,83,3 DSM,5001,4 SSH,22,9 HAS,8123,9 VNC,5900,10 "
 	nvram set vts_enable_x=1
-	nvram set vts_num_x=4
-	nvram set vts_desc_x0=DSM
-	nvram set vts_port_x0=5001
-	nvram set vts_proto_x0=TCP
-	nvram set vts_ipaddr_x0=192.168.1.4
-	nvram set vts_desc_x1=HASS
-	nvram set vts_port_x1=8123
-	nvram set vts_proto_x1=TCP
-	nvram set vts_ipaddr_x1=192.168.1.9
-	nvram set vts_desc_x2=SSH
-	nvram set vts_port_x2=22
-	nvram set vts_proto_x2=TCP
-	nvram set vts_ipaddr_x2=192.168.1.9
-	nvram set vts_desc_x3=VNC
-	nvram set vts_port_x3=5900
-	nvram set vts_proto_x3=TCP
-	nvram set vts_ipaddr_x3=192.168.1.10
+	nvram set vts_num_x=`echo "$MAPS" | tr -cd ' ' | wc -c`
+	IDX="0"
+	for MAP in $MAPS; do
+		nvram set vts_proto_x$IDX=TCP
+		nvram set vts_desc_x$IDX=`echo $MAP | cut -d , -f 1`
+		nvram set vts_port_x$IDX=`echo $MAP | cut -d , -f 2`
+		nvram set vts_ipaddr_x$IDX=192.168.1.`echo $MAP | cut -d , -f 3`
+		IDX=`expr $IDX + 1`
+	done
 
 	# IPTV
 	nvram set udpxy_enable_x=4000
