@@ -34,90 +34,6 @@ exit 1
 chkconfig --levels 235 httpd on
 #/etc/init.d/httpd start
 
-touch /var/fdid.log
-touch /var/flak.log
-chmod 666 /var/fdid.log
-chmod 666 /var/flak.log
-
-# SS: https://teddysun.com/486.html
-cd /opt
-wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
-chmod +x shadowsocks-all.sh
-./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
-
-cat <<EOF > /etc/shadowsocks-libev/config.json
-{
-    "server":"0.0.0.0",
-    "server_port":20,
-    "password":"Asdfss20",
-    "timeout":300,
-    "user":"nobody",
-    "method":"chacha20-ietf-poly1305",
-    "fast_open":false,
-    "nameserver":"8.8.8.8",
-    "mode":"tcp_and_udp",
-    "plugin":"obfs-server",
-    "plugin_opts":"obfs=http"
-}
-EOF
-
-/etc/init.d/shadowsocks-libev restart
-
-# MAC: https://medium.com/@yanlong/macos%E4%BD%BF%E7%94%A8shadowsocks-libev-simple-obfs%E6%95%99%E7%A8%8B-c10eba9c0758
-brew install shadowsocks-libev
-brew install simple-obfs
-cat <<EOF > /usr/local/etc/shadowsocks-libev.json
-{
-    "server":"v.yonsm.ga",
-    "server_port":20,
-    "local_port":1080,
-    "password":"Asdfss20",
-    "method":"chacha20-ietf-poly1305",
-    "mode":"tcp_and_udp",
-    "plugin": "obfs-local",
-    "plugin_opts": "obfs=http;obfs-host=www.bing.com"
-}
-
-EOF
-
-cat <<EOF > /Users/Yonsm/Library/Application\ Support/ShadowsocksX-NG/ss-local-config.json
-{
-    "server":"v.yonsm.ga",
-    "server_port":20,
-    "local_port":1086,
-    "password":"Asdfss20",
-    "method":"chacha20-ietf-poly1305",
-    "mode":"tcp_and_udp",
-    "plugin": "obfs-local",
-    "plugin_opts": "obfs=http;obfs-host=www.bing.com"
-}
-
-EOF
-
-# BBR
-# https://www.bandwagonhost.net/1082.html
-wget https://raw.githubusercontent.com/kuoruan/shell-scripts/master/ovz-bbr/ovz-bbr-installer.sh
-chmod +x ovz-bbr-installer.sh
-./ovz-bbr-installer.sh
-
-# KCPTUN
-echo "INSTALL KCP"
-wget --no-check-certificate https://github.com/kuoruan/shell-scripts/raw/master/kcptun/kcptun.sh
-chmod +x ./kcptun.sh
-./kcptun.sh
-
-cat <<EOF > /usr/local/kcptun/server-config.json
-{
-    "listen": ":21",
-    "target": "127.0.0.1:20",
-    "key":"Asdfkc21"
-}
-
-EOF
-
-
-#yum update
-
 # V2Ray: https://toutyrater.github.io/
 # https://github.com/233boy/v2ray
 # https://233blog.com/
@@ -199,3 +115,42 @@ cat <<EOF > /etc/v2ray/config.json
     }
 }
 EOF
+
+# Trojan
+apt-get install psmisc
+cd /etc/init.d
+cat <<\EOF > trojan
+
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          trojan
+# Required-start:    $local_fs $remote_fs $network $syslog
+# Required-Stop:     $local_fs $remote_fs $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: starts the trojan daemon
+# Description:       starts trojan using start-stop-daemon
+### END INIT INFO
+
+case "$1" in
+    start)
+        echo "Starting trojan daemon..."
+        nohup /opt/trojan/trojan -c /opt/trojan/config.json &> /opt/trojan/trojan.log &
+        ;;
+    stop)
+        echo "Stop trojan daemon..."
+        killall trojan
+        ;;
+    restart)
+        $0 stop
+        sleep 1
+        $0 start $2
+        ;;
+    *)
+        $0 start $1
+        ;;
+esac
+EOF
+cd /etc/init.d
+chmod 755 trojan
+update-rc.d trojan defaults 95
