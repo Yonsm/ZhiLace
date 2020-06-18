@@ -117,17 +117,76 @@ cat <<EOF > /etc/v2ray/config.json
 EOF
 
 # Trojan
+cd /opt
+wget -O trojan.tar.xz https://github.com/trojan-gfw/trojan/releases/latest/download/trojan-1.16.0-linux-amd64.tar.xz
+tar -xf trojan.tar.xz
+cd trojan
+rm -rf *.md LICENSE examples
+cat <<\EOF > config.json
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 443,
+    "remote_addr": "127.0.0.1",
+    "remote_port": 80,
+    "password": [
+        "Asdftr20",
+        "Asdftr99"
+    ],
+    "log_level": 1,
+    "ssl": {
+        "cert": "/opt/trojan/fullchain.pem",
+        "key": "/opt/trojan/private.key",
+        "key_password": "",
+        "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384",
+        "cipher_tls13": "TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384",
+        "prefer_server_cipher": true,
+        "alpn": [
+            "http/1.1"
+        ],
+        "alpn_port_override": {
+            "h2": 81
+        },
+        "reuse_session": true,
+        "session_ticket": false,
+        "session_timeout": 600,
+        "plain_http_response": "",
+        "curves": "",
+        "dhparam": ""
+    },
+    "tcp": {
+        "prefer_ipv4": false,
+        "no_delay": true,
+        "keep_alive": true,
+        "reuse_port": false,
+        "fast_open": false,
+        "fast_open_qlen": 20
+    },
+    "mysql": {
+        "enabled": false,
+        "server_addr": "127.0.0.1",
+        "server_port": 3306,
+        "database": "trojan",
+        "username": "trojan",
+        "password": "",
+        "key": "",
+        "cert": "",
+        "ca": ""
+    }
+}
+EOF
+
 apt-get install psmisc
+
 cd /etc/init.d
 cat <<\EOF > trojan
-
 #!/bin/sh
 ### BEGIN INIT INFO
 # Provides:          trojan
-# Required-start:    $local_fs $remote_fs $network $syslog
-# Required-Stop:     $local_fs $remote_fs $network $syslog
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
+# Required-Start:   $remote_fs $syslog
+# Required-Stop:    $remote_fs $syslog
+# Default-Start:    2 3 4 5
+# Default-Stop:     
 # Short-Description: starts the trojan daemon
 # Description:       starts trojan using start-stop-daemon
 ### END INIT INFO
@@ -135,16 +194,19 @@ cat <<\EOF > trojan
 case "$1" in
     start)
         echo "Starting trojan daemon..."
-        nohup /opt/trojan/trojan -c /opt/trojan/config.json &> /opt/trojan/trojan.log &
+        /opt/trojan/trojan -c /opt/trojan/config.json &
         ;;
     stop)
         echo "Stop trojan daemon..."
         killall trojan
         ;;
-    restart)
+    reload|restart)
         $0 stop
         sleep 1
         $0 start $2
+        ;;
+    status)
+        ps ax | grep trojan
         ;;
     *)
         $0 start $1
