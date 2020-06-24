@@ -3,6 +3,6 @@ Host *
 	UserKnownHostsFile /dev/null
 	LogLevel QUIET
 
-Host hass* yonsm.tk *yonsm.gq
+Host hass* *yonsm.gq
     user root
 

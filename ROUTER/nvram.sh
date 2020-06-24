@@ -52,7 +52,7 @@ if [ "$1" = "Router" ]; then
 	nvram set wan_pppoe_passwd=$PPPOE_PASS
 
 	# VTS
-	MAPS="RT2,82,2 RT3,83,3 DSM,5001,4 SSH,22,9 HAS,8123,9 VNC,5900,10 "
+	MAPS="RT2,82,2 RT3,83,3 DSM,5001,4 SSH,23,9 HAS,8123,9 VNC,5900,10 "
 	nvram set vts_enable_x=1
 	nvram set vts_num_x=`echo "$MAPS" | tr -cd ' ' | wc -c`
 	IDX="0"
@@ -86,7 +86,7 @@ if [ "$lan_ip" = "1" ] && [ "$1" != "ROUTER" ]; then
 	nvram set https_wopen=1
 	nvram set trmd_ropen=1
 	nvram set aria_ropen=1
-	nvram set ftpd_wopen=1
+	nvram set sshd_wopen=1
 
 	# USB
 	nvram set enable_samba=1
