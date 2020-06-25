@@ -13,9 +13,9 @@ if [ "$HOST" = "Router" ]; then
 	WING_PORT=1080
 	WING_PASS=
 elif [ "$HOST" = "router" ] ||  [ "$HOST" = "ROUTER" ]; then
-	WING_HOST=34.92.48.82
+	WING_HOST=yonsm.gq
 	WING_PORT=443
-	WING_PASS=" 52488641"
+	WING_PASS=" Asdftr99"
 fi
 
 # SSH
@@ -55,7 +55,14 @@ if [ "$HOST" = "ROUTER" ] || [ "$HOST" = "Router" ] || [ "$HOST" = "router" ]; t
 		echo "wing resume" >> storage/post_iptables_script.sh
 	fi
 	# Copy https/dnsmasq/scripts to storage
-	copy_files storage
+	if [ "$HOST" = "router" ]; then
+		ssh $HOST "[ ! -d /etc/storage/dnsmasq/ ] && mkdir /etc/storage/dnsmasq/"
+		scp storage/started_script.sh $HOST:/etc/storage/
+		scp storage/post_iptables_script.sh $HOST:/etc/storage/
+		scp storage/dnsmasq/dnsmasq.conf $HOST:/etc/storage/dnsmasq/
+	else
+		copy_files storage
+	fi
 elif [ "$HOST" = "Router2" ] || [ "$HOST" = "Router3" ]; then
 	#echo 'iwpriv ra0 set KickStaRssiLow=-85\niwpriv ra0 set AssocReqRssiThres=-80' >> storage/started_script.sh
 	echo 'iwpriv rai0 set KickStaRssiLow=-85\niwpriv rai0 set AssocReqRssiThres=-80' >> storage/started_script.sh

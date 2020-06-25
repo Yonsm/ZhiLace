@@ -107,4 +107,5 @@ if [ "$1" != "ROUTER" ]; then
 fi
 
 nvram commit
-reboot
+#sleep 2
+#reboot
