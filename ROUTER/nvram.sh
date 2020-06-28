@@ -12,7 +12,7 @@ DDNS_HOST=yonsm.f3322.net
 
 
 [ -z $1 ] && echo "Usage: $0 <NAME> [SSID]" && exit
-[ "${1::1}" != "R" ] && ADMIN_PASS=$WIFI_PASS
+[ "${1::1}" != "R" ] && ADMIN_PASS=asdfzxcv
 
 # WIFI
 if [ -z $2 ]; then SSID=Router; else SSID=$2; fi
@@ -39,10 +39,16 @@ fi
 # LAN
 LEN=$((${#1}-1))
 lan_ip=${1:$LEN:1}
+if [ "$1" = "router" ]; then
+	lan_pre=192.168.2
+	nvram set dhcp_start=$lan_pre.10
+else
+	lan_pre=192.168.1
+	nvram set dhcp_start=$lan_pre.70
+fi
 expr $lan_ip "+" 0 &> /dev/null || lan_ip=1
-nvram set lan_ipaddr=192.168.1.$lan_ip
-nvram set dhcp_start=192.168.1.70
-nvram set dhcp_end=192.168.1.99
+nvram set lan_ipaddr=$lan_pre.$lan_ip
+nvram set dhcp_end=$lan_pre.99
 [ "${1::6}" = "Router" ] && nvram set lan_domain=$LAN_DOMAIN
 
 if [ "$1" = "Router" ]; then
@@ -60,7 +66,7 @@ if [ "$1" = "Router" ]; then
 		nvram set vts_proto_x$IDX=TCP
 		nvram set vts_desc_x$IDX=`echo $MAP | cut -d , -f 1`
 		nvram set vts_port_x$IDX=`echo $MAP | cut -d , -f 2`
-		nvram set vts_ipaddr_x$IDX=192.168.1.`echo $MAP | cut -d , -f 3`
+		nvram set vts_ipaddr_x$IDX=$lan_pre.`echo $MAP | cut -d , -f 3`
 		IDX=`expr $IDX + 1`
 	done
 
@@ -87,6 +93,7 @@ if [ "$lan_ip" = "1" ] && [ "$1" != "ROUTER" ]; then
 	nvram set trmd_ropen=1
 	nvram set aria_ropen=1
 	nvram set sshd_wopen=1
+	nvram set https_wport=81
 
 	# USB
 	nvram set enable_samba=1

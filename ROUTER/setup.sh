@@ -10,11 +10,9 @@ if [ -z $2 ]; then NAME=$HOST; else NAME=$2; fi
 
 if [ "$HOST" = "Router" ]; then
 	WING_HOST=192.168.1.9
-	WING_PORT=1080
 	WING_PASS=
 elif [ "$HOST" = "router" ] ||  [ "$HOST" = "ROUTER" ]; then
 	WING_HOST=yonsm.gq
-	WING_PORT=443
 	WING_PASS=" Asdftr99"
 fi
 
@@ -51,7 +49,7 @@ if [ "$HOST" = "ROUTER" ] || [ "$HOST" = "Router" ] || [ "$HOST" = "router" ]; t
 		echo "mdev -s" >> storage/started_script.sh
 	fi
 	if [ ! -z "$WING_HOST" ]; then
-		echo "wing $WING_HOST $WING_PORT$WING_PASS" >> storage/started_script.sh
+		echo "wing $WING_HOST$WING_PASS" >> storage/started_script.sh
 		echo "wing resume" >> storage/post_iptables_script.sh
 	fi
 	# Copy https/dnsmasq/scripts to storage
