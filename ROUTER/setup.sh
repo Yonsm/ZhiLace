@@ -8,10 +8,10 @@ cd "${0%/*}"
 if [ -z $1 ]; then HOST=Router; else HOST=$1; fi
 if [ -z $2 ]; then NAME=$HOST; else NAME=$2; fi
 
-if [ "$HOST" = "Router" ]; then
+if [ "$NAME" = "Router" ]; then
 	WING_HOST=192.168.1.9
 	WING_PASS=
-elif [ "$HOST" = "router" ] ||  [ "$HOST" = "ROUTER" ]; then
+elif [ "$NAME" = "router" ] ||  [ "$NAME" = "ROUTER" ]; then
 	WING_HOST=yonsm.gq
 	WING_PASS=" Asdftr99"
 fi
@@ -42,10 +42,10 @@ copy_files()
 }
 
 # FILES
-if [ "$HOST" = "ROUTER" ] || [ "$HOST" = "Router" ] || [ "$HOST" = "router" ]; then
+if [ "$NAME" = "ROUTER" ] || [ "$NAME" = "Router" ] || [ "$NAME" = "router" ]; then
 	echo '#!/bin/sh\nsync && echo 3 > /proc/sys/vm/drop_caches' > storage/started_script.sh
 	echo '#!/bin/sh' > storage/post_iptables_script.sh
-	if [ "$HOST" = "Router" ]; then
+	if [ "$NAME" = "Router" ]; then
 		echo "mdev -s" >> storage/started_script.sh
 	fi
 	if [ ! -z "$WING_HOST" ]; then
@@ -53,7 +53,7 @@ if [ "$HOST" = "ROUTER" ] || [ "$HOST" = "Router" ] || [ "$HOST" = "router" ]; t
 		echo "wing resume" >> storage/post_iptables_script.sh
 	fi
 	# Copy https/dnsmasq/scripts to storage
-	if [ "$HOST" = "router" ]; then
+	if [ "$NAME" = "router" ]; then
 		ssh $HOST "[ ! -d /etc/storage/dnsmasq/ ] && mkdir /etc/storage/dnsmasq/"
 		scp storage/started_script.sh $HOST:/etc/storage/
 		scp storage/post_iptables_script.sh $HOST:/etc/storage/
@@ -61,7 +61,7 @@ if [ "$HOST" = "ROUTER" ] || [ "$HOST" = "Router" ] || [ "$HOST" = "router" ]; t
 	else
 		copy_files storage
 	fi
-elif [ "$HOST" = "Router2" ] || [ "$HOST" = "Router3" ]; then
+elif [ "$NAME" = "Router2" ] || [ "$NAME" = "Router3" ]; then
 	#echo 'iwpriv ra0 set KickStaRssiLow=-85\niwpriv ra0 set AssocReqRssiThres=-80' >> storage/started_script.sh
 	echo 'iwpriv rai0 set KickStaRssiLow=-85\niwpriv rai0 set AssocReqRssiThres=-80' >> storage/started_script.sh
 	scp storage/started_script.sh $HOST:/etc/storage/
