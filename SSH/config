@@ -6,3 +6,6 @@ Host *
 Host hass* *yonsm.gq
     user root
 
+Host *ali*
+    user yangguo.gcy@alipay.com
+    IdentityFile ~/.ssh/id_rsa_ali
