@@ -3,7 +3,7 @@ Host *
 	UserKnownHostsFile /dev/null
 	LogLevel QUIET
 
-Host hass* *yonsm.gq
+Host h* *yonsm.gq
     user root
 
 Host *ali*
