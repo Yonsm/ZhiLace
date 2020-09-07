@@ -26,12 +26,14 @@ scp private.key root@hass.yonsm.tk:~/.homeassistant/
 exit
 
 # Merlin
-cat fullchain.cer yonsm.ga.key > server.pem
-scp server.pem bridge:/etc/server.pem
-scp fullchain.cer bridge:/etc/cert.pem
-scp yonsm.ga.key bridge:/etc/key.pem
+cat a.yonsm.tk.crt ca.crt a.yonsm.tk.key > server.pem
+scp server.pem a.yonsm.tk:/etc/server.pem
 
-ssh bridge
+scp ca.crt a.yonsm.tk:/etc/cert.crt
+scp a.yonsm.tk.crt a.yonsm.tk:/etc/cert.pem
+scp a.yonsm.tk.key a.yonsm.tk:/etc/key.pem
+
+ssh a.yonsm.tk
 
 nvram set https_crt_save=0
 nvram unset https_crt_file
