@@ -130,7 +130,6 @@ cat <<\EOF > config.json
     "remote_addr": "127.0.0.1",
     "remote_port": 80,
     "password": [
-        "Asdftr20",
         "Asdftr99"
     ],
     "log_level": 1,
@@ -216,3 +215,7 @@ EOF
 cd /etc/init.d
 chmod 755 trojan
 update-rc.d trojan defaults 95
+
+# Password: 2O1ovKHW7AL6
+scp -P 27993 /Volumes/DAT/Sites/Yonsm/SSL/yonsm.gq.key root@98.142.139.175:/opt/trojan/private.key
+scp -P 27993 /Volumes/DAT/Sites/Yonsm/SSL/yonsm.gq.crt root@98.142.139.175:/opt/trojan/fullchain.pem
