@@ -219,3 +219,67 @@ update-rc.d trojan defaults 95
 # Password: 2O1ovKHW7AL6
 scp -P 27993 /Volumes/DAT/Sites/Yonsm/SSL/yonsm.gq.key root@98.142.139.175:/opt/trojan/private.key
 scp -P 27993 /Volumes/DAT/Sites/Yonsm/SSL/yonsm.gq.crt root@98.142.139.175:/opt/trojan/fullchain.pem
+
+
+
+
+# Nanling VPS
+ssh -p27993 98.142.139.175 # 2O1ovKHW7AL6
+cat <<\EOF > /etc/profile.d/trojan.sh
+#!/bin/sh
+/opt/trojan/trojan -c /opt/trojan/config.json &
+EOF
+chmod +x /etc/profile.d/trojan.sh
+
+cat <<\EOF > /opt/trojan/config.json
+{
+    "run_type": "server",
+    "local_addr": "0.0.0.0",
+    "local_port": 443,
+    "remote_addr": "127.0.0.1",
+    "remote_port": 80,
+    "password": [
+        "Asdftr99", "asdftr99"
+    ],
+    "log_level": 1,
+    "ssl": {
+        "cert": "/opt/trojan/fullchain.pem",
+        "key": "/opt/trojan/private.key",
+        "key_password": "",
+        "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384",
+        "cipher_tls13": "TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384",
+        "prefer_server_cipher": true,
+        "alpn": [
+            "http/1.1"
+        ],
+        "alpn_port_override": {
+            "h2": 81
+        },
+        "reuse_session": true,
+        "session_ticket": false,
+        "session_timeout": 600,
+        "plain_http_response": "",
+        "curves": "",
+        "dhparam": ""
+    },
+    "tcp": {
+        "prefer_ipv4": false,
+        "no_delay": true,
+        "keep_alive": true,
+        "reuse_port": false,
+        "fast_open": false,
+        "fast_open_qlen": 20
+    },
+    "mysql": {
+        "enabled": false,
+        "server_addr": "127.0.0.1",
+        "server_port": 3306,
+        "database": "trojan",
+        "username": "trojan",
+        "password": "",
+        "key": "",
+        "cert": "",
+        "ca": ""
+    }
+}
+EOF
