@@ -1,0 +1,187 @@
+﻿2020-03-09 23:51:57.461 T:14221  NOTICE: -----------------------------------------------------------------------
+2020-03-09 23:51:57.461 T:14221  NOTICE: Starting Kodi (18.6 Git:20200229-8e967df921). Platform: Android ARM 32-bit
+2020-03-09 23:51:57.461 T:14221  NOTICE: Using Release Kodi x32 build
+2020-03-09 23:51:57.461 T:14221  NOTICE: Kodi compiled 2020-02-29 by Clang 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) for Android ARM 32-bit API level 21 (API level 21)
+2020-03-09 23:51:57.462 T:14221  NOTICE: Running on Sony BRAVIA 4K GB with Android 8.0.0 API level 26, kernel: Linux ARM 32-bit version 3.10.79
+2020-03-09 23:51:57.464 T:14221  NOTICE: FFmpeg version/source: 4.0.4-Kodi
+2020-03-09 23:51:57.464 T:14221  NOTICE: Host CPU: ARMv7 Processor rev 2 (v7l), 4 cores available
+2020-03-09 23:51:57.464 T:14221  NOTICE: Product: BRAVIA_ATV2_CN, Device: BRAVIA_ATV2, Board: BRAVIA_ATV2 - Manufacturer: Sony, Brand: Sony, Model: BRAVIA 4K GB, Hardware: mt5891
+2020-03-09 23:51:57.468 T:14221  NOTICE: External storage path = /storage/emulated/0; status = ok
+2020-03-09 23:51:57.468 T:14221  NOTICE: ARM Features: Neon enabled
+2020-03-09 23:51:57.468 T:14221  NOTICE: special://xbmc/ is mapped to: /data/user/0/org.xbmc.kodi/cache/apk/assets
+2020-03-09 23:51:57.468 T:14221  NOTICE: special://xbmcbin/ is mapped to: /data/user/0/org.xbmc.kodi/cache/apk/assets
+2020-03-09 23:51:57.468 T:14221  NOTICE: special://xbmcbinaddons/ is mapped to: /data/user/0/org.xbmc.kodi/cache/apk/assets/addons
+2020-03-09 23:51:57.468 T:14221  NOTICE: special://masterprofile/ is mapped to: /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/userdata
+2020-03-09 23:51:57.468 T:14221  NOTICE: special://envhome/ is mapped to: /storage/emulated/0/Android/data/org.xbmc.kodi/files
+2020-03-09 23:51:57.468 T:14221  NOTICE: special://home/ is mapped to: /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi
+2020-03-09 23:51:57.468 T:14221  NOTICE: special://temp/ is mapped to: /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/temp
+2020-03-09 23:51:57.468 T:14221  NOTICE: special://logpath/ is mapped to: /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/temp
+2020-03-09 23:51:57.469 T:14221  NOTICE: The executable running is: /data/app/org.xbmc.kodi-vVSnO0mEDgm0cGcNQeNxFA==/lib/arm/libkodi.so
+2020-03-09 23:51:57.478 T:14221  NOTICE: Local hostname: X9400e.yonsm.tk
+2020-03-09 23:51:57.478 T:14221  NOTICE: Log File is located: /storage/emulated/0/Android/data/org.xbmc.kodi/files/.kodi/temp/kodi.log
+2020-03-09 23:51:57.478 T:14221  NOTICE: -----------------------------------------------------------------------
+2020-03-09 23:51:57.484 T:14221    INFO: loading settings
+2020-03-09 23:51:57.486 T:14221  NOTICE: special://profile/ is mapped to: special://masterprofile/
+2020-03-09 23:51:57.486 T:14221   ERROR: CSettings: unable to load settings from special://masterprofile/guisettings.xml, creating new default settings
+2020-03-09 23:51:57.552 T:14221   DEBUG: CSkinSettings: no <skinsettings> tag found
+2020-03-09 23:51:57.553 T:14221  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
+2020-03-09 23:51:57.556 T:14221  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
+2020-03-09 23:51:57.556 T:14221  NOTICE: Default Video Player: VideoPlayer
+2020-03-09 23:51:57.557 T:14221  NOTICE: Default Audio Player: paplayer
+2020-03-09 23:51:57.557 T:14221  NOTICE: Disabled debug logging due to GUI setting. Level 0.
+2020-03-09 23:51:57.559 T:14221  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
+2020-03-09 23:51:57.703 T:14221  NOTICE: ADDON: audioencoder.kodi.builtin.aac v1.0.0 installed
+2020-03-09 23:51:57.704 T:14221  NOTICE: ADDON: audioencoder.kodi.builtin.wma v1.0.0 installed
+2020-03-09 23:51:57.704 T:14221  NOTICE: ADDON: game.controller.default v1.0.8 installed
+2020-03-09 23:51:57.704 T:14221  NOTICE: ADDON: game.controller.snes v1.0.8 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: inputstream.adaptive v2.4.3 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.global.audioengine v1.0.1 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.global.filesystem v1.0.2 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.global.general v1.0.3 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.global.gui v5.12.0 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.global.main v1.0.14 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.global.network v1.0.0 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.audiodecoder v2.0.0 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.audioencoder v2.0.0 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.game v1.1.0 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.imagedecoder v2.0.0 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.inputstream v2.0.8 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.peripheral v1.3.7 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.pvr v5.10.3 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.screensaver v2.0.0 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.vfs v2.0.0 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.videocodec v1.0.1 installed
+2020-03-09 23:51:57.705 T:14221  NOTICE: ADDON: kodi.binary.instance.visualization v2.0.1 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: kodi.resource v1.0.0 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.album.universal v3.1.1 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.artists.universal v4.3.0 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.common.allmusic.com v3.2.0 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.common.fanart.tv v3.6.1 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.common.imdb.com v3.1.4 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.common.musicbrainz.org v2.2.1 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.common.theaudiodb.com v2.0.2 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.common.themoviedb.org v3.1.9 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.local v1.0.0 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.themoviedb.org v5.1.7 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: metadata.tvshows.themoviedb.org v3.1.0 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: peripheral.joystick v1.4.9 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: repository.xbmc.org v3.1.6 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: resource.images.weathericons.default v1.1.8 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: resource.language.en_gb v2.0.1 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: resource.uisounds.kodi v1.0.0 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: screensaver.xbmc.builtin.black v1.0.33 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: screensaver.xbmc.builtin.dim v1.0.59 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: script.module.pil v1.1.7 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: script.module.pycryptodome v3.4.3 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: service.xbmc.versioncheck v0.4.6 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: skin.estouchy v2.0.28 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: skin.estuary v2.0.27 installed
+2020-03-09 23:51:57.706 T:14221  NOTICE: ADDON: webinterface.default v18.x-2.4.6 installed
+2020-03-09 23:51:57.707 T:14221  NOTICE: ADDON: xbmc.addon v18.6.0 installed
+2020-03-09 23:51:57.707 T:14221  NOTICE: ADDON: xbmc.core v0.1.0 installed
+2020-03-09 23:51:57.707 T:14221  NOTICE: ADDON: xbmc.gui v5.14.0 installed
+2020-03-09 23:51:57.707 T:14221  NOTICE: ADDON: xbmc.json v10.3.0 installed
+2020-03-09 23:51:57.707 T:14221  NOTICE: ADDON: xbmc.metadata v2.1.0 installed
+2020-03-09 23:51:57.707 T:14221  NOTICE: ADDON: xbmc.python v2.26.0 installed
+2020-03-09 23:51:57.707 T:14221  NOTICE: ADDON: xbmc.webinterface v1.0.0 installed
+2020-03-09 23:51:58.028 T:14226  NOTICE: Float is supported
+2020-03-09 23:51:58.028 T:14226  NOTICE: Multi channel Float is supported
+2020-03-09 23:51:58.334 T:14226  NOTICE: Found 1 Lists of Devices
+2020-03-09 23:51:58.334 T:14226  NOTICE: Enumerated AUDIOTRACK devices:
+2020-03-09 23:51:58.334 T:14226  NOTICE:     Device 1
+2020-03-09 23:51:58.335 T:14226  NOTICE:         m_deviceName      : AudioTrack
+2020-03-09 23:51:58.335 T:14226  NOTICE:         m_displayName     : android
+2020-03-09 23:51:58.335 T:14226  NOTICE:         m_displayNameExtra: audiotrack
+2020-03-09 23:51:58.335 T:14226  NOTICE:         m_deviceType      : AE_DEVTYPE_HDMI
+2020-03-09 23:51:58.335 T:14226  NOTICE:         m_channels        : FL, FR, FC, LFE, SL, SR, BL, BR, BC, BLOC, BROC
+2020-03-09 23:51:58.335 T:14226  NOTICE:         m_sampleRates     : 32000,44100,48000,88200,96000,176400,192000
+2020-03-09 23:51:58.335 T:14226  NOTICE:         m_dataFormats     : AE_FMT_S16LE,AE_FMT_FLOAT,AE_FMT_RAW
+2020-03-09 23:51:58.335 T:14226  NOTICE:         m_streamTypes     : STREAM_TYPE_AC3,STREAM_TYPE_EAC3,STREAM_TYPE_DTSHD_CORE,STREAM_TYPE_DTS_1024,STREAM_TYPE_DTS_2048,STREAM_TYPE_DTS_512,STREAM_TYPE_DTSHD,STREAM_TYPE_DTSHD_MA
+2020-03-09 23:51:58.335 T:14227  NOTICE: Trying to open: samplerate: 44100, channelMask: 12, encoding: 4
+2020-03-09 23:51:58.341 T:14227  NOTICE: CAESinkAUDIOTRACK::Initializing with: m_sampleRate: 44100 format: AE_FMT_FLOAT (AE) method: PCM stream-type: PCM-STREAM min_buffer_size: 60416 m_frames: 3776 m_frameSize: 8 channels: 2
+2020-03-09 23:51:58.544 T:14221  NOTICE: Mediacodec decoder: OMX.google.mp3.decoder
+2020-03-09 23:51:58.544 T:14221  NOTICE: Mediacodec decoder: OMX.google.amrnb.decoder
+2020-03-09 23:51:58.545 T:14221  NOTICE: Mediacodec decoder: OMX.google.amrwb.decoder
+2020-03-09 23:51:58.545 T:14221  NOTICE: Mediacodec decoder: OMX.google.aac.decoder
+2020-03-09 23:51:58.546 T:14221  NOTICE: Mediacodec decoder: OMX.google.g711.alaw.decoder
+2020-03-09 23:51:58.546 T:14221  NOTICE: Mediacodec decoder: OMX.google.g711.mlaw.decoder
+2020-03-09 23:51:58.547 T:14221  NOTICE: Mediacodec decoder: OMX.google.vorbis.decoder
+2020-03-09 23:51:58.547 T:14221  NOTICE: Mediacodec decoder: OMX.google.opus.decoder
+2020-03-09 23:51:58.548 T:14221  NOTICE: Mediacodec decoder: OMX.google.raw.decoder
+2020-03-09 23:51:58.548 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPAC3
+2020-03-09 23:51:58.549 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPEAC3
+2020-03-09 23:51:58.550 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPAAC
+2020-03-09 23:51:58.550 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPWMA
+2020-03-09 23:51:58.551 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPWMAPRO
+2020-03-09 23:51:58.551 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPDTS
+2020-03-09 23:51:58.552 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPLPCMALAW
+2020-03-09 23:51:58.552 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPLPCMMLAW
+2020-03-09 23:51:58.553 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPMP1
+2020-03-09 23:51:58.553 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.DSPMP2
+2020-03-09 23:51:58.554 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.RA
+2020-03-09 23:51:58.554 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.AUDIO.DECODER.APE
+2020-03-09 23:51:58.555 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.AVC
+2020-03-09 23:51:58.555 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.MPEG4
+2020-03-09 23:51:58.556 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.H263
+2020-03-09 23:51:58.556 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.VP8
+2020-03-09 23:51:58.557 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.VP9
+2020-03-09 23:51:58.558 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.HEVC
+2020-03-09 23:51:58.559 T:14221  NOTICE: Mediacodec decoder: OMX.dolby.vision.dvhe.stn.decoder
+2020-03-09 23:51:58.559 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.MPEG2
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.WMV
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.MJPEG
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.MTK.VIDEO.DECODER.RV
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.google.mpeg2.decoder
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.google.mpeg4.decoder
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.google.h263.decoder
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.google.h264.decoder
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.google.hevc.decoder
+2020-03-09 23:51:58.560 T:14221  NOTICE: Mediacodec decoder: OMX.google.vp8.decoder
+2020-03-09 23:51:58.561 T:14221  NOTICE: Mediacodec decoder: OMX.google.vp9.decoder
+2020-03-09 23:51:58.564 T:14221  NOTICE: CAndroidUtils: window resolution: 1920x1080
+2020-03-09 23:51:58.564 T:14221  NOTICE: CAndroidUtils: Current resolution: 1920x1080 1920x1080 @ 60.000004 - Full Screen
+2020-03-09 23:51:58.564 T:14221  NOTICE: Previous line repeats 1 times.
+2020-03-09 23:51:58.564 T:14221  NOTICE: EGL_VERSION = 1.4 Android META-EGL
+2020-03-09 23:51:58.564 T:14221  NOTICE: EGL_VENDOR = Android
+2020-03-09 23:51:58.564 T:14221  NOTICE: EGL_EXTENSIONS = EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_get_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_ANDROID_get_frame_timestamps EGL_KHR_image EGL_KHR_image_base EGL_KHR_gl_colorspace EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_KHR_config_attribs EGL_KHR_surfaceless_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_KHR_mutable_render_buffer EGL_IMG_context_priority
+2020-03-09 23:51:58.564 T:14221  NOTICE: EGL_CLIENT_EXTENSIONS = NULL
+2020-03-09 23:51:58.566 T:14221  NOTICE: Checking resolution 16
+2020-03-09 23:51:58.567 T:14221  NOTICE: CAndroidUtils: SetNativeResolution: 1: 1920x1080 1920x1080@60.000004
+2020-03-09 23:51:58.571 T:14221  NOTICE: GL_VENDOR = ARM
+2020-03-09 23:51:58.571 T:14221  NOTICE: GL_RENDERER = Mali-T860
+2020-03-09 23:51:58.571 T:14221  NOTICE: GL_VERSION = OpenGL ES 3.2 v1.r20p0-01rel0.86c8ce03a9fae752557eb28834fbe74b
+2020-03-09 23:51:58.571 T:14221  NOTICE: GL_SHADING_LANGUAGE_VERSION = OpenGL ES GLSL ES 3.20
+2020-03-09 23:51:58.572 T:14221  NOTICE: GL_EXTENSIONS = GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisampled_render_to_texture GL_OES_surfaceless_context GL_OES_texture_stencil8 GL_EXT_shader_pixel_local_storage GL_ARM_shader_framebuffer_fetch GL_ARM_shader_framebuffer_fetch_depth_stencil GL_ARM_mali_program_binary GL_EXT_sRGB GL_EXT_sRGB_write_control GL_EXT_texture_sRGB_decode GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OES_texture_storage_multisample_2d_array GL_OES_shader_image_atomic GL_EXT_robustness GL_EXT_draw_buffers_indexed GL_OES_draw_buffers_indexed GL_EXT_texture_border_clamp GL_OES_texture_border_clamp GL_EXT_texture_cube_map_array GL_OES_texture_cube_map_array GL_OES_sample_variables GL_OES_sample_shading GL_OES_shader_multisample_interpolation GL_EXT_shader_io_blocks GL_OES_shader_io_blocks GL_EXT_tessellation_shader GL_OES_tessellation_shader GL_EXT_primitive_bounding_box GL_OES_primitive_bounding_box GL_EXT_geometry_shader GL_OES_geometry_shader GL_ANDROID_extension_pack_es31a GL_EXT_gpu_shader5 GL_OES_gpu_shader5 GL_EXT_texture_buffer GL_OES_texture_buffer GL_EXT_copy_image GL_OES_copy_image GL_EXT_shader_non_constant_global_initializers GL_EXT_color_buffer_half_float GL_EXT_color_buffer_float GL_EXT_YUV_target GL_OVR_multiview GL_OVR_multiview2 GL_OVR_multiview_multisampled_render_to_texture GL_KHR_robustness GL_KHR_robust_buffer_access_behavior GL_EXT_draw_elements_base_vertex GL_OES_draw_elements_base_vertex GL_EXT_protected_textures
+2020-03-09 23:51:58.978 T:14221  NOTICE: CAndroidUtils: SetNativeResolution: 1: 1920x1080 1920x1080@60.000004
+2020-03-09 23:51:59.855 T:14246  NOTICE: Running database version Addons27
+2020-03-09 23:52:00.366 T:14221  NOTICE:   load skin from: /data/user/0/org.xbmc.kodi/cache/apk/assets/addons/skin.estuary (version: 2.0.27)
+2020-03-09 23:52:01.561 T:14221 WARNING: JSONRPC: Could not parse type "Setting.Details.SettingList"
+2020-03-09 23:52:01.763 T:14221 WARNING: CAndroidJoystickState: ignoring unknown axis 32 on input device "SONY TV RC MIC 001" with ID 302
+2020-03-09 23:52:02.265 T:14221   ERROR: AddOnLog: Joystick Support: Device "Sony Interactive Entertainment Wireless Controller": can't find <controller> tag
+2020-03-09 23:52:02.483 T:14221  NOTICE: Register - new joystick device registered on android->android/inputdevice/302: SONY TV RC MIC 001 (054C:0B91)
+2020-03-09 23:52:02.484 T:14221  NOTICE: Register - new keyboard device registered on application->keyboard: Keyboard (0000:0000)
+2020-03-09 23:52:02.484 T:14221  NOTICE: Register - new mouse device registered on application->mouse: Mouse (0000:0000)
+2020-03-09 23:52:02.516 T:14221  NOTICE: Loading player core factory settings from special://xbmc/system/playercorefactory.xml.
+2020-03-09 23:52:02.517 T:14221  NOTICE: Loaded playercorefactory configuration
+2020-03-09 23:52:02.517 T:14221  NOTICE: Loading player core factory settings from special://masterprofile/playercorefactory.xml.
+2020-03-09 23:52:02.518 T:14221  NOTICE: special://masterprofile/playercorefactory.xml does not exist. Skipping.
+2020-03-09 23:52:02.656 T:14221  NOTICE: initialize done
+2020-03-09 23:52:02.656 T:14221  NOTICE: Running the application...
+2020-03-09 23:52:02.677 T:14221  NOTICE: starting zeroconf publishing
+2020-03-09 23:52:02.678 T:14277  NOTICE: ES: Starting UDP Event server on port 9777
+2020-03-09 23:52:02.678 T:14277  NOTICE: UDP: Listening on port 9777 (ipv6 : false)
+2020-03-09 23:52:08.745 T:14221  NOTICE: Stopping player
+2020-03-09 23:52:08.745 T:14221  NOTICE: Storing total System Uptime
+2020-03-09 23:52:08.746 T:14221  NOTICE: Saving settings
+2020-03-09 23:52:08.756 T:14221  NOTICE: Saving skin settings
+2020-03-09 23:52:08.759 T:14221  NOTICE: Stopping all
+2020-03-09 23:52:14.327 T:14221  NOTICE: ES: Stopping event server
+2020-03-09 23:52:14.329 T:14221  NOTICE: stopping zeroconf publishing
+2020-03-09 23:52:14.691 T:14277  NOTICE: ES: UDP Event server stopped
+2020-03-09 23:52:14.958 T:14221  NOTICE: Application stopped
+2020-03-09 23:52:15.158 T:14221  NOTICE: XBApplicationEx: destroying...
+2020-03-09 23:52:15.206 T:14221  NOTICE: unload skin
+2020-03-09 23:52:15.256 T:14221  NOTICE: CWinSystemAndroid::DestroyWindow
+2020-03-09 23:52:15.277 T:14221  NOTICE: unload sections
+2020-03-09 23:52:15.299 T:14221  NOTICE: CWinSystemAndroid::DestroyWindowSystem
+2020-03-09 23:52:15.339 T:14221  NOTICE: XBApplicationEx: application stopped!
