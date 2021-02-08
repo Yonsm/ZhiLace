@@ -1,5 +1,18 @@
 #!/bin/sh
 
+if [ "$1" == "VPS" ]; then
+    sudo su
+
+    echo -e "Asdftr30\nAsdftr30" | passwd
+    mkdir ~/.ssh/
+    echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCgPSpcJ6yIHpbOSy9/YPs8CRIWzIHqi3xkzJ5Vb6Z/oH1eo5wFLps6uOL2EnljOkd0gKRMF5YzN5ahiCTrU65X2+RllYXHful9SNiWbRvg96Ciz0u7UsI0SB8OOZvMVPMLaAXtD7p/UsJdYonzswwPP2RCc7x8MPtKQlfakf2zhB6fYULEadh6p42RPmZ23+Xniotti+MxOyh1m24naM30VrXpvMfL4oRmE29J3Ry7pPdMDanp7T/3Iixix9F/D8bIl4ly5fn5jbBnFSyg0Yg1FJU1nECqc3Pnw9d3CxAB0KiTUoAx0Cn90m+8jXW3aiXDN3FtXeU2RCoyoLF5rCj9 YONSM@QQ.COM' > ~/.ssh/authorized_keys
+
+    echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+    echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+    echo "PubkeyAuthentication yes" >> /etc/ssh/sshd_config
+    systemctl restart sshd
+fi
+
 if [ $# != 2 ]; then
 	echo "Usage: $0 <HOST> <NEW_PASS>"
 	exit
@@ -24,97 +37,97 @@ echo 'Asia/Shanghai' > /etc/timezone
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 #
-echo "00 5 * * * root init 6" >> /etc/crontab
-crontab -e
-/etc/init.d/cron restart
+# echo "00 5 * * * root init 6" >> /etc/crontab
+# crontab -e
+# /etc/init.d/cron restart
 
 exit 1
 
 # HTTP
-chkconfig --levels 235 httpd on
+#chkconfig --levels 235 httpd on
 #/etc/init.d/httpd start
 
 # V2Ray: https://toutyrater.github.io/
 # https://github.com/233boy/v2ray
 # https://233blog.com/
-bash <(curl -s -L https://git.io/v2ray.sh)
-cat <<EOF > /etc/v2ray/config.json
-{
-    "log": {
-        "access": "/var/log/v2ray/access.log",
-        "error": "/var/log/v2ray/error.log",
-        "loglevel": "warning"
-    },
-    "inbound": {
-        "port": 62223,
-        "protocol": "vmess",
-        "settings": {
-            "udp": true,
-            "clients": [
-                {
-                    "id": "3f9f18d6-9adc-49fc-a281-c5e9e2ce9f4f",
-                    "level": 1,
-                    "alterId": 233
-                }
-            ]
-        },
-        "streamSettings": {
-            "network": "kcp",
-            "kcpSettings": {
-                "mtu": 1350,
-                "tti": 50,
-                "uplinkCapacity": 100,
-                "downlinkCapacity": 100,
-                "congestion": false,
-                "readBufferSize": 2,
-                "writeBufferSize": 2,
-                "header": {
-                    "type": "utp"
-                }
-            }
-        }
-    },
-    "outbound": {
-        "protocol": "freedom",
-        "settings": {}
-    },
-    "outboundDetour": [
-        {
-            "protocol": "blackhole",
-            "settings": {},
-            "tag": "blocked"
-        }
-    ],
-    "routing": {
-        "strategy": "rules",
-        "settings": {
-            "rules": [
-                {
-                    "type": "field",
-                    "ip": [
-                        "0.0.0.0/8",
-                        "10.0.0.0/8",
-                        "100.64.0.0/10",
-                        "127.0.0.0/8",
-                        "169.254.0.0/16",
-                        "172.16.0.0/12",
-                        "192.0.0.0/24",
-                        "192.0.2.0/24",
-                        "192.168.0.0/16",
-                        "198.18.0.0/15",
-                        "198.51.100.0/24",
-                        "203.0.113.0/24",
-                        "::1/128",
-                        "fc00::/7",
-                        "fe80::/10"
-                    ],
-                    "outboundTag": "blocked"
-                }
-            ]
-        }
-    }
-}
-EOF
+# bash <(curl -s -L https://git.io/v2ray.sh)
+# cat <<EOF > /etc/v2ray/config.json
+# {
+#     "log": {
+#         "access": "/var/log/v2ray/access.log",
+#         "error": "/var/log/v2ray/error.log",
+#         "loglevel": "warning"
+#     },
+#     "inbound": {
+#         "port": 62223,
+#         "protocol": "vmess",
+#         "settings": {
+#             "udp": true,
+#             "clients": [
+#                 {
+#                     "id": "3f9f18d6-9adc-49fc-a281-c5e9e2ce9f4f",
+#                     "level": 1,
+#                     "alterId": 233
+#                 }
+#             ]
+#         },
+#         "streamSettings": {
+#             "network": "kcp",
+#             "kcpSettings": {
+#                 "mtu": 1350,
+#                 "tti": 50,
+#                 "uplinkCapacity": 100,
+#                 "downlinkCapacity": 100,
+#                 "congestion": false,
+#                 "readBufferSize": 2,
+#                 "writeBufferSize": 2,
+#                 "header": {
+#                     "type": "utp"
+#                 }
+#             }
+#         }
+#     },
+#     "outbound": {
+#         "protocol": "freedom",
+#         "settings": {}
+#     },
+#     "outboundDetour": [
+#         {
+#             "protocol": "blackhole",
+#             "settings": {},
+#             "tag": "blocked"
+#         }
+#     ],
+#     "routing": {
+#         "strategy": "rules",
+#         "settings": {
+#             "rules": [
+#                 {
+#                     "type": "field",
+#                     "ip": [
+#                         "0.0.0.0/8",
+#                         "10.0.0.0/8",
+#                         "100.64.0.0/10",
+#                         "127.0.0.0/8",
+#                         "169.254.0.0/16",
+#                         "172.16.0.0/12",
+#                         "192.0.0.0/24",
+#                         "192.0.2.0/24",
+#                         "192.168.0.0/16",
+#                         "198.18.0.0/15",
+#                         "198.51.100.0/24",
+#                         "203.0.113.0/24",
+#                         "::1/128",
+#                         "fc00::/7",
+#                         "fe80::/10"
+#                     ],
+#                     "outboundTag": "blocked"
+#                 }
+#             ]
+#         }
+#     }
+# }
+# EOF
 
 # Trojan
 cd /opt
