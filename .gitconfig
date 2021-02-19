@@ -1,0 +1,15 @@
+[core]
+	excludesfile = /Users/admin/.gitignore_global
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\"
+	path = -ro
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/bcomp \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Yonsm
+	email = Yonsm@qq.com
+[commit]
+	template = /Users/admin/.stCommitMsg
+[submodule]
+	recurse = true
