@@ -1,8 +1,11 @@
-alias grs="git reset --hard"
 alias l="ls -la"
+alias grs="git reset --hard"
+alias gsa="git submodule add"
 
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdaCxDaDahbadeche
+
+export PYTHONDONTWRITEBYTECODE=1
 
 export XWING_HOST=yonsm.gq
 export XWING_PASS=Asdftr99

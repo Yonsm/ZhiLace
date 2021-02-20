@@ -60,7 +60,4 @@ cphone:
   name: 外婆手机
   picture:
   track: true
-  mac: B0:F8:93:1E:A1:48
-  icon:
-  picture:
-  track: false
+
