@@ -5,3 +5,6 @@
 debug
 release
 __pycache__
+dist
+*.egg-info
+.vscode
