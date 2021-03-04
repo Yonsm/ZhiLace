@@ -11,5 +11,3 @@
 	email = Yonsm@qq.com
 [commit]
 	template = /Users/admin/.stCommitMsg
-[submodule]
-	recurse = true
