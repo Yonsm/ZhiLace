@@ -1,0 +1,2161 @@
+{
+    "version": 1,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "739606debc074acfb9b65974b3414c33"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "braviatv",
+                        "75d9f9685ede2db16a82f847e7bad9d7fcc231132c4c6069296fb95a73cc8ace"
+                    ]
+                ],
+                "manufacturer": "Sony",
+                "model": "\u5ba2\u5385\u7535\u89c6",
+                "name": "Sony Bravia TV",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "2e23bb7544fa4ebfa6b6dfe5584fca07",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "3db5e5bd05654274aef0436be6681d67"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "6d:ce:f5:c5:b0:19"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "3db5e5bd05654274aef0436be6681d67",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Bridge",
+                "name": "Home Assistant Bridge",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "2f93e6adfab449bab20cb6df532d7a6c",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "34:ce:00:90:90:1a"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "gateway",
+                "name": "\u5c0f\u7c73\u7f51\u5173",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001d66ce9"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001d66ce9"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "motion",
+                "name": "motion_158d0001d66ce9",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "5acbef168d6e44ccbcdb84696c4a0894",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d000228a52b"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d000228a52b"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d000228a52b",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "2950a295dac447e393eaa1cacc35b444",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001f3e5be"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001f3e5be"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d0001f3e5be",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "13cbc57a91ac4838a6026d30f4401ca6",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001f4a238"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001f4a238"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "motion",
+                "name": "motion_158d0001f4a238",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "408601bf2eab4092941a3703c6c25f33",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d000201a73f"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d000201a73f"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "switch",
+                "name": "switch_158d000201a73f",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "bbb1a66090534f0186d9ee8d89c750ec",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001e59b33"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001e59b33"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "switch",
+                "name": "switch_158d0001e59b33",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "f25c95e38be942a7bf712d7e5fbb805c",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0001f3d2d1"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0001f3d2d1"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d0001f3d2d1",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "2eafe73549bd4c45838af0afcd18025b",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0003cf4735"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0003cf4735"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d0003cf4735",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "b01ed92de6d24ab18f483a98e75f29a7",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0002a66db1"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0002a66db1"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "sensor_cube.aqgl01",
+                "name": "sensor_cube.aqgl01_158d0002a66db1",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "efa3921aa54a4f308b76ad979859afa4",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d00041c74da"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d00041c74da"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d00041c74da",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "dbfaca2c937746c98b91100ee1b66802",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0004611461"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0004611461"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "magnet",
+                "name": "magnet_158d0004611461",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "cf6ad3ebeff5462babdca5eedb741d2b",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0003f7951d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0003f7951d"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "curtain.aq2",
+                "name": "curtain.aq2_158d0003f7951d",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "e37a6063a0cf4167a3198a5e8f5e78a9",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d000405d535"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d000405d535"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "curtain",
+                "name": "curtain_158d000405d535",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "32edc4727ff54ba0937cdad01f88122d",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d00042cf265"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d00042cf265"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "curtain",
+                "name": "curtain_158d00042cf265",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "43fdfe2e37d047adb92b28b644b749a3",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0003a58422"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0003a58422"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "plug",
+                "name": "plug_158d0003a58422",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "e4b8e0f6630747fcbba5ada560412050",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d00054e98b0"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d00054e98b0"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "switch",
+                "name": "switch_158d00054e98b0",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "464026a9526e4e6195a0219b493145b9",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "b968e8d277b642a0977a57f2bdcf2c11"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "braviatv",
+                        "86f778c00f0ddb8737ae28f7d2b8d1bc2317e6f69a55b810beedfca2f4b39673"
+                    ]
+                ],
+                "manufacturer": "Sony",
+                "model": "\u4e3b\u5367\u7535\u89c6",
+                "name": "Sony Bravia TV",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "0eae1fd480184c7e8fd097682d95513f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "7f6d9c95fa12499196ea550d28992988"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "158d0003d0d46e"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "xiaomi_aqara",
+                        "158d0003d0d46e"
+                    ]
+                ],
+                "manufacturer": "Xiaomi Aqara",
+                "model": "motion",
+                "name": "motion_158d0003d0d46e",
+                "sw_version": "1.1.2",
+                "entry_type": null,
+                "id": "8ed8318cd1424667bd84e981af97b693",
+                "via_device_id": "dd5f69e1a6004c46beea1f9f7b8540e0",
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "cbc0c1f0045d5b4218b6b92ff917c429"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "yeelight",
+                        "0x00000000071a26bf"
+                    ]
+                ],
+                "manufacturer": "Yeelight",
+                "model": "mono1",
+                "name": "\u513f\u7ae5\u623f\u53f0\u706f",
+                "sw_version": "34",
+                "entry_type": null,
+                "id": "3c4922845e0680bf59edfa58e2dd6529",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "2e070a6978de55052db5d10b085540b6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "yeelight",
+                        "0x0000000003e0f627"
+                    ]
+                ],
+                "manufacturer": "Yeelight",
+                "model": "bslamp1",
+                "name": "\u4e66\u623f\u53f0\u706f",
+                "sw_version": "66",
+                "entry_type": null,
+                "id": "f3c0301593724f1a3e9900957b876115",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "60af5820b5e5b7631a49f9ccb84562b7"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "cb:50:59:81:85:0e"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "60af5820b5e5b7631a49f9ccb84562b7",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Accessory",
+                "name": "HASS Bridge MYN9",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f59ce1ce2f4ab40c808203929059147f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "0bad93cad3a65f2108565e806af84eec"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "fb:93:48:7c:e4:54"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "0bad93cad3a65f2108565e806af84eec",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Accessory",
+                "name": "HASS Bridge 1432",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "b8917f46e587f0080ae0bbe03b6ee61e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "001c8bfd40567d05c4d8a252bc21fdf0"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "92:98:90:5b:c0:de"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "001c8bfd40567d05c4d8a252bc21fdf0",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Accessory",
+                "name": "HASS Bridge HPR5",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4c3ed0006233a21bd23cee88137dbaa8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "ebf2907cc935f0093f2894ad90696bf8"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b9:31:ea:4a:d8:be"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "ebf2907cc935f0093f2894ad90696bf8",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Accessory",
+                "name": "HASS Bridge QUPE",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "fb147d7c7c01c65e6e4cb3bf79bba6fc",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "a4603c27c6f49b0f89fb79e7a7acd56b"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "2f:fc:3f:14:c9:a3"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "a4603c27c6f49b0f89fb79e7a7acd56b",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Accessory",
+                "name": "HASS Bridge 353N",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "957e7968ae596e376352cc109b570d66",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "1c75be8116671b9107ada157f9d485eb"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "6e:ab:da:87:f7:72"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "homekit",
+                        "1c75be8116671b9107ada157f9d485eb",
+                        "homekit.bridge"
+                    ]
+                ],
+                "manufacturer": "Home Assistant",
+                "model": "Home Assistant HomeKit Accessory",
+                "name": "HASS Bridge JH06",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f3bed2b80c2bb926913f14b04979d24a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "AsusWRT"
+                    ]
+                ],
+                "manufacturer": "Asus",
+                "model": "Asus Router",
+                "name": "AsusWRT",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "05acb5495d08890ed5b5185b1fb27364",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c0:a6:00:a4:ea:de"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "C0:A6:00:A4:EA:DE"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "cPhone",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "99bc3acbc4d2c030d7135ddd27aaed82",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "90:81:58:ed:67:2a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "90:81:58:ED:67:2A"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "zPhone",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f140f3a63205446764055b19db8c7a54",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "70:ea:5a:2c:6d:81"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "70:EA:5A:2C:6D:81"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "oPad",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e004020baa67baef25cbb8042e5dfd28",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "8c:86:1e:a8:99:27"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "8C:86:1E:A8:99:27"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "yPhone",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "bfab56d74be95a2bf10ce0dff0f76d93",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "fc:7c:02:8b:c8:51"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "FC:7C:02:8B:C8:51"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Hass",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4edf94f193b27128b64bcf45967691ba",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "78:11:dc:72:11:5a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "78:11:DC:72:11:5A"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Camera3",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "d8b63a35804e641a4fbea0765cf0b828",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "24:35:cc:05:9f:72"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "24:35:CC:05:9F:72"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Saswell2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "8e5feeeac281324780ece7c4d0956b49",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "44:23:7c:ba:63:69"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "44:23:7C:BA:63:69"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Washer",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "1e53b0ff9fd4fbdd0dcf40e2844a4c62",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "40:31:3c:cc:11:73"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "40:31:3C:CC:11:73"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Lamp2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e5377ba660d30d0823949f533df5f085",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ce:00:a0:82:6b"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "34:CE:00:A0:82:6B"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Purifier",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "d99d39e2f10c55cf389fe24509092ea1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "78:11:dc:db:db:e7"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "78:11:DC:DB:DB:E7"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Fresher",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "3afe6c9a4ae45b9f727c6619388734c3",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ce:00:a9:56:48"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "34:CE:00:A9:56:48"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Camera5",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f11a3537736499155cafc6e1bf735013",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "88:10:8f:d1:45:c7"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "88:10:8F:D1:45:C7"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "aPhone",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e89528cce0d053caeb1f033694aaae44",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "10:9e:3a:6e:b8:7a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "10:9E:3A:6E:B8:7A"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Sugar",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "5fba4c82bc0155838afc0261af766d19",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ce:00:90:90:1a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "34:CE:00:90:90:1A"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "ZigBee",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "52c4b0b3ff3ead8928952e8f6b43a713",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "28:d1:27:a1:bb:69"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "28:D1:27:A1:BB:69"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "MiAi3",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "0715bc986b8bf77acb74bbe0c9936155",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "6c:96:cf:e0:95:55"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "6C:96:CF:E0:95:55"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "iMac",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "2f0c58e96949509bc566579988c07b87",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "3c:22:fb:52:f8:11"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "3C:22:FB:52:F8:11"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "iPro",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "229729c2b1fb63ca02fc62c9fe0f1b72",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ec:41:18:76:af:63"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "EC:41:18:76:AF:63"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "MiAi2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "c0e1088c8c9adf51b77547add2d89ead",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "84:f3:eb:53:53:f2"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "84:F3:EB:53:53:F2"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "NodeMCU6",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "81438f303befda7a2d5f4a6346389ced",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "10:4f:a8:ef:7f:86"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "10:4F:A8:EF:7F:86"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "X9300d",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "7713c59d4c3f9a1bb58a82ed92c543da",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "78:11:dc:cf:38:c7"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "78:11:DC:CF:38:C7"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Camera1",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "726e5688b1bfc92f54c5edabd527e4b8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "d8:b0:4c:ec:0a:c1"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "D8:B0:4C:EC:0A:C1"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "ModBus",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "5a6c8b41570789207c375021a6c06c71",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "7c:49:eb:b6:d8:2b"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "7C:49:EB:B6:D8:2B"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Fresher2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "1a83a8a1dd820d348e77f855a3283a6f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ea:34:58:73:5d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "34:EA:34:58:73:5D"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Remote",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "264b110ac6c96448517606723f611d71",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "6a:09:15:4d:16:ad"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "6A:09:15:4D:16:AD"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "kakuhatasatoshi",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "62c655dbc46d307f6aad3d67acf09b7a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ce:00:89:95:af"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "34:CE:00:89:95:AF"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Airer",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "57ff2496dad68ba1a95b8d6f678c0d8e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "c0:51:7e:77:25:ac"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "C0:51:7E:77:25:AC"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Camera6",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "4cbc391f54b01d9a36a2cefd70d04506",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "cc:08:8d:1a:73:fd"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "CC:08:8D:1A:73:FD"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "bPhone",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "04d13341a7d43812bc890a324505fd47",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "78:da:07:6c:cd:2f"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "78:DA:07:6C:CD:2F"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Magic",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "001046576632709f3aa4a19ec62c1a26",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "04:5d:4b:3f:8d:93"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "04:5D:4B:3F:8D:93"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "X9400e",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "8200e8b81d2e0b9123beca5bc52f4ae1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ec:fa:bc:08:22:c7"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "EC:FA:BC:08:22:C7"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "NodeMCU1",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "343fa87fc692d26317f1399c710a2dfa",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "24:35:cc:05:9e:60"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "24:35:CC:05:9E:60"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Saswell",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "931225e48e80fd4482733663e6892dd6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "34:ea:34:b8:36:ac"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "34:EA:34:B8:36:AC"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Outlet",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "b1542555b290419abde43c276cbca8f3",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "e8:ab:fa:45:fb:03"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "E8:AB:FA:45:FB:03"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Camera2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "85af4c87a5ca3cd11f63027e35719fa8",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "78:0f:77:47:aa:8f"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "78:0F:77:47:AA:8F"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Remote2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "69ad3380b9bc212778cb296b7584c8d4",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "78:11:dc:03:a5:a2"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "78:11:DC:03:A5:A2"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Lamp",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "6a69735580fd471622fa28c60d05f77e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "04:cf:8c:73:b7:67"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "04:CF:8C:73:B7:67"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Camera4",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "5f8abe24a3155f9d26d4bca299704da6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:f8:93:1e:a1:48"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "B0:F8:93:1E:A1:48"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Aircat",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "95c039eaef52998fd95807b28c41065b",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "b0:f8:93:24:91:32"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "B0:F8:93:24:91:32"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "AirCat2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "cf7bea24f536f6ea9f9190d473e9beca",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:4c:8e:8a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "DC:4F:22:4C:8E:8A"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "NodeMCU2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "762c0f5612c943df38c5b7eba848e960",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:c2:70:f2"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "DC:4F:22:C2:70:F2"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Hassmart2",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "68086af21a61fc1a7004829e7c757ecf",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:4c:b8:e4"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "DC:4F:22:4C:B8:E4"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "NodeMCU3",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "f303edac8db072ef795362956ed70542",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:c0:b9:ed"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "DC:4F:22:C0:B9:ED"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Hassmart1",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "9b9b7167bf6fb21722a2a3b2ffa4e6c6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "84:f3:eb:53:62:f6"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "84:F3:EB:53:62:F6"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "NodeMCU4",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "21f0aedf400baf4f4e9ffdc5d4857b44",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "ec:fa:bc:07:7c:79"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "EC:FA:BC:07:7C:79"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "Sonoff1",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "93c76d93a8588bd43b1ab489317db0a1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "dc:4f:22:17:ee:77"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "DC:4F:22:17:EE:77"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "NodeMCU5",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "e55cb97aead4ae35d6fd236557a0b270",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "fe:4c:ba:31:5f:15"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "FE:4C:BA:31:5F:15"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": null,
+                "name": "kakuhatasatoshi",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "3dfe193b6817d78880932fe0fbba9f2f",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            },
+            {
+                "config_entries": [
+                    "f31fe2fccf8e384628c85c1fe7a35e77",
+                    "bf64524c4f1042774c7cbc5de03c530c"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "64:90:c1:08:d5:42"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "64:90:C1:08:D5:42"
+                    ],
+                    [
+                        "xiaomi_miio",
+                        "64:90:c1:08:d5:42"
+                    ]
+                ],
+                "manufacturer": "AsusWRT Tracked device",
+                "model": "roborock.vacuum.a11",
+                "name": "Vacuum",
+                "sw_version": null,
+                "entry_type": null,
+                "id": "c46d46c800e3503a2aa775e3320397a5",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            }
+        ],
+        "deleted_devices": [
+            {
+                "config_entries": [],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "34ea3458735d"
+                    ]
+                ],
+                "id": "bbaad1ed14856102cf5cdf8f7c7e0afe",
+                "orphaned_timestamp": 1615129738.0926423
+            },
+            {
+                "config_entries": [],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "780f7747aa8f"
+                    ]
+                ],
+                "id": "dcf963ea274d4af8ea9578560880fd9f",
+                "orphaned_timestamp": 1615129732.5890315
+            },
+            {
+                "config_entries": [],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "broadlink",
+                        "34ea34b836ac"
+                    ]
+                ],
+                "id": "c560045f90df1b1731e909d2e7a49da5",
+                "orphaned_timestamp": 1615129483.9767225
+            }
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "key": "http",
+    "data": {
+        "ssl_key": "/Users/admin/.homeassistant/ssl.key",
+        "ssl_certificate": "/Users/admin/.homeassistant/ssl.crt",
+        "ssl_profile": "modern",
+        "server_port": 8123,
+        "login_attempts_threshold": -1,
+        "cors_allowed_origins": [
+            "https://cast.home-assistant.io"
+        ],
+        "ip_ban_enabled": true
+    }
+}

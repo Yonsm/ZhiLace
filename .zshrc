@@ -1,6 +1,7 @@
 alias l="ls -la"
 alias grs="git reset --hard"
 alias gsa="git submodule add"
+alias gacp='_gacp() {git add .; git commit -m "$1"; git push $2}; _gacp'
 
 export CLICOLOR=1
 export LSCOLORS=ExGxFxdaCxDaDahbadeche

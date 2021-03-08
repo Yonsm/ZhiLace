@@ -1,0 +1,114 @@
+{
+    "version": 1,
+    "key": "lovelace.lovelace_status",
+    "data": {
+        "config": {
+            "title": "\u73af\u5883",
+            "views": [
+                {
+                    "title": "\u72b6\u6001",
+                    "path": "status",
+                    "icon": "mdi:home-thermometer",
+                    "cards": [
+                        {
+                            "type": "weather-forecast",
+                            "name": "\u5929\u6c14",
+                            "entity": "weather.tian_qi",
+                            "show_forecast": true,
+                            "secondary_info_attribute": "attribution"
+                        },
+                        {
+                            "type": "glance",
+                            "title": "\u9633\u53f0",
+                            "state_color": true,
+                            "entities": [
+                                "sun.sun",
+                                "sensor.yang_tai_wen_du",
+                                "sensor.yang_tai_shi_du",
+                                "sensor.yang_tai_ke_li_wu"
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "title": "\u5ba2\u5385",
+                            "state_color": true,
+                            "entities": [
+                                "sensor.ke_ting_wen_du",
+                                "sensor.ke_ting_shi_du",
+                                "sensor.ke_ting_ke_li_wu",
+                                "sensor.ke_ting_er_yang_hua_tan"
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "title": "\u9910\u5385",
+                            "state_color": true,
+                            "entities": [
+                                "sensor.can_ting_wen_du",
+                                "sensor.can_ting_shi_du",
+                                "sensor.can_ting_ke_li_wu",
+                                "sensor.can_ting_jia_quan",
+                                "sensor.illumination_34ce0090901a"
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "title": "\u8fc7\u9053",
+                            "state_color": true,
+                            "entities": [
+                                "sensor.guo_dao_wen_du",
+                                "sensor.guo_dao_shi_du",
+                                "sensor.guo_dao_ke_li_wu",
+                                "sensor.guo_dao_jia_quan"
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "title": "\u4e3b\u5367",
+                            "state_color": true,
+                            "entities": [
+                                "sensor.zhu_wo_wen_du",
+                                "sensor.zhu_wo_shi_du",
+                                "sensor.zhu_wo_ke_li_wu",
+                                "sensor.zhu_wo_er_yang_hua_tan",
+                                "sensor.zhu_wo_liang_du"
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "title": "\u6b21\u5367",
+                            "state_color": true,
+                            "entities": [
+                                "sensor.ci_wo_wen_du",
+                                "sensor.ci_wo_shi_du",
+                                "sensor.ci_wo_ke_li_wu"
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "title": "\u513f\u7ae5\u623f",
+                            "state_color": true,
+                            "entities": [
+                                "sensor.er_tong_fang_wen_du",
+                                "sensor.er_tong_fang_shi_du",
+                                "sensor.er_tong_fang_ke_li_wu",
+                                "sensor.er_tong_fang_er_yang_hua_tan"
+                            ]
+                        },
+                        {
+                            "type": "glance",
+                            "title": "\u4e66\u623f",
+                            "state_color": true,
+                            "entities": [
+                                "sensor.shu_fang_wen_du",
+                                "sensor.shu_fang_shi_du",
+                                "sensor.shu_fang_er_yang_hua_tan",
+                                "sensor.shu_fang_liang_du"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

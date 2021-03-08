@@ -1,0 +1,82 @@
+{
+    "version": 1,
+    "key": "lovelace.lovelace_guard",
+    "data": {
+        "config": {
+            "title": "\u5b89\u9632",
+            "views": [
+                {
+                    "title": "\u5b89\u9632",
+                    "path": "guard",
+                    "icon": "mdi:alarm-light",
+                    "badges": [
+                        {
+                            "entity": "person.ba_ba"
+                        },
+                        {
+                            "entity": "person.ma_ma"
+                        },
+                        {
+                            "entity": "person.wai_gong"
+                        },
+                        {
+                            "entity": "person.wai_po"
+                        },
+                        {
+                            "entity": "person.a_yi"
+                        },
+                        {
+                            "entity": "binary_sensor.motion_sensor_158d0003d0d46e"
+                        },
+                        {
+                            "entity": "binary_sensor.motion_sensor_158d0001f4a238"
+                        },
+                        {
+                            "entity": "binary_sensor.motion_sensor_158d0001d66ce9"
+                        },
+                        {
+                            "entity": "binary_sensor.door_window_sensor_158d0001f3e5be"
+                        },
+                        {
+                            "entity": "binary_sensor.door_window_sensor_158d0001f3d2d1"
+                        },
+                        {
+                            "entity": "binary_sensor.door_window_sensor_158d0003cf4735"
+                        },
+                        {
+                            "entity": "binary_sensor.door_window_sensor_158d0004611461"
+                        },
+                        {
+                            "entity": "binary_sensor.door_window_sensor_158d00041c74da"
+                        },
+                        {
+                            "entity": "binary_sensor.door_window_sensor_158d000228a52b"
+                        }
+                    ],
+                    "cards": [
+                        {
+                            "type": "picture-entity",
+                            "entity": "camera.ke_ting_she_xiang_ji",
+                            "aspect_ratio": "16:9"
+                        },
+                        {
+                            "type": "picture-entity",
+                            "entity": "camera.can_ting_she_xiang_ji",
+                            "aspect_ratio": "4:3"
+                        },
+                        {
+                            "type": "picture-entity",
+                            "entity": "camera.guo_dao_she_xiang_ji",
+                            "aspect_ratio": "16:9"
+                        },
+                        {
+                            "type": "picture-entity",
+                            "entity": "camera.zhu_wo_she_xiang_ji",
+                            "aspect_ratio": "4:3"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
