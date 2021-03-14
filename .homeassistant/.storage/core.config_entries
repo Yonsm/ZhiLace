@@ -49,7 +49,7 @@
                 "entry_id": "3db5e5bd05654274aef0436be6681d67",
                 "version": 1,
                 "domain": "homekit",
-                "title": "Home Assistant Bridge:51827",
+                "title": "\u5bb6\u5ead\u4e2d\u67a2",
                 "data": {
                     "name": "Home Assistant Bridge",
                     "port": 51827
@@ -57,30 +57,30 @@
                 "options": {
                     "filter": {
                         "exclude_domains": [
-                            "script",
                             "automation",
-                            "input_boolean",
+                            "camera",
                             "device_tracker",
+                            "input_boolean",
                             "media_player",
-                            "camera"
+                            "script"
                         ],
                         "exclude_entities": [
-                            "light.ke_ting_tong_deng_2",
-                            "light.can_ting_tong_deng_2",
                             "binary_sensor.switch_158d0001e59b33",
                             "binary_sensor.switch_158d000201a73f",
                             "binary_sensor.switch_158d00054e98b0",
-                            "sensor.zhu_wo_er_yang_hua_tan",
-                            "sensor.er_tong_fang_er_yang_hua_tan",
                             "climate.ke_ting_di_nuan",
-                            "climate.zhu_wo_di_nuan"
+                            "climate.zhu_wo_di_nuan",
+                            "sensor.er_tong_fang_er_yang_hua_tan",
+                            "sensor.zhu_wo_er_yang_hua_tan",
+                            "switch.can_ting_tong_deng",
+                            "switch.ke_ting_tong_deng"
                         ],
-                        "exclude_entity_globs": [],
                         "include_domains": [],
-                        "include_entity_globs": [],
-                        "include_entities": []
+                        "include_entities": [],
+                        "exclude_entity_globs": [],
+                        "include_entity_globs": []
                     },
-                    "auto_start": true,
+                    "auto_start": false,
                     "safe_mode": false,
                     "entity_config": {
                         "switch.can_ting_chu_shi_ji": {
@@ -207,254 +207,10 @@
                 "disabled_by": null
             },
             {
-                "entry_id": "60af5820b5e5b7631a49f9ccb84562b7",
-                "version": 1,
-                "domain": "homekit",
-                "title": "HASS Bridge MYN9:51828",
-                "data": {
-                    "name": "HASS Bridge MYN9",
-                    "port": 51828
-                },
-                "options": {
-                    "filter": {
-                        "include_domains": [],
-                        "exclude_domains": [],
-                        "include_entities": [
-                            "media_player.ke_ting_dian_shi"
-                        ],
-                        "exclude_entities": []
-                    },
-                    "mode": "accessory",
-                    "auto_start": true
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_push",
-                "unique_id": null,
-                "disabled_by": null
-            },
-            {
-                "entry_id": "0bad93cad3a65f2108565e806af84eec",
-                "version": 1,
-                "domain": "homekit",
-                "title": "HASS Bridge 1432:51829",
-                "data": {
-                    "name": "HASS Bridge 1432",
-                    "port": 51829
-                },
-                "options": {
-                    "filter": {
-                        "include_domains": [],
-                        "exclude_domains": [],
-                        "include_entities": [
-                            "media_player.zhu_wo_dian_shi"
-                        ],
-                        "exclude_entities": []
-                    },
-                    "mode": "accessory",
-                    "auto_start": true
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_push",
-                "unique_id": null,
-                "disabled_by": null
-            },
-            {
-                "entry_id": "001c8bfd40567d05c4d8a252bc21fdf0",
-                "version": 1,
-                "domain": "homekit",
-                "title": "HASS Bridge HPR5:51830",
-                "data": {
-                    "name": "HASS Bridge HPR5",
-                    "port": 51830
-                },
-                "options": {
-                    "filter": {
-                        "include_domains": [],
-                        "exclude_domains": [],
-                        "include_entities": [
-                            "camera.can_ting_she_xiang_ji"
-                        ],
-                        "exclude_entities": []
-                    },
-                    "mode": "accessory",
-                    "entity_config": {
-                        "camera.can_ting_she_xiang_ji": {
-                            "video_codec": "copy",
-                            "support_audio": false,
-                            "max_width": 1920,
-                            "max_height": 1080,
-                            "max_fps": 30,
-                            "audio_codec": "libopus",
-                            "audio_map": "0:a:0",
-                            "video_map": "0:v:0",
-                            "audio_packet_size": 188,
-                            "video_packet_size": 1316,
-                            "stream_count": 3
-                        }
-                    },
-                    "auto_start": true
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_push",
-                "unique_id": null,
-                "disabled_by": null
-            },
-            {
-                "entry_id": "ebf2907cc935f0093f2894ad90696bf8",
-                "version": 1,
-                "domain": "homekit",
-                "title": "HASS Bridge QUPE:51831",
-                "data": {
-                    "name": "HASS Bridge QUPE",
-                    "port": 51831
-                },
-                "options": {
-                    "filter": {
-                        "include_domains": [],
-                        "exclude_domains": [],
-                        "include_entities": [
-                            "media_player.tou_ying_yi"
-                        ],
-                        "exclude_entities": []
-                    },
-                    "mode": "accessory",
-                    "auto_start": true
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_push",
-                "unique_id": null,
-                "disabled_by": null
-            },
-            {
-                "entry_id": "a4603c27c6f49b0f89fb79e7a7acd56b",
-                "version": 1,
-                "domain": "homekit",
-                "title": "HASS Bridge 353N:51832",
-                "data": {
-                    "name": "HASS Bridge 353N",
-                    "port": 51832
-                },
-                "options": {
-                    "filter": {
-                        "include_domains": [],
-                        "exclude_domains": [],
-                        "include_entities": [
-                            "camera.guo_dao_she_xiang_ji"
-                        ],
-                        "exclude_entities": []
-                    },
-                    "mode": "accessory",
-                    "entity_config": {
-                        "camera.guo_dao_she_xiang_ji": {
-                            "video_codec": "copy",
-                            "support_audio": false,
-                            "max_width": 1920,
-                            "max_height": 1080,
-                            "max_fps": 30,
-                            "audio_codec": "libopus",
-                            "audio_map": "0:a:0",
-                            "video_map": "0:v:0",
-                            "audio_packet_size": 188,
-                            "video_packet_size": 1316,
-                            "stream_count": 3
-                        }
-                    },
-                    "auto_start": true
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_push",
-                "unique_id": null,
-                "disabled_by": null
-            },
-            {
-                "entry_id": "1c75be8116671b9107ada157f9d485eb",
-                "version": 1,
-                "domain": "homekit",
-                "title": "HASS Bridge JH06:51833",
-                "data": {
-                    "name": "HASS Bridge JH06",
-                    "port": 51833
-                },
-                "options": {
-                    "filter": {
-                        "include_domains": [],
-                        "exclude_domains": [],
-                        "include_entities": [
-                            "camera.zhu_wo_she_xiang_ji"
-                        ],
-                        "exclude_entities": []
-                    },
-                    "mode": "accessory",
-                    "entity_config": {
-                        "camera.zhu_wo_she_xiang_ji": {
-                            "video_codec": "copy",
-                            "support_audio": false,
-                            "max_width": 1920,
-                            "max_height": 1080,
-                            "max_fps": 30,
-                            "audio_codec": "libopus",
-                            "audio_map": "0:a:0",
-                            "video_map": "0:v:0",
-                            "audio_packet_size": 188,
-                            "video_packet_size": 1316,
-                            "stream_count": 3
-                        }
-                    },
-                    "auto_start": true
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "user",
-                "connection_class": "local_push",
-                "unique_id": null,
-                "disabled_by": null
-            },
-            {
-                "entry_id": "bf64524c4f1042774c7cbc5de03c530c",
-                "version": 1,
-                "domain": "asuswrt",
-                "title": "Router",
-                "data": {
-                    "host": "Router",
-                    "username": "admin",
-                    "password": "gjzgqz",
-                    "port": 22,
-                    "protocol": "ssh",
-                    "mode": "router"
-                },
-                "options": {
-                    "dnsmasq": "/tmp",
-                    "interface": "ppp0"
-                },
-                "system_options": {
-                    "disable_new_entities": false
-                },
-                "source": "import",
-                "connection_class": "local_poll",
-                "unique_id": null,
-                "disabled_by": null
-            },
-            {
                 "entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
                 "version": 1,
                 "domain": "xiaomi_miio",
-                "title": "roborock.vacuum.a11",
+                "title": "\u4e66\u623f\u626b\u5730\u673a",
                 "data": {
                     "config_flow_device": "device",
                     "host": "Vacuum",
@@ -469,6 +225,99 @@
                 "source": "user",
                 "connection_class": "local_poll",
                 "unique_id": "64:90:c1:08:d5:42",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "96747f96b5c94bedb01c4c4d7625f877",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "yPhone",
+                "data": {
+                    "app_name": "Home Assistant",
+                    "os_name": "iOS",
+                    "supports_encryption": true,
+                    "manufacturer": "Apple",
+                    "device_id": "1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
+                    "device_name": "yPhone",
+                    "app_data": {
+                        "push_token": "cc8IGTIjDkNclptxC6x18U:APA91bF5EN-KlwOXI69al_rJSh9qhV8zGFYZUxirJCRK9Sm-yBV1h_frzLRTpvO-kxcJm9diLFPtz4OlPYj_1PPWnDV2jwaAKC1-avrK776Ik__7RC1DNKvusU794TZTYlTHUeAZNlJA",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_version": "2021.3 (2021.77)",
+                    "model": "iPhone12,3",
+                    "app_id": "io.robbie.HomeAssistant",
+                    "os_version": "14.4",
+                    "webhook_id": "8c8f223bb6884ea4a5c91e2275a039fdbe0c3b17755eeba09a19e351114d001f",
+                    "secret": "ea0299dd9a9d3ff094915aa7087f5ce1ed4d519298b9725b4fa1727d9775d089",
+                    "user_id": "885ef9c0f6f64c31a332cfaea34be29a"
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": true
+                },
+                "source": "registration",
+                "connection_class": "cloud_push",
+                "unique_id": "io.robbie.HomeAssistant-1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "be0b01bcae9522072c6df2145e60327e",
+                "version": 1,
+                "domain": "broadlink",
+                "title": "\u4e66\u623f\u9065\u63a7",
+                "data": {
+                    "host": "192.168.1.46",
+                    "mac": "34ea3458735d",
+                    "type": 10141,
+                    "timeout": 5
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "34ea3458735d",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "05a6be8ca1ba8791ae2c50a38351116c",
+                "version": 1,
+                "domain": "broadlink",
+                "title": "\u5ba2\u5385\u9065\u63a7",
+                "data": {
+                    "host": "192.168.1.47",
+                    "mac": "780f7747aa8f",
+                    "type": 10039,
+                    "timeout": 5
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "780f7747aa8f",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "ef2da510d66d319e649e336a6debca5c",
+                "version": 1,
+                "domain": "broadlink",
+                "title": "\u9910\u5385\u9664\u6e7f\u673a",
+                "data": {
+                    "host": "192.168.1.57",
+                    "mac": "34ea34b836ac",
+                    "type": 30014,
+                    "timeout": 5
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "34ea34b836ac",
                 "disabled_by": null
             }
         ]

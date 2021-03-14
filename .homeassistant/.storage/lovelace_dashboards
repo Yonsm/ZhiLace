@@ -6,29 +6,11 @@
             {
                 "require_admin": false,
                 "show_in_sidebar": true,
-                "icon": "mdi:home-lightbulb",
-                "title": "\u8c03\u63a7",
-                "url_path": "lovelace-toggle",
+                "icon": "mdi:home-assistant",
+                "title": "\u533a\u57df",
+                "url_path": "lovelace-zone",
                 "mode": "storage",
-                "id": "lovelace_toggle"
-            },
-            {
-                "require_admin": false,
-                "show_in_sidebar": true,
-                "icon": "mdi:alarm-light",
-                "title": "\u5b89\u9632",
-                "url_path": "lovelace-guard",
-                "mode": "storage",
-                "id": "lovelace_guard"
-            },
-            {
-                "require_admin": false,
-                "show_in_sidebar": true,
-                "icon": "mdi:home-thermometer",
-                "title": "\u73af\u5883",
-                "url_path": "lovelace-status",
-                "mode": "storage",
-                "id": "lovelace_status"
+                "id": "lovelace_zone"
             }
         ]
     }

@@ -1,63 +1,35 @@
 x9300d:
-  icon:
-  mac: 10:4F:A8:EF:7F:86
   name: 主卧电视
-  picture:
   track: true
 
 x9400e:
-  icon:
-  mac: 04:5D:4B:3F:8D:93
   name: 客厅电视
-  picture:
   track: true
 
 projector:
-  icon:
-  mac: 1C:B3:E9:00:EC:8B
-  name: 投影仪
-  picture:
+  name: 书房投影仪
   track: true
 
 xphone:
-  icon:
-  mac: F4:60:E2:73:AF:F4
   name: 爷爷手机
-  picture:
   track: true
 
 yphone:
-  icon:
-  mac: 8C:86:1E:A8:99:27
   name: 爸爸手机
-  picture:
   track: true
 
 zphone:
-  icon:
-  mac: 90:81:58:ED:67:2A
   name: 妈妈手机
-  picture:
   track: true
 
 aphone:
-  icon:
-  mac: 88:10:8F:D1:45:C7
   name: 阿姨手机
-  picture:
   track: true
 
 bphone:
-  icon:
-  mac: CC:08:8D:1A:73:FD
   name: 外公手机
-  picture:
   track: true
 
 cphone:
-  icon:
-  mac: C0:A6:00:A4:EA:DE
   name: 外婆手机
-  picture:
   track: true
-
