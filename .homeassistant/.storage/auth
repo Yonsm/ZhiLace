@@ -343,6 +343,22 @@
                 "last_used_ip": "192.168.1.20",
                 "credential_id": "2347d9e7e9814a7a811d30624441f4a8",
                 "version": "2021.3.3"
+            },
+            {
+                "id": "aba711fe71b549c6a76be56ac301a42a",
+                "user_id": "885ef9c0f6f64c31a332cfaea34be29a",
+                "client_id": "https://h.yonsm.tk:8123/",
+                "client_name": null,
+                "client_icon": null,
+                "token_type": "normal",
+                "created_at": "2021-03-14T07:35:21.572379+00:00",
+                "access_token_expiration": 1800.0,
+                "token": "003acb92ebd178151ad1809c94aee5808600d39d599e27aeff2be73e08d51a89b5c55e85fb75aa456fa698ff6a4ad80b1fdb86a740603fd003ee20b0e4da466b",
+                "jwt_key": "7a567e31746a76f031acf8ab2581a2bfa1ff8eb9b24a4e3461701c414ee1d26b7c2148118942f5f2d9661e340ddea1ba62fce47ec6c8bb09fc97ad703a5c1ad5",
+                "last_used_at": "2021-03-14T07:35:21.573017+00:00",
+                "last_used_ip": "192.168.1.10",
+                "credential_id": "2347d9e7e9814a7a811d30624441f4a8",
+                "version": "2021.3.3"
             }
         ]
     }
