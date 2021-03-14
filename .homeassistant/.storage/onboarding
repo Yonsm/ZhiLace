@@ -3,7 +3,9 @@
     "key": "onboarding",
     "data": {
         "done": [
-            "user"
+            "user",
+            "core_config",
+            "integration"
         ]
     }
 }
