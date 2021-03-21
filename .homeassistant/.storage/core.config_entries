@@ -75,10 +75,10 @@
                             "switch.can_ting_tong_deng",
                             "switch.ke_ting_tong_deng"
                         ],
-                        "include_domains": [],
-                        "include_entities": [],
                         "exclude_entity_globs": [],
-                        "include_entity_globs": []
+                        "include_entity_globs": [],
+                        "include_domains": [],
+                        "include_entities": []
                     },
                     "auto_start": false,
                     "safe_mode": false,
@@ -318,6 +318,26 @@
                 "source": "user",
                 "connection_class": "local_poll",
                 "unique_id": "34ea34b836ac",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "dc984a33eda82510263db3960771365d",
+                "version": 1,
+                "domain": "broadlink",
+                "title": "\u8863\u67dc\u9664\u6e7f\u673a",
+                "data": {
+                    "host": "192.168.1.58",
+                    "mac": "780f77ccccbe",
+                    "type": 32013,
+                    "timeout": 5
+                },
+                "options": {},
+                "system_options": {
+                    "disable_new_entities": false
+                },
+                "source": "user",
+                "connection_class": "local_poll",
+                "unique_id": "780f77ccccbe",
                 "disabled_by": null
             }
         ]

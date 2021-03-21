@@ -10,20 +10,12 @@ projector:
   name: 书房投影仪
   track: true
 
-xphone:
-  name: 爷爷手机
-  track: true
-
 yphone:
   name: 爸爸手机
   track: true
 
 zphone:
   name: 妈妈手机
-  track: true
-
-aphone:
-  name: 阿姨手机
   track: true
 
 bphone:
