@@ -38,11 +38,11 @@ lovelace:
 
 在 HomeAssistant 左侧栏目中找到并点击 `分区` 和 `分类`，可以看到生成的仪表盘。后期如果设备变化，可以点击页面右上角三个点菜单中的 `刷新` 来更新仪表盘。
 
-![PREVIEW1](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW1.jpg)
-![PREVIEW2](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW2.jpg)
-![PREVIEW3](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW3.jpg)
-![PREVIEW4](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW4.jpg)
-![PREVIEW5](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW5.jpg)
+![PREVIEW1](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW1.png)
+![PREVIEW2](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW2.png)
+![PREVIEW3](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW3.png)
+![PREVIEW4](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW4.png)
+![PREVIEW5](https://github.com/Yonsm/ZhiLace/blob/main/PREVIEW5.png)
 
 ## 4. 参考
 
