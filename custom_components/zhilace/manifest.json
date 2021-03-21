@@ -1,0 +1,9 @@
+{
+	"domain": "zhilace",
+	"name": "Zhi Lovelace Generator",
+	"documentation": "https://github.com/Yonsm/ZhiLace",
+	"version": "1.0.1",
+	"requirements": [],
+	"dependencies": [],
+	"codeowners": ["@Yonsm"]
+}
