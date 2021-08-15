@@ -10,11 +10,9 @@
                 "title": "configuration.yaml",
                 "data": {},
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "import",
-                "connection_class": "local_push",
                 "unique_id": null,
                 "disabled_by": null
             },
@@ -37,11 +35,9 @@
                         "\u7535\u89c6"
                     ]
                 },
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "import",
-                "connection_class": "local_poll",
                 "unique_id": "75d9f9685ede2db16a82f847e7bad9d7fcc231132c4c6069296fb95a73cc8ace",
                 "disabled_by": null
             },
@@ -52,7 +48,7 @@
                 "title": "\u5bb6\u5ead\u4e2d\u67a2",
                 "data": {
                     "name": "Home Assistant Bridge",
-                    "port": 51827
+                    "port": 21063
                 },
                 "options": {
                     "filter": {
@@ -62,6 +58,7 @@
                             "device_tracker",
                             "input_boolean",
                             "media_player",
+                            "remote",
                             "script"
                         ],
                         "exclude_entities": [
@@ -76,18 +73,18 @@
                             "switch.ke_ting_tong_deng"
                         ],
                         "exclude_entity_globs": [],
-                        "include_entity_globs": [],
+                        "include_entities": [],
                         "include_domains": [],
-                        "include_entities": []
+                        "include_entity_globs": []
                     },
-                    "auto_start": false,
+                    "auto_start": true,
                     "safe_mode": false,
                     "entity_config": {
                         "switch.can_ting_chu_shi_ji": {
                             "type": "outlet",
                             "low_battery_threshold": 20
                         },
-                        "switch.yi_gui_chu_shi_ji": {
+                        "switch.yi_ju_chu_shi_ji": {
                             "type": "outlet",
                             "low_battery_threshold": 20
                         },
@@ -106,11 +103,9 @@
                     },
                     "mode": "bridge"
                 },
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "import",
-                "connection_class": "local_push",
                 "unique_id": null,
                 "disabled_by": null
             },
@@ -129,11 +124,9 @@
                     "sid": "34ce0090901a"
                 },
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "user",
-                "connection_class": "local_push",
                 "unique_id": "34:ce:00:90:90:1a",
                 "disabled_by": null
             },
@@ -148,11 +141,9 @@
                     "pin": "0000"
                 },
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "import",
-                "connection_class": "local_poll",
                 "unique_id": "86f778c00f0ddb8737ae28f7d2b8d1bc2317e6f69a55b810beedfca2f4b39673",
                 "disabled_by": null
             },
@@ -173,11 +164,9 @@
                     "save_on_change": false,
                     "nightlight_switch": false
                 },
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "import",
-                "connection_class": "local_poll",
                 "unique_id": "0x00000000071a26bf",
                 "disabled_by": null
             },
@@ -198,11 +187,9 @@
                     "save_on_change": false,
                     "nightlight_switch": false
                 },
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "import",
-                "connection_class": "local_poll",
                 "unique_id": "0x0000000003e0f627",
                 "disabled_by": null
             },
@@ -219,11 +206,9 @@
                     "mac": "64:90:c1:08:d5:42"
                 },
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "user",
-                "connection_class": "local_poll",
                 "unique_id": "64:90:c1:08:d5:42",
                 "disabled_by": null
             },
@@ -243,20 +228,18 @@
                         "push_token": "cc8IGTIjDkNclptxC6x18U:APA91bF5EN-KlwOXI69al_rJSh9qhV8zGFYZUxirJCRK9Sm-yBV1h_frzLRTpvO-kxcJm9diLFPtz4OlPYj_1PPWnDV2jwaAKC1-avrK776Ik__7RC1DNKvusU794TZTYlTHUeAZNlJA",
                         "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
                     },
-                    "app_version": "2021.3 (2021.77)",
+                    "app_version": "2021.6 (2021.158)",
                     "model": "iPhone12,3",
                     "app_id": "io.robbie.HomeAssistant",
-                    "os_version": "14.4",
+                    "os_version": "14.6",
                     "webhook_id": "8c8f223bb6884ea4a5c91e2275a039fdbe0c3b17755eeba09a19e351114d001f",
                     "secret": "ea0299dd9a9d3ff094915aa7087f5ce1ed4d519298b9725b4fa1727d9775d089",
                     "user_id": "885ef9c0f6f64c31a332cfaea34be29a"
                 },
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": true
-                },
+                "pref_disable_new_entities": true,
+                "pref_disable_polling": false,
                 "source": "registration",
-                "connection_class": "cloud_push",
                 "unique_id": "io.robbie.HomeAssistant-1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
                 "disabled_by": null
             },
@@ -272,11 +255,9 @@
                     "timeout": 5
                 },
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "user",
-                "connection_class": "local_poll",
                 "unique_id": "34ea3458735d",
                 "disabled_by": null
             },
@@ -292,11 +273,9 @@
                     "timeout": 5
                 },
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "user",
-                "connection_class": "local_poll",
                 "unique_id": "780f7747aa8f",
                 "disabled_by": null
             },
@@ -312,16 +291,14 @@
                     "timeout": 5
                 },
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "user",
-                "connection_class": "local_poll",
                 "unique_id": "34ea34b836ac",
                 "disabled_by": null
             },
             {
-                "entry_id": "dc984a33eda82510263db3960771365d",
+                "entry_id": "d2810632568cdcf14ed1ae6cf3146328",
                 "version": 1,
                 "domain": "broadlink",
                 "title": "\u8863\u67dc\u9664\u6e7f\u673a",
@@ -332,12 +309,94 @@
                     "timeout": 5
                 },
                 "options": {},
-                "system_options": {
-                    "disable_new_entities": false
-                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
                 "source": "user",
-                "connection_class": "local_poll",
                 "unique_id": "780f77ccccbe",
+                "disabled_by": "user"
+            },
+            {
+                "entry_id": "874e96ea365108dda91320fa78f51323",
+                "version": 1,
+                "domain": "xiaomi_miio",
+                "title": "\u4e3b\u5367\u65b0\u98ce\u673a",
+                "data": {
+                    "config_flow_device": "device",
+                    "host": "Fresher2",
+                    "token": "5fd8be12c63cc876ca5884ea00265a1e",
+                    "model": "zhimi.airfresh.va2",
+                    "mac": "7c:49:eb:b6:d8:2b",
+                    "cloud_username": null,
+                    "cloud_password": null,
+                    "cloud_country": null
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "import",
+                "unique_id": "7c:49:eb:b6:d8:2b",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "2478b5bb620617059d0e8df3b43c38ef",
+                "version": 1,
+                "domain": "xiaomi_miio",
+                "title": "\u5ba2\u5385\u65b0\u98ce\u673a",
+                "data": {
+                    "config_flow_device": "device",
+                    "host": "Fresher",
+                    "token": "bb1ee8999ee6bc7ce075a424bca664c3",
+                    "model": "zhimi.airfresh.va2",
+                    "mac": "78:11:dc:db:db:e7",
+                    "cloud_username": null,
+                    "cloud_password": null,
+                    "cloud_country": null
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "import",
+                "unique_id": "78:11:dc:db:db:e7",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "9a78a18b582761dde437d111388de034",
+                "version": 1,
+                "domain": "xiaomi_miio",
+                "title": "\u6b21\u5367\u51c0\u5316\u5668",
+                "data": {
+                    "config_flow_device": "device",
+                    "host": "Purifier",
+                    "token": "fe2d793b34dce57f32bf50b2e6b00874",
+                    "model": "zhimi.airpurifier.m1",
+                    "mac": "34:ce:00:a0:82:6b",
+                    "cloud_username": null,
+                    "cloud_password": null,
+                    "cloud_country": null
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "import",
+                "unique_id": "34:ce:00:a0:82:6b",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "5d15c786cad64a812d0428b9a43f2c8b",
+                "version": 1,
+                "domain": "xiaomi_fan_circulator",
+                "title": "Xiaomi Circulating Fan",
+                "data": {},
+                "options": {
+                    "host": "192.168.1.33",
+                    "token": "6dd1ec1c895a61d1b994b4a6242efe56",
+                    "model": "zhimi.fan.fa1",
+                    "name": "Xiaomi Circulating Fan"
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
                 "disabled_by": null
             }
         ]

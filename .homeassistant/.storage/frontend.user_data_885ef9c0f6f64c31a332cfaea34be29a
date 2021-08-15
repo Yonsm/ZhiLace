@@ -1,12 +1,14 @@
 {
+    "version": 1,
+    "key": "frontend.user_data_885ef9c0f6f64c31a332cfaea34be29a",
     "data": {
         "core": {
             "showAdvanced": true
         },
         "language": {
-            "language": "zh-Hans"
+            "language": "zh-Hans",
+            "number_format": "language",
+            "time_format": "language"
         }
-    },
-    "key": "frontend.user_data_885ef9c0f6f64c31a332cfaea34be29a",
-    "version": 1
+    }
 }

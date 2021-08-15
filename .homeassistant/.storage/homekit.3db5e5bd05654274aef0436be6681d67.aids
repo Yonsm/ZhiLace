@@ -189,7 +189,22 @@
             "xiaomi_aqara.sensor.Battery158d0003f7951d": 1498761037,
             "xiaomi_aqara.sensor.Battery158d000405d535": 2189515884,
             "xiaomi_aqara.sensor.Battery158d00042cf265": 2649526210,
-            "xiaomi_miio.vacuum.64:90:c1:08:d5:42": 1360781456
+            "xiaomi_miio.vacuum.64:90:c1:08:d5:42": 1360781456,
+            "zhimrbond.cover.zhimrbondlight.shu_fang_liang_yi_jia_deng": 3339665536,
+            "input_text.input_text.xiao_ai_tong_xue": 1422564697,
+            "zhimrbond.light.zhimrbondlight.shu_fang_liang_yi_deng": 2708188322,
+            "input_text.input_text.text1": 1719090601,
+            "zhimrbond.cover.zhimrbondlight.shu_fang_liang_yi_deng": 757439705,
+            "zhiviomi.vacuum.zhiviomiwasher.yu_shi_xi_yi_ji": 1839027152,
+            "zhiviomi.vacuum.zhiviomiwasheryu_shi_xi_yi_ji": 1247692274,
+            "broadlink.switch.780f77ccccbe": 3521486157,
+            "zhimrbond.light.zhimrbondlightshu_fang_liang_yi_deng": 3552891534,
+            "person.person.yeye": 1446363487,
+            "xiaomi_fan_circulator.fan.zhimi.fan.fa1-5C:E5:0C:1E:32:45": 399693058,
+            "fan.zhu_wo_feng_shan_2": 19930889,
+            "fan.zhu_wo_feng_shan": 1288717572,
+            "person.person.nainai": 263296815,
+            "fan.er_tong_fang_feng_shan_2": 2716673324
         }
     }
 }
