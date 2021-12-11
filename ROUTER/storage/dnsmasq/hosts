@@ -1,9 +1,6 @@
-192.168.1.1 Router r r.yonsm.tk
-192.168.1.2 Access a a.yonsm.tk
-192.168.1.3 Bridge b b.yonsm.tk
+192.168.1.1 Store Router r yonsm.ga
+192.168.1.2 Access a a.yonsm.ga
+192.168.1.3 Bridge b b.yonsm.ga
 192.168.1.4 Station s s.yonsm.tk
-192.168.1.9 Hass h h.yonsm.tk
-
-192.168.1.1 Store
-192.168.1.1 iptv.yonsm.tk
-192.168.1.9 aircat.phicomm.com
+192.168.1.9 Hass h yonsm.gq
+192.168.1.10 iMac i.yonsm.ga
