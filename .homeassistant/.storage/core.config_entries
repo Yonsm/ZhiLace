@@ -72,9 +72,9 @@
                             "switch.can_ting_tong_deng",
                             "switch.ke_ting_tong_deng"
                         ],
-                        "exclude_entity_globs": [],
                         "include_entities": [],
                         "include_domains": [],
+                        "exclude_entity_globs": [],
                         "include_entity_globs": []
                     },
                     "auto_start": true,
@@ -153,8 +153,9 @@
                 "domain": "yeelight",
                 "title": "\u513f\u7ae5\u623f\u53f0\u706f",
                 "data": {
-                    "host": "Lamp2",
-                    "id": null
+                    "host": "192.168.1.45",
+                    "id": "0x00000000071a26bf",
+                    "detected_model": "lamp3"
                 },
                 "options": {
                     "name": "\u513f\u7ae5\u623f\u53f0\u706f",
@@ -176,8 +177,9 @@
                 "domain": "yeelight",
                 "title": "\u4e66\u623f\u53f0\u706f",
                 "data": {
-                    "host": "Lamp",
-                    "id": null
+                    "host": "192.168.1.44",
+                    "id": "0x0000000003e0f627",
+                    "detected_model": "lamp1"
                 },
                 "options": {
                     "name": "\u4e66\u623f\u53f0\u706f",
@@ -210,37 +212,6 @@
                 "pref_disable_polling": false,
                 "source": "user",
                 "unique_id": "64:90:c1:08:d5:42",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "96747f96b5c94bedb01c4c4d7625f877",
-                "version": 1,
-                "domain": "mobile_app",
-                "title": "yPhone",
-                "data": {
-                    "app_name": "Home Assistant",
-                    "os_name": "iOS",
-                    "supports_encryption": true,
-                    "manufacturer": "Apple",
-                    "device_id": "1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
-                    "device_name": "yPhone",
-                    "app_data": {
-                        "push_token": "cc8IGTIjDkNclptxC6x18U:APA91bF5EN-KlwOXI69al_rJSh9qhV8zGFYZUxirJCRK9Sm-yBV1h_frzLRTpvO-kxcJm9diLFPtz4OlPYj_1PPWnDV2jwaAKC1-avrK776Ik__7RC1DNKvusU794TZTYlTHUeAZNlJA",
-                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
-                    },
-                    "app_version": "2021.6 (2021.158)",
-                    "model": "iPhone12,3",
-                    "app_id": "io.robbie.HomeAssistant",
-                    "os_version": "14.6",
-                    "webhook_id": "8c8f223bb6884ea4a5c91e2275a039fdbe0c3b17755eeba09a19e351114d001f",
-                    "secret": "ea0299dd9a9d3ff094915aa7087f5ce1ed4d519298b9725b4fa1727d9775d089",
-                    "user_id": "885ef9c0f6f64c31a332cfaea34be29a"
-                },
-                "options": {},
-                "pref_disable_new_entities": true,
-                "pref_disable_polling": false,
-                "source": "registration",
-                "unique_id": "io.robbie.HomeAssistant-1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
                 "disabled_by": null
             },
             {
@@ -277,7 +248,7 @@
                 "pref_disable_polling": false,
                 "source": "user",
                 "unique_id": "780f7747aa8f",
-                "disabled_by": null
+                "disabled_by": "user"
             },
             {
                 "entry_id": "ef2da510d66d319e649e336a6debca5c",
@@ -295,7 +266,7 @@
                 "pref_disable_polling": false,
                 "source": "user",
                 "unique_id": "34ea34b836ac",
-                "disabled_by": null
+                "disabled_by": "user"
             },
             {
                 "entry_id": "d2810632568cdcf14ed1ae6cf3146328",
@@ -397,6 +368,37 @@
                 "pref_disable_polling": false,
                 "source": "user",
                 "unique_id": null,
+                "disabled_by": "user"
+            },
+            {
+                "entry_id": "ece2e10b6a05286c7afe1bb6fdb9215b",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "gPhone",
+                "data": {
+                    "app_data": {
+                        "push_token": "cGz9Lwtljk7xpnw4s9my3n:APA91bG8IOkX7edGdMIOtRacHRgdDEoG858cdTeu3JC_VX-W17gbhREJ1mNu5dKsXejMGG_HwzD9JjlRIIPKrdiizEMMRvJXpL2AH8U9zpD8eWqA4kxUJMR3XlTTMgrUOA1RwgBsRmPp",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "app_version": "2021.11.1 (2021.266)",
+                    "app_name": "Home Assistant",
+                    "manufacturer": "Apple",
+                    "os_name": "iOS",
+                    "model": "iPhone14,2",
+                    "device_id": "1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
+                    "device_name": "gPhone",
+                    "os_version": "15.1",
+                    "app_id": "io.robbie.HomeAssistant",
+                    "supports_encryption": true,
+                    "webhook_id": "5fdb9de9213651e0eb23e6e2be7834bb68c9fbff1e15ab0ca8f459d97084e89f",
+                    "secret": "c97f85a868bc6c0cb061786989ecae0d2fe57aefa1f8cce4562f898d63cfa5b5",
+                    "user_id": "885ef9c0f6f64c31a332cfaea34be29a"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "registration",
+                "unique_id": "io.robbie.HomeAssistant-1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
                 "disabled_by": null
             }
         ]

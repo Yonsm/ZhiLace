@@ -1,0 +1,878 @@
+{
+    "version": 1,
+    "key": "trace.saved_traces",
+    "data": {
+        "automation.None": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "1c0e2008dfc95ed2f43cfdc734388dad",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:01.871203+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2021-12-11T10:15:01.871769+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.can_ting_ke_li_wu_bian_hua_diao_kong_jing_hua_qi",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2021-12-11T10:14:52.084394+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "friendly_name": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668"
+                                        },
+                                        "last_changed": "2021-12-11T10:02:14.389087+00:00",
+                                        "last_updated": "2021-12-11T10:14:52.093717+00:00",
+                                        "context": {
+                                            "id": "6604846c765420d8409b7ece52e4d45e",
+                                            "parent_id": "0eec44f1597ea3cf2e265064a082d518",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.can_ting_ke_li_wu",
+                                        "from_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "39",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:14:52.073484+00:00",
+                                            "last_updated": "2021-12-11T10:14:52.073484+00:00",
+                                            "context": {
+                                                "id": "0eec44f1597ea3cf2e265064a082d518",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "40",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:01.852429+00:00",
+                                            "last_updated": "2021-12-11T10:15:01.852429+00:00",
+                                            "context": {
+                                                "id": "cdcd1d3a056dd73d6cf689f3f49645c7",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.can_ting_ke_li_wu"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2021-12-11T10:15:01.876889+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "8fef8c98a17fc74cb4588bcd3df4d211",
+                                        "parent_id": "cdcd1d3a056dd73d6cf689f3f49645c7",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "zhiact",
+                                        "service": "actuate",
+                                        "service_data": {
+                                            "sensor_id": "sensor.can_ting_ke_li_wu",
+                                            "sensor_values": [
+                                                10,
+                                                20,
+                                                50
+                                            ],
+                                            "entity_id": "fan.can_ting_jing_hua_qi",
+                                            "entity_attr": "preset_mode",
+                                            "entity_values": [
+                                                "low",
+                                                "medium",
+                                                "high"
+                                            ]
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "alias": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.can_ting_ke_li_wu"
+                            }
+                        ],
+                        "action": [
+                            {
+                                "service": "zhiact.actuate",
+                                "data": {
+                                    "sensor_id": "sensor.can_ting_ke_li_wu",
+                                    "sensor_values": [
+                                        10,
+                                        20,
+                                        50
+                                    ],
+                                    "entity_id": "fan.can_ting_jing_hua_qi",
+                                    "entity_attr": "preset_mode",
+                                    "entity_values": [
+                                        "low",
+                                        "medium",
+                                        "high"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "8fef8c98a17fc74cb4588bcd3df4d211",
+                        "parent_id": "cdcd1d3a056dd73d6cf689f3f49645c7",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "1c0e2008dfc95ed2f43cfdc734388dad",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:01.871203+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "8584bad16ba46b6be5e1b549d19a167a",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:06.733181+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2021-12-11T10:15:06.733736+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.can_ting_ke_li_wu_bian_hua_diao_kong_jing_hua_qi",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2021-12-11T10:15:01.872814+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "friendly_name": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668"
+                                        },
+                                        "last_changed": "2021-12-11T10:02:14.389087+00:00",
+                                        "last_updated": "2021-12-11T10:15:01.893573+00:00",
+                                        "context": {
+                                            "id": "8fef8c98a17fc74cb4588bcd3df4d211",
+                                            "parent_id": "cdcd1d3a056dd73d6cf689f3f49645c7",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.can_ting_ke_li_wu",
+                                        "from_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "40",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:01.852429+00:00",
+                                            "last_updated": "2021-12-11T10:15:01.852429+00:00",
+                                            "context": {
+                                                "id": "cdcd1d3a056dd73d6cf689f3f49645c7",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "41",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:06.727778+00:00",
+                                            "last_updated": "2021-12-11T10:15:06.727778+00:00",
+                                            "context": {
+                                                "id": "6379ae00b7ac61f10cea769ca8f75a72",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.can_ting_ke_li_wu"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2021-12-11T10:15:06.744752+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "5c990f1cd2635f731ef4ac8ff73aa515",
+                                        "parent_id": "6379ae00b7ac61f10cea769ca8f75a72",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "zhiact",
+                                        "service": "actuate",
+                                        "service_data": {
+                                            "sensor_id": "sensor.can_ting_ke_li_wu",
+                                            "sensor_values": [
+                                                10,
+                                                20,
+                                                50
+                                            ],
+                                            "entity_id": "fan.can_ting_jing_hua_qi",
+                                            "entity_attr": "preset_mode",
+                                            "entity_values": [
+                                                "low",
+                                                "medium",
+                                                "high"
+                                            ]
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "alias": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.can_ting_ke_li_wu"
+                            }
+                        ],
+                        "action": [
+                            {
+                                "service": "zhiact.actuate",
+                                "data": {
+                                    "sensor_id": "sensor.can_ting_ke_li_wu",
+                                    "sensor_values": [
+                                        10,
+                                        20,
+                                        50
+                                    ],
+                                    "entity_id": "fan.can_ting_jing_hua_qi",
+                                    "entity_attr": "preset_mode",
+                                    "entity_values": [
+                                        "low",
+                                        "medium",
+                                        "high"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "5c990f1cd2635f731ef4ac8ff73aa515",
+                        "parent_id": "6379ae00b7ac61f10cea769ca8f75a72",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "8584bad16ba46b6be5e1b549d19a167a",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:06.733181+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "5a9ecb1f8945bbf4db3b8b84516d7692",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:11.614604+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2021-12-11T10:15:11.614891+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.can_ting_ke_li_wu_bian_hua_diao_kong_jing_hua_qi",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2021-12-11T10:15:06.734821+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "friendly_name": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668"
+                                        },
+                                        "last_changed": "2021-12-11T10:02:14.389087+00:00",
+                                        "last_updated": "2021-12-11T10:15:06.760541+00:00",
+                                        "context": {
+                                            "id": "5c990f1cd2635f731ef4ac8ff73aa515",
+                                            "parent_id": "6379ae00b7ac61f10cea769ca8f75a72",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.can_ting_ke_li_wu",
+                                        "from_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "41",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:06.727778+00:00",
+                                            "last_updated": "2021-12-11T10:15:06.727778+00:00",
+                                            "context": {
+                                                "id": "6379ae00b7ac61f10cea769ca8f75a72",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "36",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:11.605209+00:00",
+                                            "last_updated": "2021-12-11T10:15:11.605209+00:00",
+                                            "context": {
+                                                "id": "f61f76154cc2a59cf65a7cea498aa590",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.can_ting_ke_li_wu"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2021-12-11T10:15:11.617316+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "51adba2f84d1057a4dc178dde4137a6a",
+                                        "parent_id": "f61f76154cc2a59cf65a7cea498aa590",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "zhiact",
+                                        "service": "actuate",
+                                        "service_data": {
+                                            "sensor_id": "sensor.can_ting_ke_li_wu",
+                                            "sensor_values": [
+                                                10,
+                                                20,
+                                                50
+                                            ],
+                                            "entity_id": "fan.can_ting_jing_hua_qi",
+                                            "entity_attr": "preset_mode",
+                                            "entity_values": [
+                                                "low",
+                                                "medium",
+                                                "high"
+                                            ]
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "alias": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.can_ting_ke_li_wu"
+                            }
+                        ],
+                        "action": [
+                            {
+                                "service": "zhiact.actuate",
+                                "data": {
+                                    "sensor_id": "sensor.can_ting_ke_li_wu",
+                                    "sensor_values": [
+                                        10,
+                                        20,
+                                        50
+                                    ],
+                                    "entity_id": "fan.can_ting_jing_hua_qi",
+                                    "entity_attr": "preset_mode",
+                                    "entity_values": [
+                                        "low",
+                                        "medium",
+                                        "high"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "51adba2f84d1057a4dc178dde4137a6a",
+                        "parent_id": "f61f76154cc2a59cf65a7cea498aa590",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "5a9ecb1f8945bbf4db3b8b84516d7692",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:11.614604+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "e97fb561f89b3688fa319a1c6906d472",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:16.498606+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2021-12-11T10:15:16.498875+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.can_ting_ke_li_wu_bian_hua_diao_kong_jing_hua_qi",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2021-12-11T10:15:11.615424+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "friendly_name": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668"
+                                        },
+                                        "last_changed": "2021-12-11T10:02:14.389087+00:00",
+                                        "last_updated": "2021-12-11T10:15:11.625317+00:00",
+                                        "context": {
+                                            "id": "51adba2f84d1057a4dc178dde4137a6a",
+                                            "parent_id": "f61f76154cc2a59cf65a7cea498aa590",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.can_ting_ke_li_wu",
+                                        "from_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "36",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:11.605209+00:00",
+                                            "last_updated": "2021-12-11T10:15:11.605209+00:00",
+                                            "context": {
+                                                "id": "f61f76154cc2a59cf65a7cea498aa590",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "35",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:16.488854+00:00",
+                                            "last_updated": "2021-12-11T10:15:16.488854+00:00",
+                                            "context": {
+                                                "id": "283aa799a2be8b5897a76169a441a9aa",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.can_ting_ke_li_wu"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2021-12-11T10:15:16.501303+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "9960b377eb17fbb68b6fd66ff3ab782d",
+                                        "parent_id": "283aa799a2be8b5897a76169a441a9aa",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "zhiact",
+                                        "service": "actuate",
+                                        "service_data": {
+                                            "sensor_id": "sensor.can_ting_ke_li_wu",
+                                            "sensor_values": [
+                                                10,
+                                                20,
+                                                50
+                                            ],
+                                            "entity_id": "fan.can_ting_jing_hua_qi",
+                                            "entity_attr": "preset_mode",
+                                            "entity_values": [
+                                                "low",
+                                                "medium",
+                                                "high"
+                                            ]
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "alias": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.can_ting_ke_li_wu"
+                            }
+                        ],
+                        "action": [
+                            {
+                                "service": "zhiact.actuate",
+                                "data": {
+                                    "sensor_id": "sensor.can_ting_ke_li_wu",
+                                    "sensor_values": [
+                                        10,
+                                        20,
+                                        50
+                                    ],
+                                    "entity_id": "fan.can_ting_jing_hua_qi",
+                                    "entity_attr": "preset_mode",
+                                    "entity_values": [
+                                        "low",
+                                        "medium",
+                                        "high"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "9960b377eb17fbb68b6fd66ff3ab782d",
+                        "parent_id": "283aa799a2be8b5897a76169a441a9aa",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "e97fb561f89b3688fa319a1c6906d472",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:16.498606+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "a7d13a23cd5cd489baa566702445dc75",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:21.383738+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2021-12-11T10:15:21.384065+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.can_ting_ke_li_wu_bian_hua_diao_kong_jing_hua_qi",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2021-12-11T10:15:16.499404+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "friendly_name": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668"
+                                        },
+                                        "last_changed": "2021-12-11T10:02:14.389087+00:00",
+                                        "last_updated": "2021-12-11T10:15:16.509303+00:00",
+                                        "context": {
+                                            "id": "9960b377eb17fbb68b6fd66ff3ab782d",
+                                            "parent_id": "283aa799a2be8b5897a76169a441a9aa",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "state",
+                                        "entity_id": "sensor.can_ting_ke_li_wu",
+                                        "from_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "35",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:16.488854+00:00",
+                                            "last_updated": "2021-12-11T10:15:16.488854+00:00",
+                                            "context": {
+                                                "id": "283aa799a2be8b5897a76169a441a9aa",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "to_state": {
+                                            "entity_id": "sensor.can_ting_ke_li_wu",
+                                            "state": "34",
+                                            "attributes": {
+                                                "unit_of_measurement": "\u03bcg/m\u00b3",
+                                                "friendly_name": "\u9910\u5385\u9897\u7c92\u7269",
+                                                "icon": "mdi:blur",
+                                                "dash_click": "/zhilace-type",
+                                                "dash_extra_forced": "\u5206\u7c7b",
+                                                "dash_relation": "fan.can_ting_jing_hua_qi"
+                                            },
+                                            "last_changed": "2021-12-11T10:15:21.371422+00:00",
+                                            "last_updated": "2021-12-11T10:15:21.371422+00:00",
+                                            "context": {
+                                                "id": "0aebb84b0f340906ae978767569d46e5",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "for": null,
+                                        "attribute": null,
+                                        "description": "state of sensor.can_ting_ke_li_wu"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2021-12-11T10:15:21.386656+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "85f1a18aa7323f2806799e5e3a5a4dab",
+                                        "parent_id": "0aebb84b0f340906ae978767569d46e5",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "zhiact",
+                                        "service": "actuate",
+                                        "service_data": {
+                                            "sensor_id": "sensor.can_ting_ke_li_wu",
+                                            "sensor_values": [
+                                                10,
+                                                20,
+                                                50
+                                            ],
+                                            "entity_id": "fan.can_ting_jing_hua_qi",
+                                            "entity_attr": "preset_mode",
+                                            "entity_values": [
+                                                "low",
+                                                "medium",
+                                                "high"
+                                            ]
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "alias": "\u9910\u5385\u9897\u7c92\u7269\u53d8\u5316-\u8c03\u63a7\u51c0\u5316\u5668",
+                        "trigger": [
+                            {
+                                "platform": "state",
+                                "entity_id": "sensor.can_ting_ke_li_wu"
+                            }
+                        ],
+                        "action": [
+                            {
+                                "service": "zhiact.actuate",
+                                "data": {
+                                    "sensor_id": "sensor.can_ting_ke_li_wu",
+                                    "sensor_values": [
+                                        10,
+                                        20,
+                                        50
+                                    ],
+                                    "entity_id": "fan.can_ting_jing_hua_qi",
+                                    "entity_attr": "preset_mode",
+                                    "entity_values": [
+                                        "low",
+                                        "medium",
+                                        "high"
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "85f1a18aa7323f2806799e5e3a5a4dab",
+                        "parent_id": "0aebb84b0f340906ae978767569d46e5",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "a7d13a23cd5cd489baa566702445dc75",
+                    "state": "running",
+                    "script_execution": null,
+                    "timestamp": {
+                        "start": "2021-12-11T10:15:21.383738+00:00",
+                        "finish": null
+                    },
+                    "domain": "automation",
+                    "item_id": "None",
+                    "trigger": "state of sensor.can_ting_ke_li_wu"
+                }
+            }
+        ]
+    }
+}
