@@ -248,7 +248,8 @@
             "yeelight.light.f315f6209d5116d72ca6f5bbdabb29d5": 2108153880,
             "light.yu_shi_deng": 3901984273,
             "switch.yu_shi_pai_qi_shan": 1185937295,
-            "sensor.can_ting_liang_du": 1506008500
+            "sensor.can_ting_liang_du": 1506008500,
+            "person.person.jiejie": 1729814871
         }
     }
 }

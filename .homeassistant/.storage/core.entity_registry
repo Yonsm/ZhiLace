@@ -1405,6 +1405,40 @@
                 "unit_of_measurement": "s",
                 "original_name": "\u4e66\u623f\u626b\u5730\u673a Sensor Dirty Left",
                 "original_icon": "mdi:eye-outline"
+            },
+            {
+                "entity_id": "person.jie_jie",
+                "config_entry_id": null,
+                "device_id": null,
+                "area_id": null,
+                "unique_id": "jiejie",
+                "platform": "person",
+                "name": null,
+                "icon": null,
+                "disabled_by": null,
+                "capabilities": null,
+                "supported_features": 0,
+                "device_class": null,
+                "unit_of_measurement": null,
+                "original_name": "\u59d0\u59d0",
+                "original_icon": null
+            },
+            {
+                "entity_id": "person.a_yi",
+                "config_entry_id": null,
+                "device_id": null,
+                "area_id": null,
+                "unique_id": "ayi",
+                "platform": "person",
+                "name": null,
+                "icon": null,
+                "disabled_by": null,
+                "capabilities": null,
+                "supported_features": 0,
+                "device_class": null,
+                "unit_of_measurement": null,
+                "original_name": "\u963f\u59e8",
+                "original_icon": null
             }
         ]
     }
