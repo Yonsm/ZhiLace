@@ -9,10 +9,10 @@ if [ -z $1 ]; then HOST=Router; else HOST=$1; fi
 if [ -z $2 ]; then NAME=$HOST; else NAME=$2; fi
 
 if [ "$NAME" = "Router" ]; then
-	WING_HOST=192.168.1.9
+	WING_HOST=192.168.1.8
 	WING_PASS=
 elif [ "$NAME" = "router" ] ||  [ "$NAME" = "ROUTER" ]; then
-	WING_HOST=yonsm.gq
+	WING_HOST=yonsm.cf
 	WING_PASS=" Asdftr99"
 fi
 
