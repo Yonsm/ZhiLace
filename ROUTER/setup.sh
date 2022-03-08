@@ -12,7 +12,7 @@ if [ "$NAME" = "Router" ]; then
 	WING_HOST=192.168.1.8
 	WING_PASS=
 elif [ "$NAME" = "router" ] ||  [ "$NAME" = "ROUTER" ]; then
-	WING_HOST=yonsm.cf
+	WING_HOST=your.gq
 	WING_PASS=" Asdftr99"
 fi
 
