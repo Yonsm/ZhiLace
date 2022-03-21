@@ -147,8 +147,8 @@ cat <<\EOF > config.json
     ],
     "log_level": 1,
     "ssl": {
-        "cert": "/opt/trojan/fullchain.pem",
-        "key": "/opt/trojan/private.key",
+        "cert": "/opt/trojan/ssl.crt",
+        "key": "/opt/trojan/ssl.key",
         "key_password": "",
         "cipher": "ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384",
         "cipher_tls13": "TLS_AES_128_GCM_SHA256:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_256_GCM_SHA384",
@@ -229,8 +229,8 @@ cd /etc/init.d
 chmod 755 trojan
 update-rc.d trojan defaults 95
 
-scp ~/Sites/Yonsm/SSL/yonsm.gq.key yonsm.gq:/opt/trojan/private.key
-scp ~/Sites/Yonsm/SSL/yonsm.gq.crt yonsm.gq:/opt/trojan/fullchain.pem
+scp ~/Sites/Yonsm/SSL/v.your.gq.key v.your.gq:/opt/trojan/ssl.key
+scp ~/Sites/Yonsm/SSL/v.your.gq.crt v.your.gq:/opt/trojan/ssl.crt
 
 
 # Nanling VPS
@@ -240,3 +240,6 @@ cat <<\EOF > /etc/profile.d/trojan.sh
 /opt/trojan/trojan -c /opt/trojan/config.json &
 EOF
 chmod +x /etc/profile.d/trojan.sh
+
+#
+ssh root@45.77.146.204 # L8r,ok?U+8E_243!
