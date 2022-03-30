@@ -4,15 +4,15 @@
 	<TSessionFolder Value="新建文件夹"/>
 	<TDirCompareSession Value=".homeassistant">
 		<Filters>
-			<NameFilter Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-*.git;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./blueprints/;-./modules/*/custom_components/"/>
+			<NameFilter Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-*.git;-./www/.gitignore;-./README.md;-zhilace-type.yaml;-zhilace-zone.yaml;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./blueprints/;-./modules/*/custom_components/;-./extras/homeassistant/;-./extras/deprecated/;-./modules/"/>
 		</Filters>
-		<LastModified Value="2022-03-30 11:54:00"/>
+		<LastModified Value="2022-03-30 12:53:30"/>
 		<Rules>
 			<FollowSymLinks Value="True"/>
 			<UseContentComparison Value="True"/>
 		</Rules>
 		<Specs>
-			<Left Value="/Volumes/DAT/Sites/.homeassistant"/>
+			<Left Value="~/Sites/.homeassistant"/>
 			<Right Value="profile:root@Hass?.homeassistant"/>
 		</Specs>
 		<State>
@@ -20,12 +20,12 @@
 		</State>
 	</TDirCompareSession>
 	<TDirCompareSession Value="homeassistant">
-		<LastModified Value="2022-03-30 12:11:57"/>
+		<LastModified Value="2022-03-30 12:51:47"/>
 		<Rules>
 			<UseContentComparison Value="True"/>
 		</Rules>
 		<Specs>
-			<Left Value="/Volumes/DAT/Sites/.homeassistant/extras/homeassistant"/>
+			<Left Value="~/Sites/.homeassistant/extras/homeassistant"/>
 			<Right Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant"/>
 		</Specs>
 		<State>
@@ -53,14 +53,14 @@
 		<Filters>
 			<NameFilter Value="-./.git/"/>
 		</Filters>
-		<LastModified Value="2022-03-21 11:14:35"/>
+		<LastModified Value="2022-03-30 13:01:41"/>
 		<Rules>
 			<ContentCompareKind Value="ccBinary"/>
 			<FollowSymLinks Value="True"/>
 			<UseTimestampComparison Value="False"/>
 		</Rules>
 		<Specs>
-			<Left Value="/Volumes/DAT/Sites/Yonsm"/>
+			<Left Value="~/Sites/Yonsm"/>
 			<Right Value="profile:admin@iMac?Sites/Yonsm"/>
 		</Specs>
 		<State>
