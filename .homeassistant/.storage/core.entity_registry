@@ -362,13 +362,7 @@
                 "icon": null,
                 "disabled_by": null,
                 "capabilities": {
-                    "fan_speed_list": [
-                        "Silent",
-                        "Standard",
-                        "Medium",
-                        "Turbo",
-                        "Gentle"
-                    ]
+                    "fan_speed_list": []
                 },
                 "supported_features": 14204,
                 "device_class": null,
@@ -1416,28 +1410,11 @@
                 "name": null,
                 "icon": null,
                 "disabled_by": null,
-                "capabilities": null,
+                "capabilities": {},
                 "supported_features": 0,
                 "device_class": null,
                 "unit_of_measurement": null,
                 "original_name": "\u59d0\u59d0",
-                "original_icon": null
-            },
-            {
-                "entity_id": "person.a_yi",
-                "config_entry_id": null,
-                "device_id": null,
-                "area_id": null,
-                "unique_id": "ayi",
-                "platform": "person",
-                "name": null,
-                "icon": null,
-                "disabled_by": null,
-                "capabilities": null,
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": null,
-                "original_name": "\u963f\u59e8",
                 "original_icon": null
             }
         ]

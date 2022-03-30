@@ -371,7 +371,7 @@
                 "disabled_by": "user"
             },
             {
-                "entry_id": "ece2e10b6a05286c7afe1bb6fdb9215b",
+                "entry_id": "bcd9a5c8a1ab06bfd22dcd39a323bb66",
                 "version": 1,
                 "domain": "mobile_app",
                 "title": "gPhone",
@@ -380,25 +380,25 @@
                         "push_token": "cGz9Lwtljk7xpnw4s9my3n:APA91bG8IOkX7edGdMIOtRacHRgdDEoG858cdTeu3JC_VX-W17gbhREJ1mNu5dKsXejMGG_HwzD9JjlRIIPKrdiizEMMRvJXpL2AH8U9zpD8eWqA4kxUJMR3XlTTMgrUOA1RwgBsRmPp",
                         "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
                     },
-                    "app_version": "2021.11.1 (2021.266)",
-                    "app_name": "Home Assistant",
-                    "manufacturer": "Apple",
-                    "os_name": "iOS",
-                    "model": "iPhone14,2",
-                    "device_id": "1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
                     "device_name": "gPhone",
-                    "os_version": "15.1",
+                    "manufacturer": "Apple",
                     "app_id": "io.robbie.HomeAssistant",
+                    "os_name": "iOS",
+                    "app_version": "2022.3 (2022.358)",
+                    "device_id": "7C9408CF-8D4E-4885-92F8-732976E4D43C",
+                    "app_name": "Home Assistant",
+                    "model": "iPhone14,2",
+                    "os_version": "15.4",
                     "supports_encryption": true,
-                    "webhook_id": "5fdb9de9213651e0eb23e6e2be7834bb68c9fbff1e15ab0ca8f459d97084e89f",
-                    "secret": "c97f85a868bc6c0cb061786989ecae0d2fe57aefa1f8cce4562f898d63cfa5b5",
+                    "webhook_id": "0e1c817bfc1e7690bc82d24b1d2083b0fdb2b7f824deef6be0e04e1321f33d9a",
+                    "secret": "ab1ea0a976536da22b44accbcf34d0fcc2b0330fa040fdb3e1f3d2cc3b8bb08f",
                     "user_id": "885ef9c0f6f64c31a332cfaea34be29a"
                 },
                 "options": {},
                 "pref_disable_new_entities": false,
                 "pref_disable_polling": false,
                 "source": "registration",
-                "unique_id": "io.robbie.HomeAssistant-1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB",
+                "unique_id": "io.robbie.HomeAssistant-7C9408CF-8D4E-4885-92F8-732976E4D43C",
                 "disabled_by": null
             }
         ]

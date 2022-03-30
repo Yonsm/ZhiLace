@@ -26,9 +26,9 @@ yphone:
   name: 奶奶手机
   track: true
 
-aphone:
-  name: 阿姨手机
-  track: true
+# aphone:
+#   name: 阿姨手机
+#   track: true
 
 # xphone:
 #   name: 爷爷手机

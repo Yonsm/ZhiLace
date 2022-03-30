@@ -813,8 +813,30 @@
             },
             {
                 "config_entries": [
-                    "ece2e10b6a05286c7afe1bb6fdb9215b"
+                    "bcd9a5c8a1ab06bfd22dcd39a323bb66"
                 ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "7C9408CF-8D4E-4885-92F8-732976E4D43C"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone14,2",
+                "name": "gPhone",
+                "sw_version": "15.4",
+                "entry_type": null,
+                "id": "84ed5c85a0c06eb3e16838481b3bef4e",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null
+            }
+        ],
+        "deleted_devices": [
+            {
+                "config_entries": [],
                 "connections": [],
                 "identifiers": [
                     [
@@ -822,18 +844,9 @@
                         "1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB"
                     ]
                 ],
-                "manufacturer": "Apple",
-                "model": "iPhone14,2",
-                "name": "gPhone",
-                "sw_version": "15.1",
-                "entry_type": null,
                 "id": "b99695ae374cfd2d4c8da0ffe352f4bc",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null,
-                "disabled_by": null
+                "orphaned_timestamp": 1647174162.8196268
             }
-        ],
-        "deleted_devices": []
+        ]
     }
 }
