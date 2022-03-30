@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by Beyond Compare 4 from Scooter Software -->
+<BCPreferences Version="1" MinVersion="1">
+	<TBcPrefs>
+		<OpConfirmCompare Value="False"/>
+		<OpConfirmCopy Value="False"/>
+		<OpConfirmDelete Value="False"/>
+		<OpConfirmMerge Value="False"/>
+		<OpConfirmMove Value="False"/>
+		<OpConfirmMoveReplace Value="False"/>
+		<OpConfirmOverwriteNewer Value="False"/>
+		<OpConfirmOverwriteReadOnly Value="False"/>
+		<OpConfirmOverwriteSysFile Value="False"/>
+		<OpSyncConfirmMode Value="cmYesToAll"/>
+		<TabsConfirmClose Value="False"/>
+		<WindowsConfirmClose Value="False"/>
+		<Workspaces>
+			<Item Value="&#1;">
+				<Windows>
+					<_0>
+						<PosStr Value="0;25;1707;1120;M"/>
+						<Tabs>
+							<_0>
+								<TDirCompareSession>
+									<Filters>
+										<NameFilter Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-*.git;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./blueprints/;-./modules/*/custom_components/"/>
+									</Filters>
+									<Rules>
+										<FollowSymLinks Value="True"/>
+										<UseContentComparison Value="True"/>
+									</Rules>
+									<Specs>
+										<Left Value="/Volumes/DAT/Sites/Yonsm/.homeassistant"/>
+										<Right Value="profile:root@Hass?.homeassistant"/>
+									</Specs>
+									<State>
+										<DisplayFilter Value="[showLeftAdded, showRightAdded, showLeftChanged, showRightChanged, showConflict]"/>
+									</State>
+								</TDirCompareSession>
+								<ZOrder Value="0"/>
+							</_0>
+						</Tabs>
+						<ZOrder Value="0"/>
+					</_0>
+				</Windows>
+			</Item>
+		</Workspaces>
+	</TBcPrefs>
+</BCPreferences>
