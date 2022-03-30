@@ -3,7 +3,7 @@
 <BCProfiles Version="1" MinVersion="1">
 	<TFtpProfile Value="admin@iMac">
 		<Login>
-			<Host Value="i.guoz.ga"/>
+			<Host Value="guoz.gq"/>
 			<Password Value="RS8jKD8+"/>
 			<Protocol Value="fpSFTP"/>
 			<SSHPrivateKeyFile Value="/Users/admin/.ssh/id_rsa"/>
@@ -25,7 +25,7 @@
 		<Login>
 			<Host Value="guoz.ml"/>
 			<Password Value="RS8jKD8+"/>
-			<Port Value="28"/>
+			<Port Value="89"/>
 			<Protocol Value="fpSFTP"/>
 			<SSHPrivateKeyFile Value="/Users/admin/.ssh/id_rsa"/>
 			<SavePassword Value="True"/>
@@ -41,6 +41,8 @@
 				<_2 Value="guoz.ga:10=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCfmZcI5hGeOSyC7blUiqIIKLkjN6jbUYetGO0EVoqSLcdYT49J265Eti5R1pd/MrYSXQDk+pzH89BNKRFtUaJGUmjwjSawgAuFETAUYwr4tjBDmkM1f88SOBrOuTbN21QZtotov8hmVc7cjZmQsgzJhgdWdg1OD32woQfcUdCWF3q3wwsVwZdV0rQDMOLgVidbfgF9NnVrAdETbJHspIwCKcnXIB0VboUtAducGd0Vcss2i+HcNUHogYyikehQYax5AhzJ3n+mIuUjscaeNBmKRqGFqaxGihKu8sk6xHexTb4uWRpAiCv4TNXJWAewIRDWaOGbr8iS8kc9WXpHtH9vDF988Mv1R919cR+H5ZTuE3fJfjzj2ddlnHqli5mFao8J9f40pQ7ahm09+ch/DPZS/opzUHmMrdbHZRk5vXdQA9sYvCqeSwg1Z+kqBNB9UWWhQnbcwI5thRyxU7QwTshB0uyskUOeYZCYnlZ6/+CIqwsJWXn9mAIIr/G/7o5FXyc="/>
 				<_3 Value="guoz.ga:22=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCprP6cTd8ZedT+meLdbiT1GE/SeKp3xITrwfWMAViqSDtu637Plmfhi9TKm6EB7ccfGRwkiUApMn93IGcjexbH4KrV5LYb5Y46bhDITGG1gBz8Me+FqI+DB9MHjVp0jLYLqCOSVW2QKKDD+IHZi3hnu+kHPHC/KtxO69QWFd0KXJrdJ7z910VhYvxGjTJyubwRxo8bux+Y7wtU18YJ3hv1DiiofQZqPV+udILvM7KSHyG5H6VaprvBFbVi1dB4OyY41GVi8Jjkva3OSE/gSzj0SzWVxpXOXZzq46K2wDdNS//wnvCVdqHSTyCKyQkDR+bEUtAdubBEAuoP4FEFZCPxHN8O/+0jnVXGnUKgeYbEPcH27un+ms9lURrIRb3NO6BRdTduNrp1QhBohmSyglkEgV2E4hWguquNeNmh3qOflN/Iht2zsM+pqM72iS0NQvB4iQQxsqrOX3wz0aHaIj+KRUzMnXXTgjf48D13U+RMYhyrKPwccnKJG1lywwPJYz8="/>
 				<_4 Value="i.guoz.ga:22=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCfmZcI5hGeOSyC7blUiqIIKLkjN6jbUYetGO0EVoqSLcdYT49J265Eti5R1pd/MrYSXQDk+pzH89BNKRFtUaJGUmjwjSawgAuFETAUYwr4tjBDmkM1f88SOBrOuTbN21QZtotov8hmVc7cjZmQsgzJhgdWdg1OD32woQfcUdCWF3q3wwsVwZdV0rQDMOLgVidbfgF9NnVrAdETbJHspIwCKcnXIB0VboUtAducGd0Vcss2i+HcNUHogYyikehQYax5AhzJ3n+mIuUjscaeNBmKRqGFqaxGihKu8sk6xHexTb4uWRpAiCv4TNXJWAewIRDWaOGbr8iS8kc9WXpHtH9vDF988Mv1R919cR+H5ZTuE3fJfjzj2ddlnHqli5mFao8J9f40pQ7ahm09+ch/DPZS/opzUHmMrdbHZRk5vXdQA9sYvCqeSwg1Z+kqBNB9UWWhQnbcwI5thRyxU7QwTshB0uyskUOeYZCYnlZ6/+CIqwsJWXn9mAIIr/G/7o5FXyc="/>
+				<_5 Value="guoz.ml:89=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDgMqjkDv21e5rgTkYp6IIra9D1fmROE2+lIZkt5okQ7le6DCEDP6dHYQVFNnN3HBYuKDiIcdFK9xEcW5TDFKJbASodmSG5ULHnGZexDu3r/BJRtNCX5aiCyM5Ucbyr06vHF5h+HaQ484Syla5w6G2wrcG4mjElOpXy3MNYcKEezBlrHwk8KmH3Q47xY+DTF/Zn9ZECgKxHCQCPx2UYvbbYk5+PAUwng5nMQA/VNdMLOA2EBfKyqlrYy2Rpg1miheUXENuPM1fhaz0oHZNa9tvQyRq8EC8G8r2XL4t10ue/jK45hSwH6Y9nq/7FATkbIMC7sssUyP1fwxO0BhP4/BF3"/>
+				<_6 Value="guoz.gq:22=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCfmZcI5hGeOSyC7blUiqIIKLkjN6jbUYetGO0EVoqSLcdYT49J265Eti5R1pd/MrYSXQDk+pzH89BNKRFtUaJGUmjwjSawgAuFETAUYwr4tjBDmkM1f88SOBrOuTbN21QZtotov8hmVc7cjZmQsgzJhgdWdg1OD32woQfcUdCWF3q3wwsVwZdV0rQDMOLgVidbfgF9NnVrAdETbJHspIwCKcnXIB0VboUtAducGd0Vcss2i+HcNUHogYyikehQYax5AhzJ3n+mIuUjscaeNBmKRqGFqaxGihKu8sk6xHexTb4uWRpAiCv4TNXJWAewIRDWaOGbr8iS8kc9WXpHtH9vDF988Mv1R919cR+H5ZTuE3fJfjzj2ddlnHqli5mFao8J9f40pQ7ahm09+ch/DPZS/opzUHmMrdbHZRk5vXdQA9sYvCqeSwg1Z+kqBNB9UWWhQnbcwI5thRyxU7QwTshB0uyskUOeYZCYnlZ6/+CIqwsJWXn9mAIIr/G/7o5FXyc="/>
 			</TrustedKeys>
 		</Global>
 	</TFtpDefaultProfile>
