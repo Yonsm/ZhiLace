@@ -1,6 +1,6 @@
 #!/bin/sh
 
-LAN_DOMAIN=yonsm.tk
+LAN_DOMAIN=guoz.ga
 PPOE_NAME=057101258602
 PPPOE_PASS=08065222
 ADMIN_PASS=gjzgqz
@@ -58,7 +58,7 @@ if [ "$1" = "Router" ]; then
 	nvram set wan_pppoe_passwd=$PPPOE_PASS
 
 	# VTS
-	MAPS="RT2,82,2 RT3,83,3 DSM,5001,4 SSH,23,9 HAS,8123,9 VNC,5900,10 "
+	MAPS="HASS,81:89,7 MAC,22,10 VNC,5900,10 "
 	nvram set vts_enable_x=1
 	nvram set vts_num_x=`echo "$MAPS" | tr -cd ' ' | wc -c`
 	IDX="0"

@@ -1,3 +1,6 @@
 #!/bin/sh
 sync && echo 3 > /proc/sys/vm/drop_caches
-wing yonsm.gq 443 Asdftr99
+
+mdev -s
+
+wing start socks5:192.168.1.8
