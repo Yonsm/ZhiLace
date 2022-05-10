@@ -22,7 +22,7 @@
 	</TBcState>
 	<TCheckForUpdatesState>
 		<Build Value="26348"/>
-		<LastChecked Value="2022-03-30 10:53:22"/>
+		<LastChecked Value="2022-04-28 21:27:05"/>
 		<MsgBody Value="Beyond Compare is not affected by the Log4J vulnerability. Our IT systems are also secured against it."/>
 		<MsgDate Value="2021-12-23 00:00:00"/>
 		<MsgTitle Value="LOG4J"/>
@@ -40,9 +40,9 @@
 	</TDataCompareState>
 	<TDirCompareState>
 		<LeftMRUSpecs>
-			<_0 Value="~/Sites/Yonsm"/>
-			<_1 Value="~/Sites/.homeassistant/extras/homeassistant"/>
-			<_2 Value="~/Sites/.homeassistant"/>
+			<_0 Value="~/Sites/.homeassistant"/>
+			<_1 Value="~/Sites/Yonsm"/>
+			<_2 Value="~/Sites/.homeassistant/extras/homeassistant"/>
 			<_3 Value="/Volumes/DAT/Sites/.homeassistant/extras/homeassistant"/>
 			<_4 Value="/Volumes/DAT/Sites/Yonsm"/>
 			<_5 Value="/Volumes/DAT/Sites/.homeassistant"/>
@@ -51,8 +51,8 @@
 			<_8 Value="/Volumes/DAT/Sites/.homeassistant/extras/test"/>
 		</LeftMRUSpecs>
 		<MRUFilters>
-			<_0 Value="-./.git/"/>
-			<_1 Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-*.git;-./www/.gitignore;-./README.md;-zhilace-type.yaml;-zhilace-zone.yaml;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./blueprints/;-./modules/*/custom_components/;-./extras/homeassistant/;-./extras/deprecated/;-./modules/"/>
+			<_0 Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-*.git;-./www/.gitignore;-./README.md;-zhilace-type.yaml;-zhilace-zone.yaml;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./blueprints/;-./modules/*/custom_components/;-./extras/homeassistant/;-./extras/deprecated/;-./modules/"/>
+			<_1 Value="-./.git/"/>
 			<_2 Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-*.git;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./blueprints/;-./modules/*/custom_components/"/>
 			<_3 Value="-.config;-*.o;-config_done;-rt2860apd;-dnsmasq;-./trunk/user/httpd/httpd;-./trunk/user/igmpproxy/igmpproxy;-./trunk/user/infosvr/infosvr;-./trunk/user/miniupnpd/miniupnpd;-./trunk/user/lanauth/lanauth;-./trunk/user/lldt/lld2d;-./trunk/user/mtd_write/mtd_write;-./trunk/user/networkmap/networkmap;-./trunk/user/nvram/nvram;-./trunk/user/pppoe/pppoe-discovery;-./trunk/user/rc/rc;-libshared.so;-./trunk/user/tcpdump/tcpdump;-./trunk/user/udpxy/udpxrec;-./trunk/user/udpxy/udpxy;-./trunk/user/udpxy/udpxy.dep;-./trunk/user/shared/include/ralink_board.h;-./trunk/user/shared/board.mk;-./trunk/user/wireless_tools/ifrename;-./trunk/user/wireless_tools/ifrename.d;-./trunk/user/wireless_tools/iwconfig;-./trunk/user/wireless_tools/iwconfig.d;-./trunk/user/wireless_tools/iwevent;-./trunk/user/wireless_tools/iwevent.d;-./trunk/user/wireless_tools/iwgetid;-./trunk/user/wireless_tools/iwgetid.d;-./trunk/user/wireless_tools/iwlib.d;-./trunk/user/wireless_tools/iwlib.so;-./trunk/user/wireless_tools/iwlist;-./trunk/user/wireless_tools/iwlist.d;-./trunk/user/wireless_tools/iwpriv;-./trunk/user/wireless_tools/iwpriv.d;-./trunk/user/wireless_tools/iwspy;-./trunk/user/wireless_tools/iwspy.d;-./trunk/user/wireless_tools/libiw.so;-./trunk/user/wireless_tools/libiw.so.30;-./trunk/user/wireless_tools/wireless.h;-./trunk/user/wpa_supplicant/wpa_supplicant/wpa_cli;-./trunk/user/wpa_supplicant/wpa_supplicant/wpa_supplicant;-./trunk/user/xl2tpd/xl2tpd;-cpu;-hw_nat;-qdma;-mii_mgr;-mii_mgr_cl45;-switch;-./trunk/user/libdisk/libdisk.so;-./trunk/user/libdisk/test_share;-./trunk/user/wsdd2/wsdd2;-./trunk/user/uqmi/qmi-errors.c;-./trunk/user/uqmi/qmi-message-ctl.h;-./trunk/user/uqmi/qmi-message-dms.h;-./trunk/user/uqmi/qmi-message-nas.h;-./trunk/user/uqmi/qmi-message-pds.h;-./trunk/user/uqmi/qmi-message-wds.h;-./trunk/user/uqmi/qmi-message-wms.h;-./trunk/user/uqmi/uqmi;-./trunk/user/usb-modeswitch/usb_modeswitch;-./trunk/user/vsftpd/vsftpd;-./trunk/user/shadowsocks/ss_config_done;-./trunk/user/shadowsocks/ssr_config_done;-./trunk/user/u2ec/u2ec;-./trunk/user/LPRng/header;-./trunk/user/LPRng/init.freebsd;-./trunk/user/LPRng/init.linux;-./trunk/user/LPRng/init.linuxsb;-./trunk/user/LPRng/init.redhat;-./trunk/user/LPRng/init.solaris;-./trunk/user/LPRng/lpd.conf;-./trunk/user/LPRng/ltmain;-./trunk/user/LPRng/postinstall;-./trunk/user/LPRng/postinstall.freebsd;-./trunk/user/LPRng/postinstall.generic;-./trunk/user/LPRng/postinstall.linux;-./trunk/user/LPRng/postinstall.solaris;-./trunk/user/LPRng/postremove;-./trunk/user/LPRng/postremove.generic;-./trunk/user/LPRng/postremove.solaris;-./trunk/user/LPRng/preinstall.solaris;-./trunk/user/LPRng/preremove;-./trunk/user/LPRng/preremove.freebsd;-./trunk/user/LPRng/preremove.generic;-./trunk/user/LPRng/preremove.linux;-./trunk/user/LPRng/preremove.solaris;-./trunk/user/p910nd/p910nd;-./trunk/user/dosfstools/fsck.fat;-./trunk/user/hdparm/hdparm;-comgt;-./trunk/user/aria2/ariaweb/index.html;-./trunk/user/aria2/ariaweb/LICENSE;-./trunk/user/chnroute/chnroute.bz2;-./trunk/user/chnroute/chnroute.txt;-./trunk/user/nginx/nginx-1.21.4/Makefile;-./toolchain-mipsel/;-./trunk/images/;-./trunk/linux-3.4.x/;-./trunk/romfs/;-./trunk/stage/;-./trunk/tools/;-./.git/;-./.github/;-./trunk/user/ipset/ipset-6.x/;-./trunk/user/accel-pptpd/pptpd-1.3.3/;-./trunk/user/aria2/aria2-1.35.0/;-./trunk/user/busybox/busybox-1.24.x/;-./trunk/user/coremark/coremark-2e9d6165f362f7071d29b7f88c6d32655e5d4a3c/;-./trunk/user/dnsmasq/dnsmasq-2.7x/;-./trunk/user/dosfstools/dosfstools-4.1/;-./trunk/user/e2fsprogs/e2fsprogs-1.45.3/;-./trunk/user/ebtables/ebtables-2.0.10-4/;-./trunk/user/htop/htop-3.0.2/;-./trunk/user/igmpproxy/igmpproxy-0.1/;-./trunk/user/iperf3/iperf-3.7/;-./trunk/user/iproute2/iproute2-3.4.0/;-./trunk/user/inadyn/src/;-./trunk/user/miniupnpd/miniupnpd-2.x/;-./trunk/user/mtd-utils/mtd-utils-2.0.2/;-./trunk/user/ipt2socks/ipt2socks-1.1.2/;-./trunk/user/iptables/iptables-1.4.16.3/;-./trunk/user/mtr/mtr-0.92/;-./trunk/user/nano/nano-3.0/;-./trunk/user/nfs-utils/nfs-utils-1.2.8/;-./trunk/user/openssh/openssh-8.1p1/;-./trunk/user/openvpn/openvpn-2.4.x/;-./trunk/user/parted/parted-3.2/;-./trunk/user/pppd/chat/;-./trunk/user/pppd/pppd/;-./trunk/user/pppd/pppdump/;-./trunk/user/pppd/pppstats/;-./trunk/user/redsocks/redsocks-19b822e/;-./trunk/user/samba36/samba-3.6.25/;-./trunk/user/shortcut-fe/shortcut-fe/;-./trunk/user/socat/socat-1.7.3.3/;-./trunk/user/tcpdump/tcpdump-4.9.2/;-./trunk/user/transmission/transmission-3.00/;-./trunk/user/trojan/trojan-1.16.0/;-./trunk/user/util-linux/util-linux-2.33.1/;-./trunk/user/wireguard-tools/wireguard-tools-1.0.20200827/;-./trunk/user/wpa_supplicant/src/drivers/;-./trunk/user/wpa_supplicant/wpa_supplicant/dbus/;-./trunk/user/wpa_supplicant/wpa_supplicant/systemd/;-./trunk/user/shadowsocks/shadowsocks-libev-3.3.5/;-./trunk/user/utils/hub-ctrl/;-./trunk/libs/boost/;-./trunk/libs/c-ares/;-./trunk/libs/libav/;-./trunk/libs/libcurl/;-./trunk/libs/libev/;-./trunk/libs/libevent/;-./trunk/libs/libexif/;-./trunk/libs/libflac/;-./trunk/libs/libiconv/;-./trunk/libs/libid3tag/;-./trunk/libs/libjpeg/;-./trunk/libs/libjson-c/;-./trunk/libs/liblzo/;-./trunk/libs/libmnl/;-./trunk/libs/libncurses/;-./trunk/libs/libnfnetlink/;-./trunk/libs/libogg/;-./trunk/libs/libpcap/;-./trunk/libs/libpcre/;-./trunk/libs/librtlsdr/;-./trunk/libs/libsodium/;-./trunk/libs/libsqlite/;-./trunk/libs/libssl/;-./trunk/libs/libtirpc/;-./trunk/libs/libudns/;-./trunk/libs/libusb/;-./trunk/libs/libusb-1.0/;-./trunk/libs/libuv/;-./trunk/libs/libvorbis/;-./trunk/libs/libwebsockets/;-./trunk/libs/libxml2/;-./trunk/libs/libz/;-./trunk/libs/mbedtls/;-./trunk/libs/readline/;-./trunk/user/uqmi/libubox/;-./trunk/user/transmission/install/;-./trunk/user/shadowsocks/gfwlist/;-./trunk/user/shadowsocks/shadowsocksr-libev-master/;-./trunk/user/LPRng/man/;-./trunk/user/LPRng/src/;-./trunk/user/rpcbind/rpcbind-91973cc/;-./trunk/user/aria2/ariaweb/;-./trunk/user/frp/frp_0.29.0_linux_mipsle/;-./trunk/user/nginx/nginx-1.21.4/objs/"/>
 			<_4 Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-*.git;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./extras/;-./blueprints/;-./modules/*/custom_components/"/>
@@ -62,9 +62,9 @@
 			<_8 Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./extras/;-./blueprints/;-./modules/*/custom_components/"/>
 		</MRUFilters>
 		<RightMRUSpecs>
-			<_0 Value="profile:admin@iMac?Sites/Yonsm"/>
-			<_1 Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant"/>
-			<_2 Value="profile:root@Hass?.homeassistant"/>
+			<_0 Value="profile:root@Hass?.homeassistant"/>
+			<_1 Value="profile:admin@iMac?Sites/Yonsm"/>
+			<_2 Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant"/>
 			<_3 Value="profile:admin@iMac?/"/>
 			<_4 Value="profile:admin@iMac?/home"/>
 			<_5 Value="profile:admin@iMac"/>
@@ -102,7 +102,7 @@
 	</THexCompareState>
 	<THomeState>
 		<NewExpanded Value="True"/>
-		<SessionName Value="Yonsm"/>
+		<SessionName Value=".homeassistant"/>
 		<SessionType Value="TDirCompareSession"/>
 	</THomeState>
 	<TOpCopyToState>
@@ -140,29 +140,29 @@
 	</TPixCompareState>
 	<TTextCompareState>
 		<LeftMRUSpecs>
-			<_0 Value="/Users/admin/Sites/.homeassistant/.storage/homekit.3db5e5bd05654274aef0436be6681d67.state"/>
-			<_1 Value="/Users/admin/Sites/.homeassistant/.storage/auth"/>
-			<_2 Value="/Volumes/DAT/Sites/Yonsm/Beyond Compare/BCState.xml"/>
-			<_3 Value="/Volumes/DAT/Sites/Yonsm/.zshrc"/>
-			<_4 Value="/Volumes/DAT/Sites/.homeassistant/extras/homeassistant/auth/const.py"/>
-			<_5 Value="/Volumes/DAT/Sites/Yonsm/Beyond Compare/BCSessions.xml"/>
-			<_6 Value="/Volumes/DAT/Sites/Yonsm/Beyond Compare/BCProfiles.xml"/>
-			<_7 Value="/Volumes/DAT/Sites/Yonsm/Beyond Compare/BCPreferences.xml"/>
-			<_8 Value="/Volumes/DAT/Sites/Yonsm/.homeassistant/secrets.yaml"/>
+			<_0 Value="/Users/admin/Sites/.homeassistant/automations/air.yaml"/>
+			<_1 Value="/Users/admin/Sites/.homeassistant/automations/cube.yaml"/>
+			<_2 Value="/Users/admin/Sites/.homeassistant/automations/door.yaml"/>
+			<_3 Value="/Users/admin/Sites/.homeassistant/automations/pm25.yaml"/>
+			<_4 Value="/Users/admin/Sites/.homeassistant/customize.yaml"/>
+			<_5 Value="/Users/admin/Sites/.homeassistant/sensors.yaml"/>
+			<_6 Value="/Users/admin/Sites/.homeassistant/custom_components/zhibot/zhichat/__init__.py"/>
+			<_7 Value="/Users/admin/Sites/.homeassistant/.storage/homekit.3db5e5bd05654274aef0436be6681d67.state"/>
+			<_8 Value="/Users/admin/Sites/.homeassistant/.storage/auth"/>
 		</LeftMRUSpecs>
 		<MRUFonts>
 			<_0 Value="Andale Mono;12"/>
 		</MRUFonts>
 		<RightMRUSpecs>
-			<_0 Value="profile:root@Hass?.homeassistant/.storage/homekit.3db5e5bd05654274aef0436be6681d67.state"/>
-			<_1 Value="profile:root@Hass?.homeassistant/.storage/auth"/>
-			<_2 Value="profile:root@Hass?.homeassistant/extras/test/test_genie.py"/>
-			<_3 Value="profile:admin@iMac?Sites/Yonsm/Beyond Compare/BCState.xml"/>
-			<_4 Value="profile:admin@iMac?Sites/Yonsm/.zshrc"/>
-			<_5 Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant/auth/const.py"/>
-			<_6 Value="profile:admin@iMac?Sites/Yonsm/Beyond Compare/BCSessions.xml"/>
-			<_7 Value="profile:admin@iMac?Sites/Yonsm/Beyond Compare/BCProfiles.xml"/>
-			<_8 Value="profile:admin@iMac?Sites/Yonsm/Beyond Compare/BCPreferences.xml"/>
+			<_0 Value="profile:root@Hass?.homeassistant/automations/air.yaml"/>
+			<_1 Value="profile:root@Hass?.homeassistant/automations/cube.yaml"/>
+			<_2 Value="profile:root@Hass?.homeassistant/automations/door.yaml"/>
+			<_3 Value="profile:root@Hass?.homeassistant/automations/pm25.yaml"/>
+			<_4 Value="profile:root@Hass?.homeassistant/customize.yaml"/>
+			<_5 Value="profile:root@Hass?.homeassistant/sensors.yaml"/>
+			<_6 Value="profile:root@Hass?.homeassistant/custom_components/zhibot/zhichat/__init__.py"/>
+			<_7 Value="profile:root@Hass?.homeassistant/www/1230.html"/>
+			<_8 Value="profile:root@Hass?.homeassistant/.storage/homekit.3db5e5bd05654274aef0436be6681d67.state"/>
 		</RightMRUSpecs>
 	</TTextCompareState>
 	<TTextFindState>
