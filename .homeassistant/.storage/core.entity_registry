@@ -352,25 +352,6 @@
                 "original_icon": null
             },
             {
-                "entity_id": "vacuum.shu_fang_sao_di_ji",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": null,
-                "capabilities": {
-                    "fan_speed_list": []
-                },
-                "supported_features": 14204,
-                "device_class": null,
-                "unit_of_measurement": null,
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a",
-                "original_icon": null
-            },
-            {
                 "entity_id": "climate.ke_ting_kong_diao",
                 "config_entry_id": null,
                 "device_id": null,
@@ -823,27 +804,6 @@
                 "original_icon": null
             },
             {
-                "entity_id": "light.shu_fang_liang_yi_deng",
-                "config_entry_id": null,
-                "device_id": null,
-                "area_id": null,
-                "unique_id": "zhimrbondlight.shu_fang_liang_yi_deng",
-                "platform": "zhimrbond",
-                "name": null,
-                "icon": null,
-                "disabled_by": null,
-                "capabilities": {
-                    "supported_color_modes": [
-                        "onoff"
-                    ]
-                },
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": null,
-                "original_name": "\u4e66\u623f\u667e\u8863\u706f",
-                "original_icon": null
-            },
-            {
                 "entity_id": "vacuum.yu_shi_xi_yi_ji",
                 "config_entry_id": null,
                 "device_id": null,
@@ -1246,161 +1206,6 @@
                 "original_icon": "mdi:progress-clock"
             },
             {
-                "entity_id": "sensor.shu_fang_sao_di_ji_dnd_start",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "dnd_start_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {},
-                "supported_features": 0,
-                "device_class": "timestamp",
-                "unit_of_measurement": null,
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a DnD Start",
-                "original_icon": "mdi:minus-circle-off"
-            },
-            {
-                "entity_id": "sensor.shu_fang_sao_di_ji_dnd_end",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "dnd_end_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {},
-                "supported_features": 0,
-                "device_class": "timestamp",
-                "unit_of_measurement": null,
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a DnD End",
-                "original_icon": "mdi:minus-circle-off"
-            },
-            {
-                "entity_id": "sensor.shu_fang_sao_di_ji_total_duration",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "clean_history_total_duration_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {},
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": "s",
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a Total duration",
-                "original_icon": "mdi:timer-sand"
-            },
-            {
-                "entity_id": "sensor.shu_fang_sao_di_ji_total_clean_area",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "clean_history_total_area_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {},
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": "m\u00b2",
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a Total Clean Area",
-                "original_icon": "mdi:texture-box"
-            },
-            {
-                "entity_id": "sensor.shu_fang_sao_di_ji_total_clean_count",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "clean_history_count_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {
-                    "state_class": "total_increasing"
-                },
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": "",
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a Total Clean Count",
-                "original_icon": "mdi:counter"
-            },
-            {
-                "entity_id": "sensor.shu_fang_sao_di_ji_main_brush_left",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "consumable_main_brush_left_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {},
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": "s",
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a Main Brush Left",
-                "original_icon": "mdi:brush"
-            },
-            {
-                "entity_id": "sensor.shu_fang_sao_di_ji_side_brush_left",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "consumable_side_brush_left_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {},
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": "s",
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a Side Brush Left",
-                "original_icon": "mdi:brush"
-            },
-            {
-                "entity_id": "sensor.shu_fang_sao_di_ji_filter_left",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "consumable_filter_left_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {},
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": "s",
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a Filter Left",
-                "original_icon": "mdi:air-filter"
-            },
-            {
-                "entity_id": "sensor.shu_fang_sao_di_ji_sensor_dirty_left",
-                "config_entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "device_id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "area_id": null,
-                "unique_id": "consumable_sensor_dirty_left_64:90:c1:08:d5:42",
-                "platform": "xiaomi_miio",
-                "name": null,
-                "icon": null,
-                "disabled_by": "integration",
-                "capabilities": {},
-                "supported_features": 0,
-                "device_class": null,
-                "unit_of_measurement": "s",
-                "original_name": "\u4e66\u623f\u626b\u5730\u673a Sensor Dirty Left",
-                "original_icon": "mdi:eye-outline"
-            },
-            {
                 "entity_id": "person.jie_jie",
                 "config_entry_id": null,
                 "device_id": null,
@@ -1415,6 +1220,48 @@
                 "device_class": null,
                 "unit_of_measurement": null,
                 "original_name": "\u59d0\u59d0",
+                "original_icon": null
+            },
+            {
+                "entity_id": "light.yu_shi_yu_ba_deng",
+                "config_entry_id": null,
+                "device_id": null,
+                "area_id": null,
+                "unique_id": "zhimilight.yu_shi_yu_ba_deng",
+                "platform": "zhimijia",
+                "name": null,
+                "icon": null,
+                "disabled_by": null,
+                "capabilities": {
+                    "supported_color_modes": [
+                        "brightness"
+                    ]
+                },
+                "supported_features": 1,
+                "device_class": null,
+                "unit_of_measurement": null,
+                "original_name": "\u6d74\u5ba4\u6d74\u9738\u706f",
+                "original_icon": null
+            },
+            {
+                "entity_id": "light.shu_fang_liang_yi_deng",
+                "config_entry_id": null,
+                "device_id": null,
+                "area_id": null,
+                "unique_id": "zhimilight.shu_fang_liang_yi_deng",
+                "platform": "zhimijia",
+                "name": null,
+                "icon": null,
+                "disabled_by": null,
+                "capabilities": {
+                    "supported_color_modes": [
+                        "onoff"
+                    ]
+                },
+                "supported_features": 0,
+                "device_class": null,
+                "unit_of_measurement": null,
+                "original_name": "\u4e66\u623f\u667e\u8863\u706f",
                 "original_icon": null
             }
         ]

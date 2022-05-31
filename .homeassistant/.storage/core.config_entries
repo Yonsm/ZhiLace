@@ -196,25 +196,6 @@
                 "disabled_by": null
             },
             {
-                "entry_id": "f31fe2fccf8e384628c85c1fe7a35e77",
-                "version": 1,
-                "domain": "xiaomi_miio",
-                "title": "\u4e66\u623f\u626b\u5730\u673a",
-                "data": {
-                    "config_flow_device": "device",
-                    "host": "Vacuum",
-                    "token": "366c45696155624e3566674c72314f39",
-                    "model": "roborock.vacuum.a11",
-                    "mac": "64:90:c1:08:d5:42"
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "user",
-                "unique_id": "64:90:c1:08:d5:42",
-                "disabled_by": null
-            },
-            {
                 "entry_id": "be0b01bcae9522072c6df2145e60327e",
                 "version": 1,
                 "domain": "broadlink",

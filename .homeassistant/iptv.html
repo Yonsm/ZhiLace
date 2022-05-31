@@ -4,25 +4,53 @@
 	<head>
 		<title>数字电视</title>
 		<meta charset="utf-8" />
+		<script>
+			function parse(text) {
+				var options = document.getElementById('menu').options
+				options.length = 0
+
+				var pairs = text.split('\r\n#EXTINF:')
+				for (var i = 1; i < pairs.length; i++) {
+					var pair = pairs[i]
+					var parts = pair.split('\r\n')
+					var metas = parts[0].split(',')
+					var title = metas[metas.length - 1].trim()
+					var url = parts[1]
+
+					options.add(new Option(title, url))
+				}
+
+				if (localStorage.hasOwnProperty('lastChannel')) {
+					var lastChannel = localStorage["lastChannel"]
+					options[lastChannel].selected = true
+				}
+
+				toggle()
+			}
+
+			function toggle() {
+				var menu = document.getElementById('menu')
+				var channel = menu.selectedIndex
+				var option = menu.options[channel]
+				console.log("切换到 " + option.text + "：" + option.value)
+
+				var video = document.getElementById('video')
+				video.innerHTML = '<source type="application/x-mpegURL" src="' + option.value + '" />'
+				localStorage["lastChannel"] = channel
+			}
+
+			function load() {
+				fetch('iptv.m3u8').then(response => response.text()).then(text => parse(text))
+			}
+		</script>
 	</head>
 
-	<body>
-		<video height="100%" width="100%" controls autoplay>
-			<source src="https://yonsm.gq:8123/local/iptv.m3u8" type="application/x-mpegURL" />
+	<body onload="load()">
+		<video id="video" height="100%" width="100%" controls autoplay muted playsinline>
 		</video>
-
-		<!-- <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
-		<video id="video" height="100%" width="100%" controls></video>
-		<script>
-			if (Hls.isSupported()) {
-				var video = document.getElementById('video');
-				var hls = new Hls();
-				hls.loadSource('https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8');
-				hls.attachMedia(video);
-				hls.on(Hls.Events.MANIFEST_PARSED, function () { video.play(); });
-			}
-		</script> -->
- 
+		<select id="menu" onchange="toggle()">
+			<option>加载中</option>
+		</select>
 	</body>
 
 </html>

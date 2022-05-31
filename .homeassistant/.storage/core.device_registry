@@ -93,33 +93,6 @@
             },
             {
                 "config_entries": [
-                    "f31fe2fccf8e384628c85c1fe7a35e77"
-                ],
-                "connections": [
-                    [
-                        "mac",
-                        "64:90:c1:08:d5:42"
-                    ]
-                ],
-                "identifiers": [
-                    [
-                        "xiaomi_miio",
-                        "64:90:c1:08:d5:42"
-                    ]
-                ],
-                "manufacturer": "Xiaomi",
-                "model": "roborock.vacuum.a11",
-                "name": "\u4e66\u623f\u626b\u5730\u673a",
-                "sw_version": null,
-                "entry_type": null,
-                "id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null,
-                "disabled_by": null
-            },
-            {
-                "config_entries": [
                     "7f6d9c95fa12499196ea550d28992988"
                 ],
                 "connections": [],
@@ -837,15 +810,20 @@
         "deleted_devices": [
             {
                 "config_entries": [],
-                "connections": [],
-                "identifiers": [
+                "connections": [
                     [
-                        "mobile_app",
-                        "1CF8BAC2-B4CF-4935-B30A-431DAD26C1EB"
+                        "mac",
+                        "64:90:c1:08:d5:42"
                     ]
                 ],
-                "id": "b99695ae374cfd2d4c8da0ffe352f4bc",
-                "orphaned_timestamp": 1647174162.8196268
+                "identifiers": [
+                    [
+                        "xiaomi_miio",
+                        "64:90:c1:08:d5:42"
+                    ]
+                ],
+                "id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
+                "orphaned_timestamp": 1652489646.175601
             }
         ]
     }

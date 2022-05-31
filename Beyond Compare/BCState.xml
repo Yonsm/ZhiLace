@@ -22,7 +22,7 @@
 	</TBcState>
 	<TCheckForUpdatesState>
 		<Build Value="26348"/>
-		<LastChecked Value="2022-04-28 21:27:05"/>
+		<LastChecked Value="2022-05-23 20:14:18"/>
 		<MsgBody Value="Beyond Compare is not affected by the Log4J vulnerability. Our IT systems are also secured against it."/>
 		<MsgDate Value="2021-12-23 00:00:00"/>
 		<MsgTitle Value="LOG4J"/>
@@ -41,14 +41,14 @@
 	<TDirCompareState>
 		<LeftMRUSpecs>
 			<_0 Value="~/Sites/.homeassistant"/>
-			<_1 Value="~/Sites/Yonsm"/>
-			<_2 Value="~/Sites/.homeassistant/extras/homeassistant"/>
-			<_3 Value="/Volumes/DAT/Sites/.homeassistant/extras/homeassistant"/>
-			<_4 Value="/Volumes/DAT/Sites/Yonsm"/>
-			<_5 Value="/Volumes/DAT/Sites/.homeassistant"/>
-			<_6 Value="/Volumes/DAT/Sites/Yonsm/.homeassistant"/>
-			<_7 Value="/Users/admin/.ssh"/>
-			<_8 Value="/Volumes/DAT/Sites/.homeassistant/extras/test"/>
+			<_1 Value="/Users/admin/Sites/Yonsm/GUOZ.GQ"/>
+			<_2 Value="~/Sites/Yonsm"/>
+			<_3 Value="~/Sites/.homeassistant/extras/homeassistant"/>
+			<_4 Value="/Volumes/DAT/Sites/.homeassistant/extras/homeassistant"/>
+			<_5 Value="/Volumes/DAT/Sites/Yonsm"/>
+			<_6 Value="/Volumes/DAT/Sites/.homeassistant"/>
+			<_7 Value="/Volumes/DAT/Sites/Yonsm/.homeassistant"/>
+			<_8 Value="/Users/admin/.ssh"/>
 		</LeftMRUSpecs>
 		<MRUFilters>
 			<_0 Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-*.git;-./www/.gitignore;-./README.md;-zhilace-type.yaml;-zhilace-zone.yaml;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./blueprints/;-./modules/*/custom_components/;-./extras/homeassistant/;-./extras/deprecated/;-./modules/"/>
@@ -63,14 +63,14 @@
 		</MRUFilters>
 		<RightMRUSpecs>
 			<_0 Value="profile:root@Hass?.homeassistant"/>
-			<_1 Value="profile:admin@iMac?Sites/Yonsm"/>
-			<_2 Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant"/>
-			<_3 Value="profile:admin@iMac?/"/>
-			<_4 Value="profile:admin@iMac?/home"/>
-			<_5 Value="profile:admin@iMac"/>
-			<_6 Value="profile:admin@iMac?/home/admin"/>
-			<_7 Value="profile:root@Hass?/usr/lib/python3.9/site-packages"/>
-			<_8 Value="profile:root@Hass?/usr/lib/python3.9"/>
+			<_1 Value="/Users/admin/Sites/Yonsm/ROUTER"/>
+			<_2 Value="profile:admin@iMac?Sites/Yonsm"/>
+			<_3 Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant"/>
+			<_4 Value="profile:admin@iMac?/"/>
+			<_5 Value="profile:admin@iMac?/home"/>
+			<_6 Value="profile:admin@iMac"/>
+			<_7 Value="profile:admin@iMac?/home/admin"/>
+			<_8 Value="profile:root@Hass?/usr/lib/python3.9/site-packages"/>
 		</RightMRUSpecs>
 	</TDirCompareState>
 	<THexCompareState>
@@ -140,29 +140,29 @@
 	</TPixCompareState>
 	<TTextCompareState>
 		<LeftMRUSpecs>
-			<_0 Value="/Users/admin/Sites/.homeassistant/automations/air.yaml"/>
-			<_1 Value="/Users/admin/Sites/.homeassistant/automations/cube.yaml"/>
-			<_2 Value="/Users/admin/Sites/.homeassistant/automations/door.yaml"/>
-			<_3 Value="/Users/admin/Sites/.homeassistant/automations/pm25.yaml"/>
-			<_4 Value="/Users/admin/Sites/.homeassistant/customize.yaml"/>
-			<_5 Value="/Users/admin/Sites/.homeassistant/sensors.yaml"/>
-			<_6 Value="/Users/admin/Sites/.homeassistant/custom_components/zhibot/zhichat/__init__.py"/>
+			<_0 Value="/Users/admin/Sites/.homeassistant/.storage/core.entity_registry"/>
+			<_1 Value="/Users/admin/Sites/.homeassistant/lights.yaml"/>
+			<_2 Value="/Users/admin/Sites/.homeassistant/customize.yaml"/>
+			<_3 Value="/Users/admin/Sites/.homeassistant/configuration.yaml"/>
+			<_4 Value="/Users/admin/Sites/.homeassistant/www/iptv.html"/>
+			<_5 Value="/Users/admin/Sites/.homeassistant/custom_components/zhimi/entity.py"/>
+			<_6 Value="/Users/admin/Sites/.homeassistant/custom_components/zhimi/__init__.py"/>
 			<_7 Value="/Users/admin/Sites/.homeassistant/.storage/homekit.3db5e5bd05654274aef0436be6681d67.state"/>
-			<_8 Value="/Users/admin/Sites/.homeassistant/.storage/auth"/>
+			<_8 Value="/Users/admin/Sites/.homeassistant/custom_components/zhimi/light.py"/>
 		</LeftMRUSpecs>
 		<MRUFonts>
 			<_0 Value="Andale Mono;12"/>
 		</MRUFonts>
 		<RightMRUSpecs>
-			<_0 Value="profile:root@Hass?.homeassistant/automations/air.yaml"/>
-			<_1 Value="profile:root@Hass?.homeassistant/automations/cube.yaml"/>
-			<_2 Value="profile:root@Hass?.homeassistant/automations/door.yaml"/>
-			<_3 Value="profile:root@Hass?.homeassistant/automations/pm25.yaml"/>
-			<_4 Value="profile:root@Hass?.homeassistant/customize.yaml"/>
-			<_5 Value="profile:root@Hass?.homeassistant/sensors.yaml"/>
-			<_6 Value="profile:root@Hass?.homeassistant/custom_components/zhibot/zhichat/__init__.py"/>
-			<_7 Value="profile:root@Hass?.homeassistant/www/1230.html"/>
-			<_8 Value="profile:root@Hass?.homeassistant/.storage/homekit.3db5e5bd05654274aef0436be6681d67.state"/>
+			<_0 Value="profile:root@Hass?.homeassistant/.storage/core.entity_registry"/>
+			<_1 Value="profile:root@Hass?.homeassistant/lights.yaml"/>
+			<_2 Value="profile:root@Hass?.homeassistant/customize.yaml"/>
+			<_3 Value="profile:root@Hass?.homeassistant/configuration.yaml"/>
+			<_4 Value="profile:root@Hass?.homeassistant/www/iptv.html"/>
+			<_5 Value="profile:root@Hass?.homeassistant/custom_components/zhimi/entity.py"/>
+			<_6 Value="profile:root@Hass?.homeassistant/custom_components/zhimi/__init__.py"/>
+			<_7 Value="profile:root@Hass?.homeassistant/.storage/homekit.3db5e5bd05654274aef0436be6681d67.state"/>
+			<_8 Value="profile:root@Hass?.homeassistant/custom_components/zhimi/light.py"/>
 		</RightMRUSpecs>
 	</TTextCompareState>
 	<TTextFindState>
