@@ -258,7 +258,17 @@
             "sensor.can_ting_kong_qi_zhi_liang": 1594381635,
             "zhimi.light.zhimilight.zhu_wei_yu_ba_deng": 760274688,
             "zhimi.light.zhimilight.shu_fang_liang_yi_deng": 2764467874,
-            "zhimi.light.zhimilight.yu_shi_yu_ba_deng": 3084215620
+            "zhimi.light.zhimilight.yu_shi_yu_ba_deng": 3084215620,
+            "zhimijia.light.zhimilight.yu_shi_yu_ba_deng": 3810195504,
+            "zhimijia.light.zhimilight.shu_fang_liang_yi_deng": 472687774,
+            "person.person.dabao": 2383443890,
+            "zhiviomi.vacuum.zhiviomicloudwasher.yu_shi_xi_yi_ji": 1406739009,
+            "zhimijia.cover.zhimrbondairer.shu_fang_liang_yi_jia": 1666563536,
+            "zhiremote.fan.zhiremotefan.ke_ting_feng_shan": 2505545140,
+            "zhimijia.vacuum.zhimivacuum.yu_shi_xi_yi_ji": 3745192023,
+            "zhimijia.fan.zhimifan.shu_fang_feng_shan": 2932110590,
+            "zhimijia.light.zhimilight.er_tong_fang_tai_deng": 389484470,
+            "zhimijia.light.zhimilight.shu_fang_tai_deng": 3521289778
         }
     }
 }

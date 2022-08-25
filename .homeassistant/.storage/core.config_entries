@@ -148,54 +148,6 @@
                 "disabled_by": null
             },
             {
-                "entry_id": "cbc0c1f0045d5b4218b6b92ff917c429",
-                "version": 1,
-                "domain": "yeelight",
-                "title": "\u513f\u7ae5\u623f\u53f0\u706f",
-                "data": {
-                    "host": "192.168.1.45",
-                    "id": "0x00000000071a26bf",
-                    "detected_model": "lamp3"
-                },
-                "options": {
-                    "name": "\u513f\u7ae5\u623f\u53f0\u706f",
-                    "model": "mono1",
-                    "transition": 350,
-                    "use_music_mode": false,
-                    "save_on_change": false,
-                    "nightlight_switch": false
-                },
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "0x00000000071a26bf",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "2e070a6978de55052db5d10b085540b6",
-                "version": 1,
-                "domain": "yeelight",
-                "title": "\u4e66\u623f\u53f0\u706f",
-                "data": {
-                    "host": "192.168.1.44",
-                    "id": "0x0000000003e0f627",
-                    "detected_model": "lamp1"
-                },
-                "options": {
-                    "name": "\u4e66\u623f\u53f0\u706f",
-                    "model": "bslamp1",
-                    "transition": 350,
-                    "use_music_mode": false,
-                    "save_on_change": false,
-                    "nightlight_switch": false
-                },
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "0x0000000003e0f627",
-                "disabled_by": null
-            },
-            {
                 "entry_id": "be0b01bcae9522072c6df2145e60327e",
                 "version": 1,
                 "domain": "broadlink",
@@ -229,7 +181,7 @@
                 "pref_disable_polling": false,
                 "source": "user",
                 "unique_id": "780f7747aa8f",
-                "disabled_by": "user"
+                "disabled_by": null
             },
             {
                 "entry_id": "ef2da510d66d319e649e336a6debca5c",
@@ -369,7 +321,7 @@
                     "device_id": "7C9408CF-8D4E-4885-92F8-732976E4D43C",
                     "app_name": "Home Assistant",
                     "model": "iPhone14,2",
-                    "os_version": "15.4",
+                    "os_version": "15.5",
                     "supports_encryption": true,
                     "webhook_id": "0e1c817bfc1e7690bc82d24b1d2083b0fdb2b7f824deef6be0e04e1321f33d9a",
                     "secret": "ab1ea0a976536da22b44accbcf34d0fcc2b0330fa040fdb3e1f3d2cc3b8bb08f",
@@ -380,6 +332,52 @@
                 "pref_disable_polling": false,
                 "source": "registration",
                 "unique_id": "io.robbie.HomeAssistant-7C9408CF-8D4E-4885-92F8-732976E4D43C",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "0591f9e29f1d03b96c9b78287c3fbaec",
+                "version": 1,
+                "domain": "yeelight",
+                "title": "\u4e66\u623f\u53f0\u706f",
+                "data": {
+                    "host": "Lamp",
+                    "id": null
+                },
+                "options": {
+                    "name": "\u4e66\u623f\u53f0\u706f",
+                    "model": "bslamp1",
+                    "transition": 350,
+                    "use_music_mode": false,
+                    "save_on_change": false,
+                    "nightlight_switch": false
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "import",
+                "unique_id": "0x0000000003e0f627",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "6265b0cd2c2e2512e54a4f9743ae6305",
+                "version": 1,
+                "domain": "yeelight",
+                "title": "\u513f\u7ae5\u623f\u53f0\u706f",
+                "data": {
+                    "host": "Lamp2",
+                    "id": null
+                },
+                "options": {
+                    "name": "\u513f\u7ae5\u623f\u53f0\u706f",
+                    "model": "mono1",
+                    "transition": 350,
+                    "use_music_mode": false,
+                    "save_on_change": false,
+                    "nightlight_switch": false
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "import",
+                "unique_id": "0x00000000071a26bf",
                 "disabled_by": null
             }
         ]

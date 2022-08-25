@@ -49,50 +49,6 @@
             },
             {
                 "config_entries": [
-                    "2e070a6978de55052db5d10b085540b6"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "yeelight",
-                        "0x0000000003e0f627"
-                    ]
-                ],
-                "manufacturer": "Yeelight",
-                "model": "bslamp1",
-                "name": "\u4e66\u623f\u53f0\u706f",
-                "sw_version": "66",
-                "entry_type": null,
-                "id": "99d4e5fde53a552a31b128da4ddc5997",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null,
-                "disabled_by": null
-            },
-            {
-                "config_entries": [
-                    "cbc0c1f0045d5b4218b6b92ff917c429"
-                ],
-                "connections": [],
-                "identifiers": [
-                    [
-                        "yeelight",
-                        "0x00000000071a26bf"
-                    ]
-                ],
-                "manufacturer": "Yeelight",
-                "model": "mono1",
-                "name": "\u513f\u7ae5\u623f\u53f0\u706f",
-                "sw_version": "34",
-                "entry_type": null,
-                "id": "6136e4abbc89b89bf654a6e2ed6c39da",
-                "via_device_id": null,
-                "area_id": null,
-                "name_by_user": null,
-                "disabled_by": null
-            },
-            {
-                "config_entries": [
                     "7f6d9c95fa12499196ea550d28992988"
                 ],
                 "connections": [],
@@ -624,7 +580,7 @@
                 "via_device_id": null,
                 "area_id": null,
                 "name_by_user": null,
-                "disabled_by": "config_entry"
+                "disabled_by": null
             },
             {
                 "config_entries": [
@@ -798,7 +754,7 @@
                 "manufacturer": "Apple",
                 "model": "iPhone14,2",
                 "name": "gPhone",
-                "sw_version": "15.4",
+                "sw_version": "15.5",
                 "entry_type": null,
                 "id": "84ed5c85a0c06eb3e16838481b3bef4e",
                 "via_device_id": null,
@@ -810,20 +766,27 @@
         "deleted_devices": [
             {
                 "config_entries": [],
-                "connections": [
-                    [
-                        "mac",
-                        "64:90:c1:08:d5:42"
-                    ]
-                ],
+                "connections": [],
                 "identifiers": [
                     [
-                        "xiaomi_miio",
-                        "64:90:c1:08:d5:42"
+                        "yeelight",
+                        "0x0000000003e0f627"
                     ]
                 ],
-                "id": "ce3d2a62a9b46a8663bc4eac859ff6e5",
-                "orphaned_timestamp": 1652489646.175601
+                "id": "99d4e5fde53a552a31b128da4ddc5997",
+                "orphaned_timestamp": 1661349155.011481
+            },
+            {
+                "config_entries": [],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "yeelight",
+                        "0x00000000071a26bf"
+                    ]
+                ],
+                "id": "6136e4abbc89b89bf654a6e2ed6c39da",
+                "orphaned_timestamp": 1661349158.054028
             }
         ]
     }
