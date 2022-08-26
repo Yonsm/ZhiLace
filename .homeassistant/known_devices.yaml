@@ -19,7 +19,11 @@ zphone:
   track: true
 
 jphone:
-  name: 姐姐手机
+  name: 大宝手机
+  track: true
+
+zpad:
+  name: 小智平板
   track: true
 
 yphone:
