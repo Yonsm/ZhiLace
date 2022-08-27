@@ -3,7 +3,7 @@ from functools import partial
 from homeassistant.util import slugify
 from homeassistant.util.yaml import load_yaml, save_yaml
 
-sensor_units = ['°C', '%', 'μg/m³', 'ppm', 'mg/m³', 'lm']
+sensor_units = ['°C', '%', 'µg/m³', 'ppm', 'mg/m³', 'lm']
 # sensor_classes = ['temperature', 'humidity', 'pm25', 'co2', 'hcho', 'illuminance']
 binary_sensor_classes = ['opening', 'motion', 'window', 'illuminance']
 card_types = ['weather-forecast', 'glance', 'entities', 'entity', 'media-control', 'thermostat', 'picture-entity']
