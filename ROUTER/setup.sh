@@ -22,9 +22,9 @@ ssh $HOST "chmod 600 /etc/storage/authorized_keys; [ ! -d ~/.ssh ] && mkdir ~/.s
 
 # SSL
 ssh $HOST "[ ! -d /etc/storage/https ] && mkdir /etc/storage/https"
-scp ../SSL/yonsm.tk/ca.crt $HOST:/etc/storage/https/
-scp ../SSL/yonsm.tk/fullchain.pem $HOST:/etc/storage/https/server.crt
-scp ../SSL/yonsm.tk/private.key $HOST:/etc/storage/https/server.key
+scp ../SSL/yonsm.ga/ca.crt $HOST:/etc/storage/https/
+scp ../SSL/yonsm.ga/fullchain.pem $HOST:/etc/storage/https/server.crt
+scp ../SSL/yonsm.ga/private.key $HOST:/etc/storage/https/server.key
 
 
 copy_files()
