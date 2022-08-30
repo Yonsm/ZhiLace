@@ -1,12 +1,13 @@
 {
-    "data": {
-        "users": [
-            {
-                "password": "JDJiJDEyJEFxT3llVUcvNDY5eGxRZE5mNlRJay5rMDdOc2RoOVZGSE41ejdvVFN5TEFUVFlPUkd6YTVl",
-                "username": "admin"
-            }
-        ]
-    },
-    "key": "auth_provider.homeassistant",
-    "version": 1
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "admin",
+        "password": "JDJiJDEyJDdzM1BKaFM5U25XYXNqalBhMGVzanVna3J6dFlKSWVuMlIuVnp3eXB6dkhUWkdubDRwWUdx"
+      }
+    ]
+  }
 }

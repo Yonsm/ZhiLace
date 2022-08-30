@@ -1,7 +1,8 @@
 {
-    "version": 1,
-    "key": "core.uuid",
-    "data": {
-        "uuid": "c3506128e3c7489f85764ab18e277282"
-    }
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.uuid",
+  "data": {
+    "uuid": "d145710482e84672876fe91670e7aa1c"
+  }
 }

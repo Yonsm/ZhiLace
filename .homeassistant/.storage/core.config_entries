@@ -5,140 +5,10 @@
   "data": {
     "entries": [
       {
-        "entry_id": "4b7381f25e914975b9bd36b673b93d6f",
-        "version": 1,
-        "domain": "mqtt",
-        "title": "物联网关",
-        "data": {
-          "broker": "Hass",
-          "port": 1883,
-          "birth_message": {
-            "topic": "homeassistant/status",
-            "payload": "online",
-            "qos": 0,
-            "retain": false
-          },
-          "will_message": {
-            "topic": "homeassistant/status",
-            "payload": "offline",
-            "qos": 0,
-            "retain": false
-          },
-          "discovery": true
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "import",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
-        "entry_id": "3db5e5bd05654274aef0436be6681d67",
-        "version": 1,
-        "domain": "homekit",
-        "title": "家庭中枢",
-        "data": {
-          "name": "Home Assistant Bridge",
-          "port": 21063
-        },
-        "options": {
-          "filter": {
-            "exclude_domains": [
-              "automation",
-              "camera",
-              "device_tracker",
-              "input_boolean",
-              "media_player",
-              "remote",
-              "script"
-            ],
-            "exclude_entities": [
-              "binary_sensor.switch_158d0001e59b33",
-              "binary_sensor.switch_158d000201a73f",
-              "binary_sensor.switch_158d00054e98b0",
-              "climate.ke_ting_di_nuan",
-              "climate.zhu_wo_di_nuan",
-              "sensor.er_tong_fang_er_yang_hua_tan",
-              "sensor.zhu_wo_er_yang_hua_tan",
-              "switch.can_ting_tong_deng",
-              "switch.ke_ting_tong_deng"
-            ],
-            "include_entities": [],
-            "include_entity_globs": [],
-            "exclude_entity_globs": [],
-            "include_domains": []
-          },
-          "entity_config": {
-            "switch.can_ting_chu_shi_ji": {
-              "type": "outlet",
-              "low_battery_threshold": 20,
-              "manufacturer": "Broadlink",
-              "model": "SP mini 3",
-              "sw_version": 10012,
-              "platform": "broadlink"
-            },
-            "switch.yi_ju_chu_shi_ji": {
-              "type": "outlet",
-              "low_battery_threshold": 20
-            },
-            "media_player.zhu_wo_dian_shi": {
-              "feature_list": {
-                "on_off": {}
-              },
-              "low_battery_threshold": 20
-            },
-            "media_player.ke_ting_dian_shi": {
-              "feature_list": {
-                "on_off": {}
-              },
-              "low_battery_threshold": 20
-            }
-          },
-          "mode": "bridge"
-        },
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "import",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
-        "entry_id": "bcd9a5c8a1ab06bfd22dcd39a323bb66",
-        "version": 1,
-        "domain": "mobile_app",
-        "title": "gPhone",
-        "data": {
-          "app_data": {
-            "push_token": "cGz9Lwtljk7xpnw4s9my3n:APA91bG8IOkX7edGdMIOtRacHRgdDEoG858cdTeu3JC_VX-W17gbhREJ1mNu5dKsXejMGG_HwzD9JjlRIIPKrdiizEMMRvJXpL2AH8U9zpD8eWqA4kxUJMR3XlTTMgrUOA1RwgBsRmPp",
-            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
-          },
-          "device_name": "gPhone",
-          "manufacturer": "Apple",
-          "app_id": "io.robbie.HomeAssistant",
-          "os_name": "iOS",
-          "app_version": "2022.3 (2022.358)",
-          "device_id": "7C9408CF-8D4E-4885-92F8-732976E4D43C",
-          "app_name": "Home Assistant",
-          "model": "iPhone14,2",
-          "os_version": "15.5",
-          "supports_encryption": true,
-          "webhook_id": "0e1c817bfc1e7690bc82d24b1d2083b0fdb2b7f824deef6be0e04e1321f33d9a",
-          "secret": "ab1ea0a976536da22b44accbcf34d0fcc2b0330fa040fdb3e1f3d2cc3b8bb08f",
-          "user_id": "885ef9c0f6f64c31a332cfaea34be29a"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "registration",
-        "unique_id": "io.robbie.HomeAssistant-7C9408CF-8D4E-4885-92F8-732976E4D43C",
-        "disabled_by": null
-      },
-      {
-        "entry_id": "d95413a84896ad1617ad6c298b7492b7",
+        "entry_id": "74097b7366fe854355847f519b728435",
         "version": 1,
         "domain": "sun",
-        "title": "日照",
+        "title": "Sun",
         "data": {},
         "options": {},
         "pref_disable_new_entities": false,
@@ -201,24 +71,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "can_ting_chu_shi_ji",
-        "version": 1,
-        "domain": "broadlink",
-        "title": "餐厅除湿机",
-        "data": {
-          "host": "192.168.1.57",
-          "mac": "34ea34b836ac",
-          "type": 30014,
-          "timeout": 10
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": "can_ting_chu_shi_ji",
-        "disabled_by": null
-      },
-      {
         "entry_id": "ke_ting_dian_shi",
         "version": 1,
         "domain": "braviatv",
@@ -254,6 +106,89 @@
         "pref_disable_polling": false,
         "source": "user",
         "unique_id": "xiao_mi_wang_guan",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "0cdd8df5c2c0f2aef8348512c0da0679",
+        "version": 1,
+        "domain": "homekit",
+        "title": "旌启智家:21063",
+        "data": {
+          "name": "旌启智家",
+          "port": 21063
+        },
+        "options": {
+          "filter": {
+            "exclude_domains": [
+              "automation",
+              "camera",
+              "device_tracker",
+              "input_boolean",
+              "media_player",
+              "remote",
+              "script"
+            ],
+            "exclude_entities": [
+              "binary_sensor.switch_158d0001e59b33",
+              "binary_sensor.switch_158d000201a73f",
+              "binary_sensor.switch_158d00054e98b0",
+              "climate.ke_ting_di_nuan",
+              "climate.zhu_wo_di_nuan",
+              "sensor.er_tong_fang_er_yang_hua_tan",
+              "sensor.zhu_wo_er_yang_hua_tan",
+              "switch.can_ting_tong_deng",
+              "switch.ke_ting_tong_deng"
+            ],
+            "include_domains": [],
+            "exclude_entity_globs": [],
+            "include_entities": [],
+            "include_entity_globs": []
+          },
+          "entity_config": {
+            "switch.can_ting_chu_shi_ji": {
+              "type": "outlet",
+              "low_battery_threshold": 20
+            },
+            "switch.yi_ju_chu_shi_ji": {
+              "type": "outlet",
+              "low_battery_threshold": 20
+            },
+            "media_player.zhu_wo_dian_shi": {
+              "feature_list": {
+                "on_off": {}
+              },
+              "low_battery_threshold": 20
+            },
+            "media_player.ke_ting_dian_shi": {
+              "feature_list": {
+                "on_off": {}
+              },
+              "low_battery_threshold": 20
+            }
+          },
+          "mode": "bridge"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d6f801f0e6f42bb7b0c84aae59b5218e",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "Hass",
+        "data": {
+          "broker": "Hass",
+          "port": 1883,
+          "discovery": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "unique_id": null,
         "disabled_by": null
       }
     ]

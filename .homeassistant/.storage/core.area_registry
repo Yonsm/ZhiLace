@@ -1,40 +1,24 @@
 {
-    "version": 1,
-    "key": "core.area_registry",
-    "data": {
-        "areas": [
-            {
-                "name": "\u5ba2\u5385",
-                "id": "ke_ting"
-            },
-            {
-                "name": "\u9910\u5385",
-                "id": "can_ting"
-            },
-            {
-                "name": "\u8fc7\u9053",
-                "id": "guo_dao"
-            },
-            {
-                "name": "\u4e3b\u5367",
-                "id": "zhu_wo"
-            },
-            {
-                "name": "\u6b21\u5367",
-                "id": "ci_wo"
-            },
-            {
-                "name": "\u513f\u7ae5\u623f",
-                "id": "er_tong_fang"
-            },
-            {
-                "name": "\u4e66\u623f",
-                "id": "shu_fang"
-            },
-            {
-                "name": "\u9633\u53f0",
-                "id": "yang_tai"
-            }
-        ]
-    }
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "name": "客厅",
+        "id": "ke_ting",
+        "picture": null
+      },
+      {
+        "name": "厨房",
+        "id": "chu_fang",
+        "picture": null
+      },
+      {
+        "name": "卧室",
+        "id": "wo_shi",
+        "picture": null
+      }
+    ]
+  }
 }
