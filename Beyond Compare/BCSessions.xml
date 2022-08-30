@@ -20,13 +20,13 @@
 		</State>
 	</TDirCompareSession>
 	<TDirCompareSession Value="homeassistant">
-		<LastModified Value="2022-03-30 12:51:47"/>
+		<LastModified Value="2022-08-30 17:01:15"/>
 		<Rules>
 			<UseContentComparison Value="True"/>
 		</Rules>
 		<Specs>
 			<Left Value="~/Sites/.homeassistant/extras/homeassistant"/>
-			<Right Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant"/>
+			<Right Value="profile:root@Hass?/usr/local/lib/python3.10/dist-packages/homeassistant"/>
 		</Specs>
 		<State>
 			<DisplayFilter Value="[showLeftChanged, showRightChanged, showConflict]"/>

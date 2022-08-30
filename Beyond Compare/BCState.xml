@@ -7,22 +7,22 @@
 			<TAboutDialog Value="452;317;1005;668"/>
 			<TCheckForUpdatesDialog Value="476;328;982;655"/>
 			<TDirCompareSessionDialog Value="581;304;1127;841"/>
-			<TDirLoadErrorDialog Value="432;406;930;518"/>
+			<TDirLoadErrorDialog Value="605;516;1103;628"/>
 			<TDownloadUpdateDialog Value="464;411;994;572"/>
 			<THexCompareSessionDialog Value="583;115;1129;652"/>
 			<TNagDialog Value="419;179;940;412"/>
 			<TOpSyncDialog Value="792;432;1256;873"/>
-			<TProfileBrowseDialog Value="292;99;1070;825"/>
+			<TProfileBrowseDialog Value="465;209;1243;935"/>
 			<TProgOptionsDialog Value="324;207;1133;776"/>
 			<TQuickCompareDialog Value="616;231;1090;476"/>
 			<TSessionSaveAsDialog Value="661;440;1046;705"/>
 			<TUnixCrashDialog Value="418;68;1033;806"/>
-			<TViewFrame Value="0;25;1360;900;M"/>
+			<TViewFrame Value="0;25;1707;1120;M"/>
 		</FormPositions>
 	</TBcState>
 	<TCheckForUpdatesState>
-		<Build Value="26348"/>
-		<LastChecked Value="2022-05-23 20:14:18"/>
+		<Build Value="26655"/>
+		<LastChecked Value="2022-08-30 16:59:47"/>
 		<MsgBody Value="Beyond Compare is not affected by the Log4J vulnerability. Our IT systems are also secured against it."/>
 		<MsgDate Value="2021-12-23 00:00:00"/>
 		<MsgTitle Value="LOG4J"/>
@@ -40,10 +40,10 @@
 	</TDataCompareState>
 	<TDirCompareState>
 		<LeftMRUSpecs>
-			<_0 Value="~/Sites/.homeassistant"/>
-			<_1 Value="/Users/admin/Sites/Yonsm/GUOZ.GQ"/>
-			<_2 Value="~/Sites/Yonsm"/>
-			<_3 Value="~/Sites/.homeassistant/extras/homeassistant"/>
+			<_0 Value="~/Sites/.homeassistant/extras/homeassistant"/>
+			<_1 Value="~/Sites/.homeassistant"/>
+			<_2 Value="/Users/admin/Sites/Yonsm/GUOZ.GQ"/>
+			<_3 Value="~/Sites/Yonsm"/>
 			<_4 Value="/Volumes/DAT/Sites/.homeassistant/extras/homeassistant"/>
 			<_5 Value="/Volumes/DAT/Sites/Yonsm"/>
 			<_6 Value="/Volumes/DAT/Sites/.homeassistant"/>
@@ -62,15 +62,15 @@
 			<_8 Value="-./.gitignore;-./home-assistant.log;-./home-assistant_v2.db;-./home-assistant_v2.db-shm;-./home-assistant_v2.db-wal;-./www/aha.html;-./www/aha.json;-./www/aha.png;-.gitmodules;-http;-core.restore_state;-.git/;-./deps/;-__pycache__/;-./.vscode/;-./extras/;-./blueprints/;-./modules/*/custom_components/"/>
 		</MRUFilters>
 		<RightMRUSpecs>
-			<_0 Value="profile:root@Hass?.homeassistant"/>
-			<_1 Value="/Users/admin/Sites/Yonsm/ROUTER"/>
-			<_2 Value="profile:admin@iMac?Sites/Yonsm"/>
-			<_3 Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant"/>
-			<_4 Value="profile:admin@iMac?/"/>
-			<_5 Value="profile:admin@iMac?/home"/>
-			<_6 Value="profile:admin@iMac"/>
-			<_7 Value="profile:admin@iMac?/home/admin"/>
-			<_8 Value="profile:root@Hass?/usr/lib/python3.9/site-packages"/>
+			<_0 Value="profile:root@Hass?/usr/local/lib/python3.10/dist-packages/homeassistant"/>
+			<_1 Value="profile:root@Hass?.homeassistant"/>
+			<_2 Value="/Users/admin/Sites/Yonsm/ROUTER"/>
+			<_3 Value="profile:admin@iMac?Sites/Yonsm"/>
+			<_4 Value="profile:root@Hass?/usr/lib/python3.9/site-packages/homeassistant"/>
+			<_5 Value="profile:admin@iMac?/"/>
+			<_6 Value="profile:admin@iMac?/home"/>
+			<_7 Value="profile:admin@iMac"/>
+			<_8 Value="profile:admin@iMac?/home/admin"/>
 		</RightMRUSpecs>
 	</TDirCompareState>
 	<THexCompareState>
@@ -102,7 +102,7 @@
 	</THexCompareState>
 	<THomeState>
 		<NewExpanded Value="True"/>
-		<SessionName Value=".homeassistant"/>
+		<SessionName Value="homeassistant"/>
 		<SessionType Value="TDirCompareSession"/>
 	</THomeState>
 	<TOpCopyToState>

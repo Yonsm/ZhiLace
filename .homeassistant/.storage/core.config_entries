@@ -1,385 +1,261 @@
 {
-    "version": 1,
-    "key": "core.config_entries",
-    "data": {
-        "entries": [
-            {
-                "entry_id": "4b7381f25e914975b9bd36b673b93d6f",
-                "version": 1,
-                "domain": "mqtt",
-                "title": "configuration.yaml",
-                "data": {},
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": null,
-                "disabled_by": null
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "4b7381f25e914975b9bd36b673b93d6f",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "物联网关",
+        "data": {
+          "broker": "Hass",
+          "port": 1883,
+          "birth_message": {
+            "topic": "homeassistant/status",
+            "payload": "online",
+            "qos": 0,
+            "retain": false
+          },
+          "will_message": {
+            "topic": "homeassistant/status",
+            "payload": "offline",
+            "qos": 0,
+            "retain": false
+          },
+          "discovery": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "3db5e5bd05654274aef0436be6681d67",
+        "version": 1,
+        "domain": "homekit",
+        "title": "家庭中枢",
+        "data": {
+          "name": "Home Assistant Bridge",
+          "port": 21063
+        },
+        "options": {
+          "filter": {
+            "exclude_domains": [
+              "automation",
+              "camera",
+              "device_tracker",
+              "input_boolean",
+              "media_player",
+              "remote",
+              "script"
+            ],
+            "exclude_entities": [
+              "binary_sensor.switch_158d0001e59b33",
+              "binary_sensor.switch_158d000201a73f",
+              "binary_sensor.switch_158d00054e98b0",
+              "climate.ke_ting_di_nuan",
+              "climate.zhu_wo_di_nuan",
+              "sensor.er_tong_fang_er_yang_hua_tan",
+              "sensor.zhu_wo_er_yang_hua_tan",
+              "switch.can_ting_tong_deng",
+              "switch.ke_ting_tong_deng"
+            ],
+            "include_entities": [],
+            "include_entity_globs": [],
+            "exclude_entity_globs": [],
+            "include_domains": []
+          },
+          "entity_config": {
+            "switch.can_ting_chu_shi_ji": {
+              "type": "outlet",
+              "low_battery_threshold": 20,
+              "manufacturer": "Broadlink",
+              "model": "SP mini 3",
+              "sw_version": 10012,
+              "platform": "broadlink"
             },
-            {
-                "entry_id": "739606debc074acfb9b65974b3414c33",
-                "version": 1,
-                "domain": "braviatv",
-                "title": "\u5ba2\u5385\u7535\u89c6",
-                "data": {
-                    "host": "X9400e",
-                    "mac": "04:5D:4B:3F:8D:93",
-                    "pin": "8404"
-                },
-                "options": {
-                    "ignored_sources": [
-                        "Kodi",
-                        "\u56fe\u5e93",
-                        "CIBN\u9177\u55b5\u5f71\u89c6",
-                        "YouTube",
-                        "\u7535\u89c6"
-                    ]
-                },
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "75d9f9685ede2db16a82f847e7bad9d7fcc231132c4c6069296fb95a73cc8ace",
-                "disabled_by": null
+            "switch.yi_ju_chu_shi_ji": {
+              "type": "outlet",
+              "low_battery_threshold": 20
             },
-            {
-                "entry_id": "3db5e5bd05654274aef0436be6681d67",
-                "version": 1,
-                "domain": "homekit",
-                "title": "\u5bb6\u5ead\u4e2d\u67a2",
-                "data": {
-                    "name": "Home Assistant Bridge",
-                    "port": 21063
-                },
-                "options": {
-                    "filter": {
-                        "exclude_domains": [
-                            "automation",
-                            "camera",
-                            "device_tracker",
-                            "input_boolean",
-                            "media_player",
-                            "remote",
-                            "script"
-                        ],
-                        "exclude_entities": [
-                            "binary_sensor.switch_158d0001e59b33",
-                            "binary_sensor.switch_158d000201a73f",
-                            "binary_sensor.switch_158d00054e98b0",
-                            "climate.ke_ting_di_nuan",
-                            "climate.zhu_wo_di_nuan",
-                            "sensor.er_tong_fang_er_yang_hua_tan",
-                            "sensor.zhu_wo_er_yang_hua_tan",
-                            "switch.can_ting_tong_deng",
-                            "switch.ke_ting_tong_deng"
-                        ],
-                        "include_entities": [],
-                        "include_domains": [],
-                        "exclude_entity_globs": [],
-                        "include_entity_globs": []
-                    },
-                    "auto_start": true,
-                    "safe_mode": false,
-                    "entity_config": {
-                        "switch.can_ting_chu_shi_ji": {
-                            "type": "outlet",
-                            "low_battery_threshold": 20
-                        },
-                        "switch.yi_ju_chu_shi_ji": {
-                            "type": "outlet",
-                            "low_battery_threshold": 20
-                        },
-                        "media_player.zhu_wo_dian_shi": {
-                            "feature_list": {
-                                "on_off": {}
-                            },
-                            "low_battery_threshold": 20
-                        },
-                        "media_player.ke_ting_dian_shi": {
-                            "feature_list": {
-                                "on_off": {}
-                            },
-                            "low_battery_threshold": 20
-                        }
-                    },
-                    "mode": "bridge"
-                },
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": null,
-                "disabled_by": null
+            "media_player.zhu_wo_dian_shi": {
+              "feature_list": {
+                "on_off": {}
+              },
+              "low_battery_threshold": 20
             },
-            {
-                "entry_id": "7f6d9c95fa12499196ea550d28992988",
-                "version": 1,
-                "domain": "xiaomi_aqara",
-                "title": "\u5c0f\u7c73\u7f51\u5173",
-                "data": {
-                    "host": "192.168.1.30",
-                    "interface": "any",
-                    "key": "3ECB50168D7F4AEB",
-                    "mac": "34:ce:00:90:90:1a",
-                    "port": 9898,
-                    "protocol": "1.1.2",
-                    "sid": "34ce0090901a"
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "user",
-                "unique_id": "34:ce:00:90:90:1a",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "b968e8d277b642a0977a57f2bdcf2c11",
-                "version": 1,
-                "domain": "braviatv",
-                "title": "\u4e3b\u5367\u7535\u89c6",
-                "data": {
-                    "host": "X9300d",
-                    "mac": "10:4F:A8:EF:7F:86",
-                    "pin": "0000"
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "86f778c00f0ddb8737ae28f7d2b8d1bc2317e6f69a55b810beedfca2f4b39673",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "be0b01bcae9522072c6df2145e60327e",
-                "version": 1,
-                "domain": "broadlink",
-                "title": "\u4e66\u623f\u9065\u63a7",
-                "data": {
-                    "host": "192.168.1.46",
-                    "mac": "34ea3458735d",
-                    "type": 10141,
-                    "timeout": 5
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "user",
-                "unique_id": "34ea3458735d",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "05a6be8ca1ba8791ae2c50a38351116c",
-                "version": 1,
-                "domain": "broadlink",
-                "title": "\u5ba2\u5385\u9065\u63a7",
-                "data": {
-                    "host": "192.168.1.47",
-                    "mac": "780f7747aa8f",
-                    "type": 10039,
-                    "timeout": 5
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "user",
-                "unique_id": "780f7747aa8f",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "ef2da510d66d319e649e336a6debca5c",
-                "version": 1,
-                "domain": "broadlink",
-                "title": "\u9910\u5385\u9664\u6e7f\u673a",
-                "data": {
-                    "host": "192.168.1.57",
-                    "mac": "34ea34b836ac",
-                    "type": 30014,
-                    "timeout": 5
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "user",
-                "unique_id": "34ea34b836ac",
-                "disabled_by": "user"
-            },
-            {
-                "entry_id": "d2810632568cdcf14ed1ae6cf3146328",
-                "version": 1,
-                "domain": "broadlink",
-                "title": "\u8863\u67dc\u9664\u6e7f\u673a",
-                "data": {
-                    "host": "192.168.1.58",
-                    "mac": "780f77ccccbe",
-                    "type": 32013,
-                    "timeout": 5
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "user",
-                "unique_id": "780f77ccccbe",
-                "disabled_by": "user"
-            },
-            {
-                "entry_id": "874e96ea365108dda91320fa78f51323",
-                "version": 1,
-                "domain": "xiaomi_miio",
-                "title": "\u4e3b\u5367\u65b0\u98ce\u673a",
-                "data": {
-                    "config_flow_device": "device",
-                    "host": "Fresher2",
-                    "token": "5fd8be12c63cc876ca5884ea00265a1e",
-                    "model": "zhimi.airfresh.va2",
-                    "mac": "7c:49:eb:b6:d8:2b",
-                    "cloud_username": null,
-                    "cloud_password": null,
-                    "cloud_country": null
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "7c:49:eb:b6:d8:2b",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "2478b5bb620617059d0e8df3b43c38ef",
-                "version": 1,
-                "domain": "xiaomi_miio",
-                "title": "\u5ba2\u5385\u65b0\u98ce\u673a",
-                "data": {
-                    "config_flow_device": "device",
-                    "host": "Fresher",
-                    "token": "bb1ee8999ee6bc7ce075a424bca664c3",
-                    "model": "zhimi.airfresh.va2",
-                    "mac": "78:11:dc:db:db:e7",
-                    "cloud_username": null,
-                    "cloud_password": null,
-                    "cloud_country": null
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "78:11:dc:db:db:e7",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "9a78a18b582761dde437d111388de034",
-                "version": 1,
-                "domain": "xiaomi_miio",
-                "title": "\u6b21\u5367\u51c0\u5316\u5668",
-                "data": {
-                    "config_flow_device": "device",
-                    "host": "Purifier",
-                    "token": "fe2d793b34dce57f32bf50b2e6b00874",
-                    "model": "zhimi.airpurifier.m1",
-                    "mac": "34:ce:00:a0:82:6b",
-                    "cloud_username": null,
-                    "cloud_password": null,
-                    "cloud_country": null
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "34:ce:00:a0:82:6b",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "5d15c786cad64a812d0428b9a43f2c8b",
-                "version": 1,
-                "domain": "xiaomi_fan_circulator",
-                "title": "Xiaomi Circulating Fan",
-                "data": {},
-                "options": {
-                    "host": "192.168.1.33",
-                    "token": "6dd1ec1c895a61d1b994b4a6242efe56",
-                    "model": "zhimi.fan.fa1",
-                    "name": "Xiaomi Circulating Fan"
-                },
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "user",
-                "unique_id": null,
-                "disabled_by": "user"
-            },
-            {
-                "entry_id": "bcd9a5c8a1ab06bfd22dcd39a323bb66",
-                "version": 1,
-                "domain": "mobile_app",
-                "title": "gPhone",
-                "data": {
-                    "app_data": {
-                        "push_token": "cGz9Lwtljk7xpnw4s9my3n:APA91bG8IOkX7edGdMIOtRacHRgdDEoG858cdTeu3JC_VX-W17gbhREJ1mNu5dKsXejMGG_HwzD9JjlRIIPKrdiizEMMRvJXpL2AH8U9zpD8eWqA4kxUJMR3XlTTMgrUOA1RwgBsRmPp",
-                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
-                    },
-                    "device_name": "gPhone",
-                    "manufacturer": "Apple",
-                    "app_id": "io.robbie.HomeAssistant",
-                    "os_name": "iOS",
-                    "app_version": "2022.3 (2022.358)",
-                    "device_id": "7C9408CF-8D4E-4885-92F8-732976E4D43C",
-                    "app_name": "Home Assistant",
-                    "model": "iPhone14,2",
-                    "os_version": "15.5",
-                    "supports_encryption": true,
-                    "webhook_id": "0e1c817bfc1e7690bc82d24b1d2083b0fdb2b7f824deef6be0e04e1321f33d9a",
-                    "secret": "ab1ea0a976536da22b44accbcf34d0fcc2b0330fa040fdb3e1f3d2cc3b8bb08f",
-                    "user_id": "885ef9c0f6f64c31a332cfaea34be29a"
-                },
-                "options": {},
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "registration",
-                "unique_id": "io.robbie.HomeAssistant-7C9408CF-8D4E-4885-92F8-732976E4D43C",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "0591f9e29f1d03b96c9b78287c3fbaec",
-                "version": 1,
-                "domain": "yeelight",
-                "title": "\u4e66\u623f\u53f0\u706f",
-                "data": {
-                    "host": "Lamp",
-                    "id": null
-                },
-                "options": {
-                    "name": "\u4e66\u623f\u53f0\u706f",
-                    "model": "bslamp1",
-                    "transition": 350,
-                    "use_music_mode": false,
-                    "save_on_change": false,
-                    "nightlight_switch": false
-                },
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "0x0000000003e0f627",
-                "disabled_by": null
-            },
-            {
-                "entry_id": "6265b0cd2c2e2512e54a4f9743ae6305",
-                "version": 1,
-                "domain": "yeelight",
-                "title": "\u513f\u7ae5\u623f\u53f0\u706f",
-                "data": {
-                    "host": "Lamp2",
-                    "id": null
-                },
-                "options": {
-                    "name": "\u513f\u7ae5\u623f\u53f0\u706f",
-                    "model": "mono1",
-                    "transition": 350,
-                    "use_music_mode": false,
-                    "save_on_change": false,
-                    "nightlight_switch": false
-                },
-                "pref_disable_new_entities": false,
-                "pref_disable_polling": false,
-                "source": "import",
-                "unique_id": "0x00000000071a26bf",
-                "disabled_by": null
+            "media_player.ke_ting_dian_shi": {
+              "feature_list": {
+                "on_off": {}
+              },
+              "low_battery_threshold": 20
             }
-        ]
-    }
+          },
+          "mode": "bridge"
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "bcd9a5c8a1ab06bfd22dcd39a323bb66",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "gPhone",
+        "data": {
+          "app_data": {
+            "push_token": "cGz9Lwtljk7xpnw4s9my3n:APA91bG8IOkX7edGdMIOtRacHRgdDEoG858cdTeu3JC_VX-W17gbhREJ1mNu5dKsXejMGG_HwzD9JjlRIIPKrdiizEMMRvJXpL2AH8U9zpD8eWqA4kxUJMR3XlTTMgrUOA1RwgBsRmPp",
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+          },
+          "device_name": "gPhone",
+          "manufacturer": "Apple",
+          "app_id": "io.robbie.HomeAssistant",
+          "os_name": "iOS",
+          "app_version": "2022.3 (2022.358)",
+          "device_id": "7C9408CF-8D4E-4885-92F8-732976E4D43C",
+          "app_name": "Home Assistant",
+          "model": "iPhone14,2",
+          "os_version": "15.5",
+          "supports_encryption": true,
+          "webhook_id": "0e1c817bfc1e7690bc82d24b1d2083b0fdb2b7f824deef6be0e04e1321f33d9a",
+          "secret": "ab1ea0a976536da22b44accbcf34d0fcc2b0330fa040fdb3e1f3d2cc3b8bb08f",
+          "user_id": "885ef9c0f6f64c31a332cfaea34be29a"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.robbie.HomeAssistant-7C9408CF-8D4E-4885-92F8-732976E4D43C",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d95413a84896ad1617ad6c298b7492b7",
+        "version": 1,
+        "domain": "sun",
+        "title": "日照",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "zhu_wo_dian_shi",
+        "version": 1,
+        "domain": "braviatv",
+        "title": "主卧电视",
+        "data": {
+          "host": "192.168.1.6",
+          "mac": "10:4F:A8:EF:7F:86",
+          "pin": "0000"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "zhu_wo_dian_shi",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "shu_fang_yao_kong",
+        "version": 1,
+        "domain": "broadlink",
+        "title": "书房遥控",
+        "data": {
+          "host": "192.168.1.46",
+          "mac": "34ea3458735d",
+          "type": 10141,
+          "timeout": 10
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "shu_fang_yao_kong",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "ke_ting_yao_kong",
+        "version": 1,
+        "domain": "broadlink",
+        "title": "客厅遥控",
+        "data": {
+          "host": "192.168.1.47",
+          "mac": "780f7747aa8f",
+          "type": 10039,
+          "timeout": 10
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "ke_ting_yao_kong",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "can_ting_chu_shi_ji",
+        "version": 1,
+        "domain": "broadlink",
+        "title": "餐厅除湿机",
+        "data": {
+          "host": "192.168.1.57",
+          "mac": "34ea34b836ac",
+          "type": 30014,
+          "timeout": 10
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "can_ting_chu_shi_ji",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "ke_ting_dian_shi",
+        "version": 1,
+        "domain": "braviatv",
+        "title": "客厅电视",
+        "data": {
+          "host": "192.168.1.7",
+          "mac": "04:5D:4B:3F:8D:93",
+          "pin": "0000"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "ke_ting_dian_shi",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "xiao_mi_wang_guan",
+        "version": 1,
+        "domain": "xiaomi_aqara",
+        "title": "小米网关",
+        "data": {
+          "host": "192.168.1.30",
+          "port": 9898,
+          "mac": "34:ce:00:90:90:1a",
+          "interface": "any",
+          "protocol": "1.1.2",
+          "key": "3ECB50168D7F4AEB",
+          "sid": "34ce0090901a"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "xiao_mi_wang_guan",
+        "disabled_by": null
+      }
+    ]
+  }
 }

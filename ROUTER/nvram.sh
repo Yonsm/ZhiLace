@@ -60,7 +60,7 @@ if [ "$HOST" = "Router" ]; then
 	nvram set wan_pppoe_passwd=$PPPOE_PASS
 
 	# VTS
-	MAPS="HASS,82:89,8  "
+	MAPS="HASS,88:99,8  "
 	nvram set vts_enable_x=1
 	nvram set vts_num_x=`echo "$MAPS" | tr -cd ' ' | wc -c`
 	IDX="0"
