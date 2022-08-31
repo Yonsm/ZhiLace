@@ -963,6 +963,7 @@
         "area_id": null,
         "capabilities": {
           "preset_modes": [
+            "空闲",
             "自动",
             "静音",
             "最爱"
