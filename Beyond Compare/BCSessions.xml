@@ -71,26 +71,6 @@
 	</TDirCompareSession>
 	<TSessionFolder>
 		<Items>
-			<TSessionFolder>
-				<Items>
-					<TDirCompareSession Value="GUOZ.GQ &lt;--> ROUTER">
-						<LastModified Value="2022-05-11 00:40:39"/>
-						<Rules>
-							<ContentCompareKind Value="ccBinary"/>
-							<FollowSymLinks Value="True"/>
-						</Rules>
-						<Specs>
-							<Left Value="/Users/admin/Sites/Yonsm/GUOZ.GQ"/>
-							<Right Value="/Users/admin/Sites/Yonsm/ROUTER"/>
-						</Specs>
-						<State>
-							<DisplayFilter Value="[showLeftAdded, showRightAdded, showLeftChanged, showRightChanged, showConflict]"/>
-							<SortCol Value="colCompareStatus"/>
-							<SortSide Value="dsRight"/>
-						</State>
-					</TDirCompareSession>
-				</Items>
-			</TSessionFolder>
 			<TDirCompareSession>
 				<Rules>
 					<ContentCompareKind Value="ccBinary"/>
