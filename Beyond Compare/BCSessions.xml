@@ -13,7 +13,7 @@
 		</Rules>
 		<Specs>
 			<Left Value="~/Sites/.homeassistant"/>
-			<Right Value="profile:root@Hass?.homeassistant"/>
+			<Right Value="profile:root@guoz.ml?.homeassistant"/>
 		</Specs>
 		<State>
 			<DisplayFilter Value="[showLeftAdded, showRightAdded, showLeftChanged, showRightChanged, showConflict]"/>
@@ -26,7 +26,7 @@
 		</Rules>
 		<Specs>
 			<Left Value="~/Sites/.homeassistant/extras/homeassistant"/>
-			<Right Value="profile:root@Hass?/usr/local/lib/python3.10/dist-packages/homeassistant"/>
+			<Right Value="profile:root@guoz.ml?/usr/local/lib/python3.10/dist-packages/homeassistant"/>
 		</Specs>
 		<State>
 			<DisplayFilter Value="[showLeftChanged, showRightChanged, showConflict]"/>
@@ -44,6 +44,23 @@
 		<Specs>
 			<Left Value="/Volumes/XFS/Padavan"/>
 			<Right Value="profile:admin@Linux?/opt/rt-n56u"/>
+		</Specs>
+		<State>
+			<DisplayFilter Value="[showLeftAdded, showRightAdded, showLeftChanged, showRightChanged, showConflict]"/>
+			<SortCol Value="colCompareStatus"/>
+			<SortSide Value="dsRight"/>
+		</State>
+	</TDirCompareSession>
+	<TDirCompareSession Value="Pictures">
+		<LastModified Value="2022-08-31 21:13:34"/>
+		<Rules>
+			<ContentCompareKind Value="ccBinary"/>
+			<FollowSymLinks Value="True"/>
+			<UseTimestampComparison Value="False"/>
+		</Rules>
+		<Specs>
+			<Left Value="/Users/admin/Pictures/Pictures"/>
+			<Right Value="profile:admin@guoz.ga?/media/STORE/Pictures"/>
 		</Specs>
 		<State>
 			<DisplayFilter Value="[showLeftAdded, showRightAdded, showLeftChanged, showRightChanged, showConflict]"/>
