@@ -22,6 +22,10 @@ jphone:
   name: 大宝手机
   track: true
 
+jpad:
+  name: 大宝平板
+  track: true
+
 zpad:
   name: 小智平板
   track: true
@@ -30,9 +34,9 @@ yphone:
   name: 奶奶手机
   track: true
 
-# aphone:
-#   name: 阿姨手机
-#   track: true
+aphone:
+  name: 阿姨手机
+  track: true
 
 # xphone:
 #   name: 爷爷手机

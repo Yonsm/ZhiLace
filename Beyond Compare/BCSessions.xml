@@ -59,7 +59,7 @@
 			<UseTimestampComparison Value="False"/>
 		</Rules>
 		<Specs>
-			<Left Value="/Users/admin/Pictures/Pictures"/>
+			<Left Value="/Users/admin/Pictures"/>
 			<Right Value="profile:admin@guoz.ga?/media/STORE/Pictures"/>
 		</Specs>
 		<State>
@@ -95,8 +95,6 @@
 				</Rules>
 				<State>
 					<DisplayFilter Value="[showLeftAdded, showRightAdded, showLeftChanged, showRightChanged, showConflict]"/>
-					<SortCol Value="colCompareStatus"/>
-					<SortSide Value="dsRight"/>
 				</State>
 			</TDirCompareSession>
 			<TDirMergeSession>
