@@ -52,7 +52,10 @@
 		</State>
 	</TDirCompareSession>
 	<TDirCompareSession Value="Pictures">
-		<LastModified Value="2022-08-31 21:13:34"/>
+		<Filters>
+			<NameFilter Value="-./照片图库.photoslibrary/"/>
+		</Filters>
+		<LastModified Value="2022-09-01 18:22:16"/>
 		<Rules>
 			<ContentCompareKind Value="ccBinary"/>
 			<FollowSymLinks Value="True"/>
