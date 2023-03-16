@@ -160,7 +160,7 @@ def make_lovelace(hass, views, handle_entity):
     for i in entities:
         entity_id = i.entity_id
         attributes = i.attributes
-        name = attributes['friendly_name']
+        name = attributes.get('friendly_name')
         if entity_id == 'zone.home':
             title = name
             continue
